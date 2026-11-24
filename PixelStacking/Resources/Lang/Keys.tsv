@@ -1,0 +1,884 @@
+﻿ContextMenu_Cut	剪下(_T)
+ContextMenu_Copy	複製(_C)
+ContextMenu_Paste	貼上(_P)
+Menu_About	關於
+Lbl_Author	作者: 
+Lbl_AIAssistant	AI助理: 
+Btn_OK	確定
+Common_ShadingLightAndDarkBy	光影（依面向調整明暗）
+Export_TrimTheCommonEmptyMargin	裁掉共同的空白（錨點記在 JSON）
+Export_Both	兩者都要
+Export_AtlasJSON	圖集＋JSON
+Export_PNGSequence	PNG 序列
+Common_Export	匯出
+Tip_Close	關閉
+Common_ChooseLocation	選擇位置…
+Export_ExportPNGFixedAnglesFor	匯出 PNG（固定角度，給遊戲用）
+Common_OutputFile	輸出檔案
+Export_TheAtlasUsesThisFile	圖集用這個檔名（.png），JSON 同名，PNG 序列放在「檔名_frames」資料夾。同名檔案會被覆蓋。
+Common_Angle	角度
+Common_Yaw	水平旋轉
+Common_DegPitch	度　俯角
+Common_Deg	度
+Common_DefaultsToTheCurrentPreview	預設是目前預覽的角度。俯角：90 = 正上方、0 = 側視、負值 = 從下往上看。
+Export_Directions	方向數
+Export_HowManyDirectionsAroundA	繞一圈平均分成幾個方向（1 = 只有上面那個角度）
+Common_Image	畫面
+Common_HowManyPixelsEachCell	每個格子在圖上佔幾個像素（最近鄰，不會模糊）
+Common_IntegerScale	整數倍率
+Common_ExtraPixelsKeptOnEach	裁切後四邊多留幾個像素
+Common_Padding	留白
+Export_Output	輸出內容
+Export_AtlasOneDirectionPerRow	圖集：每列一個方向、每欄一幀。透明與半透明都完整保留（32 位元 PNG）。
+Common_Cancelling	正在取消…
+Common_PleaseChooseAnOutputFile	請選擇輸出檔案。
+Common_PleaseEnterANumberFor	水平旋轉請輸入數字。
+Common_PleaseEnterANumberFrom	俯角請輸入 -90 ~ 90 的數字。
+Export_PleaseEnterAWholeNumber	方向數請輸入 1 ~ 64 的整數。
+Export_ScaleInvalid	倍率請輸入 1 ~ 16 的整數。
+Export_PaddingInvalid	留白請輸入 0 ~ 64 的整數。
+Export_CellsSummary	共 {0} 個方向 × {1} 幀 = {2} 格。
+Export_LargestCell	每格最大 {0}×{1}（{2}）。
+Common_UsuallyMuchSmallerAfterTrimming	裁切後通常小很多
+Common_NotTrimmed	未裁切
+Common_Cancel	取消
+Common_Exporting	匯出中…
+Common_Cancelled	已取消。
+ExportExtra_TrimTheCommonEmptyMargin	裁掉共同的空白
+ExportExtra_LoopForeverUncheckedPlayOnce	無限循環播放（不勾 = 只播一次）
+ExportExtra_TopLayerGoesLeftmostDefault	最上層排在最左邊（預設最底層在最左邊）
+ExportExtra_Transparent	透明
+ExportExtra_White	白
+ExportExtra_Black	黑
+ExportExtra_DarkGray	深灰
+ExportExtra_ExportStackStripSpriteStacking	匯出疊層條帶（Sprite Stacking）
+ExportExtra_ExportGIFAnimationAtA	匯出 GIF（固定角度的動畫）
+ExportExtra_FilesWithTheSameName	同名檔案會被覆蓋。動畫的速度用「時間軸」上設定的每秒幀數。
+ExportExtra_TheImageUsesThisFile	圖用這個檔名（.png），JSON 同名。同名檔案會被覆蓋。
+ExportExtra_Background	背景
+ExportExtra_GIFTransparencyIsOnlyOn	GIF 的透明只有「有／沒有」，半透明的邊緣會被二選一
+ExportExtra_LookingStraightDownEachSlice	從正上方往下看，每一層切成一張平面圖，由左到右排成一條，每一幀一列。顏色是調色盤的原色，不加光影。遊戲端把每層依序往上疊、再旋轉，就是 Sprite Stacking。
+ExportGif_Summary	共 {0} 幀，每秒 {1} 幀。每幀最大 {2}×{3}（{4}）。
+ExportStrip_Summary	共 {0} 層 × {1} 幀。每層最大 {2}×{3}，整張圖最大 {4}×{5}（上限 {6}）。
+Help_UserGuide	使用教學
+ImportImage_CutThisOneImageHorizontally	把這一張圖橫向切成多層（疊層條帶）
+ImportImage_OnlyOverwriteCellsThatHave	只覆蓋有顏色的格子（透明的地方保留原本的內容）
+Common_ImportImage	匯入圖片
+ImportImage_OptionOneUnit	放在一{0}（目前這{1}）
+ImportImage_OptionOneUnitPerFile	每個檔案一{0}（依檔名順序，從{1}往上放）
+Export_ResultDone	完成：{0}\n{1}
+Export_ResultFailed	匯出失敗：{0}
+ImportImage_CenteredAnythingOutsideIsCropped	置中（超出的裁掉、不夠的補透明）
+Common_AlignTopLeft	左上角對齊
+ImportImage_ScaleToExactlyTheCanvas	縮放成剛好等於畫布（最近鄰）
+ImportImage_Header	要匯入 {0} 張圖片，畫布是 {1}×{2}：
+ImportImage_Placement	放法
+ImportImage_WidthPerUnit	每{0}寬
+ImportImage_PixelsStartingAt	像素（從{0}開始，由左到右依序往上放）
+ImportImage_TheStripUsesOnlyThe	條帶只取第一列；最後不滿一層寬的部分補透明。匯出的疊層條帶就是這種格式。
+ImportImage_WhenTheSizesDiffer	尺寸不一樣時
+ImportImage_ColoursAreMappedToThe	顏色會對應到調色盤：已經有的直接用，新的佔用空格；空格不夠時會量化（半透明會變不透明）。整個匯入算一次復原。
+ImportImage_Import	匯入
+ImportImage_PleaseEnterAWholeNumber	每層寬度請輸入 1 ~ 4096 的整數。
+Inflate_AutoThickestPointLargestInscribed	最厚處自動（最大內切圓直徑，圓盤變球）
+Inflate_ClearThisFrameBeforeApplying	套用前先清空這一幀
+Common_InflateTo3D	膨脹成 3D
+Inflate_ViewOptionWithAxis	{0}（厚度沿 {1} 軸）
+Inflate_CenteredAnythingOutsideIsCropped	置中（超出的裁掉）
+Inflate_ScaleProportionallyToFitThe	等比縮放放進畫布
+Inflate_StretchToTheCanvasSize	拉伸成畫布大小
+Inflate_FlatJustExtruded	平板（直接擠出）
+Inflate_SmoothSCurve	平滑（S 形）
+Inflate_ConeLikeARoof	錐形（像屋頂）
+Inflate_RoundLikeABalloon	圓潤（像氣球）
+Inflate_BulgeOnlyTowardTheViewer	只往觀看者鼓（背面平）
+Inflate_SymmetricFrontAndBack	前後對稱
+Inflate_BulgeOnlyAwayFromThe	只往遠處鼓（正面平）
+Inflate_Cells	{0} 格
+Inflate_Auto	自動
+Inflate_WhichViewTheImageIs	放哪個視角
+Inflate_TransparencyThresholdAlpha	透明門檻（alpha）
+Inflate_HowItBulges	鼓起的方式
+Inflate_Thickest	最厚
+Inflate_ThinnestEdge	最薄（邊緣）
+Inflate_DistanceToReachTheThickest	長到最厚的距離
+Inflate_Smoothing	平滑
+Inflate_PreviewDragTheSliderBelow	預覽（拖曳下方滑桿轉動）
+Inflate_Inflate	膨脹
+Inflate_TheImageHasNoColoured	圖片裡沒有有顏色的像素（全透明，或低於透明門檻）。
+Inflate_Summary	畫布 {0}×{1}、厚度方向最多 {2} 格；這樣會產生 {3} 個體素，最厚 {4} 格。
+Selection_CellArea	{0} 格區域（外框 {1}×{2}）
+LayerCanvas_FeatheredEdge	（邊緣羽化）
+Selection_Rotated	（已旋轉 {0}°）
+Selection_FloatingDescription	{0} {1}，{2} 層
+LayerCanvas_Moving	移動中
+LayerCanvas_Pasting	貼上中
+LayerCanvas_DragToMoveArrowKeys	（拖曳移動、方向鍵微調、[ ] 換層；點框外或 Enter 放下，Esc 取消）
+Selection_Description	選取 {0}，{1} 層（深度）
+LayerListBox_ShowHideThisLayerHidden	顯示／隱藏這個圖層（隱藏的圖層不參與預覽與匯出，內容還在）
+LayerListBox_ClickEditThisLayerDouble	點一下＝編輯這個圖層；連點兩下＝改名
+Strip_SliceEmpty	{0} 空
+MoveLayer_OnlyThisFrame	只動目前這一幀
+MoveLayer_TheContentOfThisLayer	這個圖層在所有幀的內容都一起動
+Common_MoveLayerContent	移動圖層內容
+MoveLayer_Prompt	把圖層「{0}」的所有體素整塊平移：
+MoveLayer_UnitsHint	單位是格（−{0} ~ {1}）。X 往右為正、Y 往前（正面視角的觀看者那一側）為正、Z 往上為正。超出模型的體素會被丟掉，可以 Ctrl+Z 復原。
+MoveLayer_Move	移動
+MoveLayer_RangeError	X、Y、Z 都要是 −{0} ~ {1} 的整數。
+MoveLayer_AllThreeDirectionsAre0	三個方向都是 0，沒有東西要移動。
+New_New	新增
+New_LengthX	長 (X)
+New_HorizontalCellsOfTheCanvas	畫布的水平格數
+New_VerticalCellsOfTheCanvas	畫布的垂直格數
+New_WidthY	寬 (Y)
+New_NumberOfSlicesStackedUpward	往上疊的層數
+New_HeightSlices	高 (層數)
+New_Create	建立
+NewDialog_Prompt	建立新的空白動畫（各 {0}~{1}）：
+New_WhatIsOpenNowIs	目前開著的內容不會自動儲存，沒存的變更會遺失。
+NewDialog_SizeError	長、寬、高都必須是 {0}~{1} 的整數。
+NewDialog_SizeSummary	{0} × {1} × {2} = {3} 格，每幀存檔約 {4}。
+New_OnTheLargeSideEditing	\n偏大：畫布編輯在 64 以內會比較順手，太大的模型也很難畫。
+Range_CopyToRange	複製到範圍
+Range_From	第
+Range_To	到 第
+Range_CurrentOption	{0}（共 {1} {2}）
+Range_Prompt	把目前這{0}（第 {1} {2}）複製到：
+Range_EveryOtherSliceInThe	範圍內其他每一層都會被覆蓋（可以 Ctrl+Z 復原）。
+Range_PleaseEnterAWholeNumber	請輸入整數。
+Range_Invalid	範圍必須在 1 ~ {0} 之間。
+Menu_RotateSelection	旋轉選取區
+Rotate_RotateBy	再轉
+Rotate_AlreadyRotated	目前已經轉了 {0}°，繞選取區的正中心再轉：
+Rotate_RotateAroundTheExactCentre	繞選取區的正中心旋轉（沿著視線方向，每一層一起轉）：
+Rotate_PositiveClockwiseNegativeCounter	正數 = 順時針、負數 = 逆時針。轉完還是浮動的內容，可以拖曳、再轉，Enter 放下、Esc 取消。
+Rotate_PleaseEnterANumberNegative	請輸入數字（可以是負數、小數）。
+Rotate_TheAngleMustBeBetween	角度請在 -3600 ~ 3600 之間。
+SavePrompt_NotSavedYet	尚未儲存
+Menu_Save	儲存
+SavePrompt_DonTSave	不儲存
+SavePrompt_Message	「{0}」有尚未儲存的變更。要先儲存嗎？
+SavePrompt_DonTSaveThrowsAway	選「不儲存」會丟掉上次儲存之後的所有修改，無法復原。
+Shift_WrapAroundWhatGoesPast	超出的部分從另一邊繞回來（環狀）
+Shift_Shift	平移
+Shift_Right	往右
+Shift_Down	往下
+Shift_Cells	格
+Shift_Prompt	平移{0}（畫布 {1}×{2}）：
+Shift_NegativeLeftUpWithoutWrap	負數＝往左／往上。沒有勾選繞回的話，移出畫布的部分會被丟掉。
+Shift_PleaseEnterAWholeNumber	請輸入整數（可以是負數）。
+Shift_LimitHint	最多移動一整個畫布：左右 ±{0}、上下 ±{1}。
+Animation_Layer1	圖層 1
+Common_TheSizeMustBeGreater	尺寸必須大於 0
+Animation_NoFrames	沒有幀
+Animation_TheFramesAreNotAll	幀的尺寸不一致
+Animation_TheMaximumNumberOfLayers	圖層數量已達上限
+Animation_NotAPixelStackingFile	不是 PixelStacking 檔案
+Animation_UnsupportedVersion	不支援的檔案版本：{0}
+Animation_TheFileSizeIsNot	檔案尺寸不合理
+Animation_TheFileDataIsIncomplete	檔案資料不完整
+Animation_TheNumberOfLayersIs	圖層數量不合理
+Animation_TheLayerNameIsNot	圖層名稱不合理
+Animation_TheNumberOfPartsIs	部件數量不合理
+Animation_TheBodyTranslationIsNot	身體平移不是數字
+Animation_ThePartDataIsNot	部件資料不合理
+Animation_ThePartSAxisIs	部件的軸不合理
+Animation_ThePartSPivotAngle	部件的樞軸、角度或平移不是數字
+Animation_ThePartSParentDoes	部件的上一層不存在
+Animation_TheParentChildRelationshipsOf	部件的上下層關係有循環
+Common_TheAngleIsNotA	角度不是數字
+Inflate_TheCanvasSizesDoNot	畫布尺寸不符
+LayerTransform_RotatingBy90NeedsA	旋轉 90° 需要正方形的畫布
+PosePresets_Constant	固定值
+PosePresets_FullTurn0To1	轉圈（0 到 1）
+PosePresets_SwingBackAndForthSine	來回擺動（正弦）
+PosePresets_OneWaySwingOneSide	單向擺動（只往一邊）
+PosePresets_ArcRisesToTheMax	弧形（升到最大再回來）
+PosePresets_Wave1To1	揮動（−1 到 +1）
+PosePresets_BounceLikeABallLanding	彈跳（像球落地）
+PosePresets_EaseInSlowThenFast	緩入（先慢後快）
+PosePresets_EaseInOutSlowAt	緩入緩出（兩頭慢）
+PosePresets_EaseOutFastThenSlow	緩出（先快後慢）
+PosePresets_LinearConstantSpeed	線性（等速）
+PosePresets_BackOvershootsThenReturns	回彈（衝過頭再彈回）
+PosePresets_RightThigh	右大腿
+PosePresets_LeftThigh	左大腿
+PosePresets_LeftShin	左小腿
+PosePresets_RightShin	右小腿
+PosePresets_LeftUpperArm	左上臂
+PosePresets_RightUpperArm	右上臂
+PosePresets_RightForearm	右前臂
+PosePresets_LeftForearm	左前臂
+PosePresets_Head	頭
+PosePresets_TorsoWaist	軀幹／腰
+PosePresets_LeftWing	左翅膀
+PosePresets_RightWing	右翅膀
+PosePresets_TailSegment1	尾巴第 1 節
+PosePresets_TailSegment2	尾巴第 2 節
+PosePresets_TailSegment3	尾巴第 3 節
+PosePresets_RotorPropeller	旋轉件（螺旋槳）
+PosePresets_WholeBody	整個身體
+PosePresets_LegsAndArmsSwingBack	雙腿與雙臂交替前後擺，膝蓋在腿往前時彎曲，身體上下輕微起伏。擺動方向不對時，勾該通道的「反向」。
+PosePresets_Walk	走路
+PosePresets_TheSameSetAsWalk	跟走路同一套，擺幅更大、膝蓋彎更多、身體起伏更高。
+PosePresets_Run	跑步
+PosePresets_IdleBreathing	待機（呼吸）
+PosePresets_TheBodySlowlyRisesAnd	身體慢慢上下起伏，手臂與頭微微晃動。
+PosePresets_Wave	揮手
+PosePresets_TheRightHandIsRaised	右手舉高，前臂左右擺動。
+PosePresets_AttackSlash	攻擊（揮砍）
+PosePresets_TheRightArmSwingsDown	右臂從後往前揮下，身體跟著前傾。一次性動作。
+PosePresets_TheWholeBodyJumpsUp	身體整個跳起再落下，雙腿先彎、雙臂上舉。一次性動作。
+PosePresets_Jump	跳躍
+PosePresets_StaticPoseMakesOnly1	靜態姿勢（只產生 1 幀）：大腿與小腿各彎 90°，身體降低。
+PosePresets_SitDown	坐下
+PosePresets_Bow	鞠躬
+PosePresets_TheTorsoBendsForwardAnd	軀幹往前彎再起來，頭微微低下。一次性動作。
+PosePresets_NodShakeHead	點頭／搖頭
+PosePresets_TheHeadTurnsBackAnd	頭來回轉動。轉軸怎麼設就決定它是點頭還是搖頭。
+PosePresets_BothWingsFlapUpAnd	兩邊翅膀上下拍動（右邊預設反向，因為鏡像），身體跟著微微起伏。
+PosePresets_FlapWings	拍翅膀
+PosePresets_WagTail	搖尾巴
+PosePresets_ThreeTailSegmentsSwingOne	三節尾巴依序擺動，每節慢一點點（波浪）。
+PosePresets_SpinPropeller	旋轉（螺旋槳）
+PosePresets_TheRotatingPartMakesA	旋轉件轉滿一圈，最後一幀剛好接回第一幀。
+PosePresets_FrameCountRange	幀數要在 1 ~ {0} 之間
+SliceOps_TheSliceSizesDoNot	切片尺寸不符
+ViewDirection_Top	頂部
+ViewDirection_Bottom	底部
+ViewDirection_Front	正面
+ViewDirection_Back	背面
+ViewDirection_Left	左側
+ViewDirection_Right	右側
+ViewDirection_TopLookingDownXY	頂部（從上往下看）　→ +X　↓ +Y
+ViewDirection_BottomLookingUpXY	底部（從下往上看）　→ +X　↓ −Y
+ViewDirection_FrontStandingOnTheY	正面（站在 +Y 側）　→ +X　↑ +Z
+ViewDirection_BackStandingOnTheY	背面（站在 −Y 側）　→ −X　↑ +Z
+ViewDirection_LeftStandingOnTheX	左側（站在 −X 側）　→ +Y　↑ +Z
+ViewDirection_RightStandingOnTheX	右側（站在 +X 側）　→ −Y　↑ +Z
+VoxelModel_ThePartMarkerLengthsDo	部件標記長度不符
+VoxelModel_TheNumberOfLayersDoes	圖層數量不符
+VoxelModel_TheCelSizesDoNot	圖格尺寸不符
+Lbl_Layers	圖層
+Layers_Header	圖層（{0}）
+Layers_DefaultName	圖層 {0}
+Layers_CopyName	{0} 複本
+Main_OnlyOneLayerIsLeft	只剩一個圖層，不能刪除。
+Main_TheBottomLayerHasNo	最底下的圖層沒有可以合併的下一層。
+Menu_FlattenAllLayers	拼合所有圖層
+Main_SomeLayersAreHiddenAnd	有隱藏的圖層，拼合時它們會被丟掉（可以 Ctrl+Z 復原）。要繼續嗎？
+Main_NameOfThisLayer	這個圖層的名稱：
+Main_LayerName	圖層名稱
+Main_TheNameCannotBeEmpty	名稱不能是空的。
+Main_ImportFailed	匯入失敗
+Main_TheMaximumNumberOfLayers	圖層數量已達上限。
+Layers_NewColoursAdded	　新增 {0} 個顏色
+Layers_ColoursQuantized	　顏色太多，已量化成 {0} 色
+Layers_SizeCentred	（尺寸 {0}×{1}×{2}，已置中對齊）
+Layers_Imported	已匯入「{0}」成新圖層{1}{2}（可以 Ctrl+Z 復原）。
+Main_ThisLayerHasNoVoxels	這個圖層沒有任何體素，沒有東西可以移動。
+Layers_Shifted	已把圖層「{0}」平移 ({1}, {2}, {3})：{4} 個體素{5}{6}（可以 Ctrl+Z 復原）。
+Layers_ShiftedDropped	，{0} 個超出模型被丟掉
+Layers_ShiftedFrames	（{0} 幀）
+Main_ClickAVoxelToSelect	點一個體素，選出跟它立體相連的整塊（點空白＝取消）。Shift 加選、Ctrl 減選。選好後用下面的按鈕或方向鍵搬移。
+Layers_PartSelected	已選 {0} 個體素。方向鍵 ← → ↑ ↓ 移動、Ctrl+↑／↓ 往前／往後、Delete 刪除、Esc 取消選取。
+Main_MovingFurtherWouldLeaveThe	再移動就會超出模型邊界，沒有移動。
+Layers_PartMoved	已移動 {0} 個體素（可以 Ctrl+Z 復原）。
+Layers_PartDeleted	已刪除 {0} 個體素（可以 Ctrl+Z 復原）。
+Main_SelectAPartWithThe	先用 3D 魔術棒選一塊部件。
+Lbl_Part	部件
+Layers_PartExtracted	已把 {0} 個體素抽到新圖層「{1}」（可以移動它、再向下合併；Ctrl+Z 復原）。
+Tip_Minimize	最小化
+Tip_Maximize	最大化
+Menu_File	檔案(_F)
+Menu_New	新增…
+Menu_Open	開啟…
+Menu_SaveAs	另存新檔…
+Menu_ImportImage	匯入圖片…
+Tip_ReadAPNGBMPGIF	把 PNG／BMP／GIF／JPG 讀進來放在目前這一層（可以一次選多張，每張一層；或把疊層條帶切成多層）。顏色對應到調色盤，整個匯入算一次復原。
+Menu_InflateTo3D	膨脹成 3D…
+Tip_ReadA2DImage	讀一張 2D 圖片，把它的輪廓往厚度方向鼓起來變成立體（可以調厚度、截面形狀、前後對稱或單面），有即時預覽。算一次復原。
+Menu_ExportPNG	匯出 PNG…
+Tip_PreRenderFixedAnglesInto	固定角度預先渲染成圖集＋JSON 或 PNG 序列，給遊戲使用
+Menu_ExportGIF	匯出 GIF…
+Tip_AnAnimatedGIFAtA	固定角度的動畫 GIF（速度用動畫的每秒幀數），拿來預覽或分享
+Menu_ExportStackStrip	匯出疊層條帶…
+Tip_OriginalSpriteStackingFormatLooking	Sprite Stacking 原始格式：從正上方往下看，每一層一張平面圖排成一條（每幀一列）＋JSON，遊戲端把每層疊起來再旋轉
+Menu_Exit	結束
+Menu_Edit	編輯(_E)
+Menu_Cut	剪下
+Menu_Copy	複製
+Menu_Paste	貼上
+Menu_SelectAll	全選
+Menu_CopyToNextSlice	複製到 +1 層
+Menu_CopyToPrevSlice	複製到 −1 層
+Menu_CopyToRange	複製到範圍…
+Menu_Clockwise15	順時針 15°
+Menu_CounterClockwise15	逆時針 15°
+Menu_Clockwise5	順時針 5°
+Menu_CounterClockwise5	逆時針 5°
+Menu_Clockwise90	順時針 90°
+Menu_CounterClockwise90	逆時針 90°
+Menu_SpecifyAngle	指定角度…
+Menu_TransformThisSlice	變換此層
+Menu_FlipHorizontally	左右翻轉
+Menu_FlipVertically	上下翻轉
+Menu_Rotate90ClockwiseSquareCanvas	順時針轉 90°（正方形畫布）
+Menu_Rotate90CounterClockwiseSquare	逆時針轉 90°（正方形畫布）
+Menu_Rotate180	旋轉 180°
+Menu_Shift	平移…
+Menu_TransformAllSlicesOfThe	變換目前圖層的所有切片
+Menu_Layer	圖層(_L)
+Menu_NewLayer	新增圖層
+Menu_DeleteLayer	刪除圖層
+Menu_MoveUpOne	上移一層
+Menu_MoveDownOne	下移一層
+Tip_LayTheCurrentLayerOnto	目前圖層疊到下面那一層上，合成一層（所有幀）
+Menu_MergeDown	向下合併
+Tip_StackAllVisibleLayersInto	把所有看得見的圖層疊成一個圖層；隱藏的圖層會被丟掉
+Menu_ImportFileAsLayer	匯入檔案成圖層…
+Tip_ReadAnotherPstkAComponent	把另一個 .pstk（組件）讀進來，放在目前圖層上方成為新圖層：尺寸不同以中心對齊，顏色對應到目前的調色盤。之後可以用「移動圖層內容」或 3D 魔術棒把它拼到位置，再向下合併。
+Menu_MoveLayerContent	移動圖層內容…
+Tip_ShiftAllVoxelsOfThe	把目前圖層的所有體素整塊平移 X／Y／Z 格（只動這一幀或所有幀）
+Menu_MovePartToNewLayer	部件抽到新圖層
+Tip_MoveThePartSelectedWith	把 3D 魔術棒選到的部件抽到新圖層
+Menu_Tools	工具(_T)
+Menu_Palette	調色盤(_P)
+Tip_RemoveColoursThatNoVoxel	把所有幀都沒有任何體素用到的顏色從調色盤拿掉，空出色格。可以 Ctrl+Z 復原。
+Tip_KeepOnlyOneSlotFor	調色盤裡完全相同的顏色只留一格，其他格的體素改指向它。可以 Ctrl+Z 復原。
+Menu_ImportPalette	匯入調色盤…
+Tip_ReadAGIMPPaletteGpl	讀取 GIMP 調色盤（.gpl）：新的顏色附加進空的色格，已經有的略過，不會動到現有的顏色與模型。
+Menu_ExportPalette	匯出調色盤…
+Tip_SaveAllColoursOfThe	把目前調色盤的所有顏色存成 GIMP 調色盤（.gpl）。半透明顏色的透明度記在名稱裡（a=128）。
+Menu_Language	語言 / Language
+Menu_Help	說明(_H)
+Menu_UserGuide	使用教學…
+Tip_FeatureOverviewWhatTheTool	功能總覽（目前有哪些功能）、快速上手、建議做法、快捷鍵與常見問題。
+Lbl_TimelineFramesAndPlayback	時間軸（幀與播放）
+Tip_TimelineCollapse	點一下收起或展開：收起時只剩這一條，編輯畫布與預覽可以用掉下面的空間。空白鍵播放、, . 切換幀仍然有效。
+Btn_PlaySpace	▶ 播放 (Space)
+Lbl_Speed	速度
+Btn_AddBlankFrame	新增空白幀
+Btn_DuplicateFrame	複製此幀
+Btn_DeleteFrame	刪除此幀
+Btn_MoveLeft	◀ 左移
+Btn_MoveRight	右移 ▶
+Lbl_PreviousNextFrame	（, . 切換上一幀／下一幀）
+Btn_Plus	＋
+Tip_AddABlankLayerAbove	在目前圖層上方新增一個空白圖層（Ctrl+Shift+N）。第一次新增時，原本的內容變成「圖層 1」。
+Tip_DuplicateTheCurrentLayerWith	複製目前圖層（連同每一幀的內容），放在它的正上方
+Tip_DeleteTheCurrentLayerAt	刪除目前圖層（至少要留一個；可以 Ctrl+Z 復原）
+Tip_MoveTheCurrentLayerUp	把目前圖層往上移一格（蓋住更多東西）
+Tip_MoveTheCurrentLayerDown	把目前圖層往下移一格
+Tip_MergeDownLayTheCurrent	向下合併：目前圖層疊到它下面那一層上，兩層變成一層（所有幀）
+Tip_LayerListUpperLayersCover	圖層清單（最上面的圖層蓋住下面的）。點一列＝編輯那個圖層；左邊的勾＝顯示／隱藏；連點兩下＝改名。畫筆、填滿、選取、匯入圖片、膨脹都作用在目前圖層。
+Hdr_ViewEditCanvas	視角（編輯畫布）
+Opt_Top1	頂部 (1)
+Opt_Bottom2	底部 (2)
+Opt_Front3	正面 (3)
+Opt_Back4	背面 (4)
+Opt_Left5	左側 (5)
+Opt_Right6	右側 (6)
+Lbl_ColourRGBAAndPalette	顏色（RGBA）與調色盤
+Tip_SquareLeftRightRUp	方框：左右 = R、上下 = G；第一條 = B、第二條 = A（透明度）。點或拖曳取色，也可以直接輸入 0~255。
+Lbl_PaletteClickToPickA	調色盤（點選取色；畫下去才會記進調色盤）
+Hdr_Tools	工具
+Opt_Pencil	畫筆
+Opt_Eraser	橡皮擦
+Opt_Select	選取
+Tip_DragOutASelectionBox	拖曳拉出選取框（厚度 = 筆刷深度）。Ctrl+C 複製、Ctrl+X 剪下、Ctrl+V 貼上、Delete 刪除；在選取框內拖曳可以搬移。
+Tip_PressToSetTheStart	按下設起點、拖曳到終點再放開。用目前的筆刷（形狀／粗細／深度／立體筆刷）畫；左鍵畫目前顏色、右鍵清除。按住 Shift 限制成水平／垂直／45°。Esc 取消。快捷鍵 L。
+Tip_DragOutTheCornersOf	拖曳拉出矩形的對角再放開；預設只畫外框，勾「填滿形狀」畫實心。按住 Shift 變正方形。左鍵畫、右鍵清除。Esc 取消。快捷鍵 R。
+Tip_DragOutTheBoundingRectangle	拖曳拉出橢圓的外接矩形再放開；預設只畫外圈，勾「填滿形狀」畫實心。按住 Shift 變正圓。左鍵畫、右鍵清除。Esc 取消。快捷鍵 E。
+Tip_ClickAVoxelOnThe	點畫布上的體素，把它的顏色變成畫筆顏色（點到空白格＝選透明色）。按著拖曳可以連續取色。快捷鍵 I。
+Tip_ClickToSelectTheConnected	點一下選取目前這一層裡「相連的同色區域」（點空白處就選相連的空白）。Shift+點＝加入選取、Ctrl+點＝從選取中減去。厚度 = 筆刷深度。選好之後可以複製、剪下、刪除，或在選取區上拖曳搬移。
+Tip_ClickAVoxelToSelect	點一個體素，選出跟它「立體相連」的整塊部件（預設所有有顏色的相連體素；可以改成只選同色）。選好後用方向鍵或下面的按鈕整塊搬動，或抽到新圖層，拼到別的地方。Shift+點＝加選、Ctrl+點＝減選。
+Lbl_LeftButtonDrawsFillsRight	左鍵畫／填色、右鍵擦／清除該區
+Lbl_3DMagicWandParts	3D 魔術棒（部件）
+Opt_SameColourOnly	只選同色
+Tip_TickedOnlyVoxelsOfThe	勾選：只選跟點到的體素同色而且相連的；不勾：選所有相連的有顏色體素（不管顏色）
+Opt_DiagonalsCountAsConnected26	斜角相連也算（26 連通）
+Tip_ByDefaultOnlyNeighboursSharing	預設只算共用一個面的鄰居（6 連通）；勾選後共用邊或角的斜向鄰居也算相連
+Tip_PartMoveLeft	整塊往左一格（方向鍵 ←）
+Tip_PartMoveRight	整塊往右一格（方向鍵 →）
+Tip_PartMoveUp	整塊往上一格（方向鍵 ↑）
+Tip_PartMoveDown	整塊往下一格（方向鍵 ↓）
+Tip_PartMoveForward	整塊往觀看者的方向移一片（Ctrl+↑），切片滑桿會跟著
+Btn_Forward	往前
+Tip_PartMoveBack	整塊往遠離觀看者的方向移一片（Ctrl+↓）
+Btn_Back	往後
+Tip_CutTheSelectedPartOut	把選到的部件從目前圖層剪下來，放進它上面的新圖層（選取跟著過去）。拼好之後再用「向下合併」合起來。
+Btn_MoveToNewLayer	抽到新圖層
+Btn_DeleteSelection	刪除選取
+Tip_DeleteTheSelectedVoxelsDelete	刪除選到的體素（Delete）
+Opt_FillShapesRectangleEllipse	填滿形狀（矩形／橢圓）
+Tip_ForTheRectangleAndEllipse	矩形與橢圓工具用：勾選 = 畫實心，不勾 = 只畫外框。
+Opt_3DFill	立體填滿
+Tip_TickedReplacesTheConnectedSolid	勾選：換掉整個體積中連通的同色實心塊（點空白格不會動）。不勾：只填目前切片裡連通的同色區域。
+Opt_GlobalSameColour	全域同色
+Tip_ForTheMagicWandTicked	魔術棒用：勾選＝選取目前這一層裡「所有」同色的格子（不要求相連）。不勾＝只選跟點到的格子相連的同色區域。
+Lbl_MagicWandTolerance	魔術棒容許誤差
+Tip_WandTolerance	魔術棒用：0 = 只選完全同色。數字越大，顏色越接近的也一起選進來（R、G、B、A 四個通道都跟點到的顏色相差不超過這個數字）。透明格只跟透明格算同色。
+Lbl_MagicWandFeatherCells	魔術棒羽化（格）
+Tip_WandFeather	魔術棒用：0 = 硬邊。N = 選取區邊緣「往內」N 格漸變（最外圈只選到一小部分，越往內越多）。刪除時邊緣只淡掉一部分，複製／剪下／搬移／貼上時邊緣以半透明混進底下原有的顏色（會用掉調色盤的空格）。選取當下就決定，之後再拉滑桿不影響已選好的區域。
+Hdr_Brush	筆刷
+Tip_MirrorsAroundTheExactCentre	以模型正中央為軸（用模型的 X／Y／Z 軸，任何視角都一致）。開啟後，畫筆、橡皮擦（含立體筆刷）與填滿改到的每一格，都會在對稱的位置也改成同樣的值；可以同時開好幾個軸。選取、貼上不受影響。畫布上的粉紅虛線是落在這個視角平面上的對稱軸，粉紅框是對稱位置的游標。
+Tip_MirrorOnXLeftRight	X 軸對稱（長的方向左右對稱）
+Tip_MirrorOnYFrontBack	Y 軸對稱（寬的方向前後對稱）
+Tip_MirrorOnZUpDown	Z 軸對稱（高的方向上下對稱）
+Lbl_Shape	形狀
+Opt_Square	方形
+Tip_FlatSquareSizeSideLength	平面方形，粗細 = 邊長。再用「深度」往後面疊幾層。
+Opt_Circle	圓形
+Tip_FlatCircleSizeDiameterUse	平面圓形，粗細 = 直徑。再用「深度」往後面疊幾層。
+Opt_Cube	立方體
+Tip_3DBrushCentredOn	立體筆刷：以點到的格子與目前這一層為中心，粗細 = 邊長（左右、上下、前後都是這麼多格）。不使用深度。超出模型的部分自動裁掉。
+Opt_Ellipsoid	橢圓球
+Tip_3DBrushSizeThe	立體筆刷：粗細 = 畫布上（左右、上下）的半徑，視線方向的總長 = 筆刷深度。深度 = 2×半徑+1 時就是球，比較短是扁的、比較長是拉長的橄欖球形。以點到的格子與目前這一層為中心。
+Opt_Spring	彈簧
+Tip_3DBrushTheSame	立體筆刷：跟「螺旋」一樣的螺旋線，但線是粗的（線徑 3 格），所以每「半徑+6」層才轉一圈，圈與圈之間不會黏在一起。粗細 = 彈簧半徑，軸沿視線方向，總長 = 筆刷深度。
+Opt_Helix	螺旋
+Tip_3DBrushOneContinuous	立體筆刷：一條 1 個體素粗的連續螺旋線。粗細 = 螺旋半徑，軸沿視線方向（以點到的格子為軸），總長 = 筆刷深度，每「半徑+4」層轉一圈。從最後面那一層的右邊開始，往前面在畫布上順時針轉。
+Opt_Torus	圓環
+Tip_3DBrushDonutSize	立體筆刷（甜甜圈）：粗細 = 環的半徑（點到的格子是正中央的洞），管子的粗細（管徑）= 筆刷深度，也就是沿視線方向厚幾層。環平躺在畫布上；深度 1 = 一圈平的環。以目前這一層為中心。
+Opt_Pyramid	金字塔
+Tip_3DBrushSizeSide	立體筆刷：粗細 = 正方形底面的邊長，軸沿視線方向（垂直於畫布），長度 = 筆刷深度。底面在最後面（邊長最大），尖端朝向你（逐層變小）。以點到的格子與目前這一層為中心。
+Opt_Cone	圓錐體
+Tip_3DBrushSizeBase	立體筆刷：粗細 = 底面半徑，軸沿視線方向（垂直於畫布），長度 = 筆刷深度。底面在最後面（半徑最大），尖端朝向你（逐層變小）。以點到的格子與目前這一層為中心。
+Opt_Cylinder	圓柱體
+Tip_BrushCylinder	立體筆刷：粗細 = 半徑，軸沿視線方向（垂直於畫布），長度 = 筆刷深度；每一層都是同樣的圓盤、兩端是平的。以點到的格子與目前這一層為中心。
+Opt_Capsule	膠囊型
+Tip_BrushCapsule	立體筆刷：粗細 = 半徑，軸沿視線方向（垂直於畫布），軸向總長 = 筆刷深度（含兩端半球；深度比球的直徑還短時就是一顆球）。以點到的格子與目前這一層為中心。
+Lbl_SizeSideLength	粗細（邊長）
+Lbl_Depth	深度
+Tip_1DrawOnlyTheCurrent	1 = 只畫目前這一層。2 以上 = 同時畫目前這一層，以及沿視線方向往後面（遠離你、切片編號變小）的幾層。適用畫筆、橡皮擦與（平面）填滿；立體填滿本來就跨層，不使用深度。
+Lbl_DrawOnlyTheCurrentSlice	只畫目前這一層
+Hdr_Display	顯示
+Opt_ShowNextSliceSemiTransparent	半透明顯示下一層
+Opt_ShowPreviousFrameSemiTransparent	半透明顯示上一幀（橘）
+Opt_Grid	格線
+Opt_LightTransparencyCheckerboard	淺色透明棋盤
+Tip_WhatToShowBehindTransparent	透明（沒有顏色）的格子用什麼底：勾選 = 白／淺灰棋盤（一般繪圖軟體的樣子），不勾 = 深灰棋盤。畫布、調色盤色塊、顏色預覽、透明度條一起換，下次開啟也會記住。
+Lbl_Coordinates	座標 —
+Lbl_SlicesAndCopyTools	層數與複製工具
+Tip_SlicesCollapse	點一下收起或展開：層數滑桿、剪下／複製／貼上、複製到其他層。收起後 [ ]、PageUp／PageDown、←／→ 仍然可以切換層。
+Lbl_TheMouseWheelAndPageUp	←／→、[ ]、PageUp / PageDown 或在這個面板上滾動滾輪，都可以切換切片（數字越大越靠近視角）
+Tip_AThumbnailOfEverySlice	每一層（切片）的縮圖。橘框＋「空」＝這一層完全沒有顏色；藍框＝正在編輯的這一層。點一下跳到那一層；按住縮圖拖到別的位置再放開，就把這一層搬過去（中間的層各挪一格，可以 Ctrl+Z 復原，只動目前這一幀）。
+Btn_CutCtrlX	剪下 (Ctrl+X)
+Tip_WithASelectionCutThe	有選取區：把選取的內容剪下（原位置清成透明）。沒有選取區什麼都不做。
+Btn_CopyCtrlC	複製 (Ctrl+C)
+Tip_WithASelectionCopyThe	有選取區：複製選取的內容（厚度 = 筆刷深度）。沒有選取區：複製目前視角看到的整個這一層。
+Btn_PasteCtrlV	貼上 (Ctrl+V)
+Tip_PasteTheSelectionItAppears	貼上選取區的內容：會出現在畫布左上角，拖曳到想要的位置，點框外或按 Enter 放下。貼上整層時直接取代目前這一層。
+Btn_CopyToNextSlice	複製到 +1 層 (Ctrl+D)
+Tip_CopyToNextSlice	把這一層複製到編號 +1（更靠近視角）的那一層，並跳過去，連按就能一路疊上去
+Btn_CopyToPrevSlice	複製到 −1 層 (Ctrl+Shift+D)
+Tip_CopyToPrevSlice	把這一層複製到編號 −1 的那一層，並跳過去
+Tip_CopyThisSliceToEvery	把這一層一次複製到一段範圍內的每一層（例如把一個輪廓往上拉出整面牆）
+Opt_DonTOverwriteTransparent	透明不覆蓋
+Tip_TickedOnlyCopyPasteCells	勾選：只複製／貼上有顏色的格子，不會把目標原本的內容清掉（疊加；貼上選取區時就是小畫家的「透明選取」）
+Tip_ClearAllColoursOfThis	把目前畫布上這一層的顏色全部清掉（只清這一層，可以 Ctrl+Z 復原）
+Lbl_ClipboardEmpty	剪貼簿：（空）
+Lbl_PreviewMode	預覽方式
+Opt_SolidVoxels	實心體素
+Tip_EachPixelLooksIntoThe	每個像素往畫面裡看，第一個看到的格子是什麼顏色就顯示什麼顏色（不分層）
+Opt_Stacked	層疊
+Tip_SpriteStackingStyleEachSlice	Sprite Stacking 風格：把每一層當平面疊起來
+Opt_AutoRotate	自動旋轉
+Opt_CutOpenToSeeInside	切開看內部（只顯示目前切片以後面的部分）
+Opt_ShadingLightAndDarkBy	光影（依面向調整明暗，取消勾選＝純色）
+Lbl_DragOnThePreviewLeft	在預覽上拖曳：左右轉動、上下改變俯角（實心體素可繞到下方往上看）。滾輪拉近／拉遠（目前 100%），雙擊還原。
+Main_Untitled	（未命名）
+Status_Document	{0}　長{1} × 寬{2} × 高{3}　{4} 幀
+Status_Frame	第 {0} / {1} 幀
+Status_TimelineHeader	第 {0} / {1} 幀　{2} 幀/秒
+Unit_SliceVertical	切片
+Unit_SliceHorizontal	層
+Status_SliceWithAxis	第 {0} / {1} {2}（{3} 軸）
+Status_SliceLine	第 {0} / {1} {2}{3}{4}
+Status_ActiveLayer	　圖層「{0}」
+Status_EmptySlices	　{0} {1}空白
+Status_Coordinates	座標 X{0}  Y{1}  Z{2}
+Main_ReplaceWithTheCurrentBrush	整個模型換成目前畫筆顏色
+Main_ReplaceThisColourInEvery	把這個顏色在所有幀、所有體素上換成目前調色盤（RGBA／HSV）上的顏色。可以 Ctrl+Z 復原。
+Main_DeleteThisColourVoxelsUsing	刪除這個顏色（用到它的體素變透明）
+Palette_SwatchTip	色格 {0}　RGBA ({1}, {2}, {3}, {4})\n{5}
+Main_NoVoxelUsesThisColour	沒有任何體素用到這個顏色
+Palette_SwatchUsage	所有幀共 {0} 個體素用到\n（點一下取色、右鍵換色或刪除）
+Palette_ResultWithUndo	{0}（可以 Ctrl+Z 復原）。
+Palette_RemovedUnused	已清掉 {0} 個沒用到的顏色
+Main_NoColoursToRemoveEvery	沒有需要清掉的顏色：每個顏色都有體素在用。
+Palette_MergedDuplicates	已合併 {0} 個重複的顏色（改了 {1} 個體素的色格）
+Main_ThereAreNoDuplicateColours	沒有重複的顏色。
+Palette_TransparentNoReplace	目前畫筆是「透明色」，沒有顏色可以拿來換；要拿掉這個顏色請用「刪除這個顏色」。
+Palette_SlotReplaced	已把色格 {0} 換成目前畫筆顏色（整個模型的這個顏色都跟著變）
+Palette_SlotMerged	已把色格 {0} 合併到調色盤裡本來就有的同色格（{1} 個體素改指向它）
+Main_ThisSlotIsAlreadyThe	這格本來就是目前畫筆的顏色。
+Main_ThisSlotIsAlreadyEmpty	這格已經是空的。
+Palette_SlotDeleted	已刪除色格 {0}（{1} 個體素變成透明）
+Main_GIMPPaletteGplGpl	GIMP 調色盤 (*.gpl)|*.gpl
+Main_GIMPPaletteGplGplAll	GIMP 調色盤 (*.gpl)|*.gpl|所有檔案 (*.*)|*.*
+Palette_Exported	已匯出 {0} 個顏色：{1}
+Main_ExportFailed	匯出失敗
+Main_NoColoursWereFoundIn	這個檔案裡找不到任何顏色（要是 GIMP 調色盤 .gpl，每行「R G B 名稱」）。
+Palette_Imported	已匯入 {0} 個新顏色
+Palette_NothingAdded	沒有新增任何顏色（讀到 {0} 個，全都已經在調色盤裡）。
+Palette_ImportFull	　調色盤滿了，{0} 個放不進去。
+Main_TransparentColourWhenSelectedPainting	透明色：選了它，畫筆畫下去＝清成透明（等同橡皮擦），填滿＝清空該區
+Main_TransparentColour	透明色
+Palette_TransparentNote	目前畫筆是「透明色」：畫下去＝清成透明（等同橡皮擦），填滿＝清空該區。
+Main_All255PaletteSlotsAre	調色盤 255 格已滿，這筆改用最接近的顏色。
+Main_SizeSpringRadius	粗細（彈簧半徑）
+Main_SizeHelixRadius	粗細（螺旋半徑）
+Main_SizeRingRadius	粗細（環半徑）
+Main_SizeBaseSideLength	粗細（底面邊長）
+Main_SizeRadius	粗細（半徑）
+Main_SizeDiameter	粗細（直徑）
+Main_3DFillAlreadyConnects	立體填滿本來就會跨層連通，不使用深度
+Main_FillOnlyTheCurrentSlice	只填目前這一層
+Hint_FillDepth	以目前層連通的區域為範本，同時填往後 {0} 層（切片編號變小的方向）
+Hint_DrawDepth	同時畫目前層與往後 {0} 層（切片編號變小的方向）
+Main_SelectionOnlyTheCurrentSlice	選取：只選目前這一層
+Hint_SelectDepth	選取：目前層與往後 {0} 層
+Main_3DMagicWandClick	3D 魔術棒：點一個體素選出整塊立體相連的部件，不使用深度
+Main_EyedropperTakesOnlyTheColour	吸管：只取點到的那一格（目前這一層）的顏色，不使用深度
+Hint_Cube	立方體：邊長 {0}，前後左右上下一樣長，不使用深度
+Hint_Spring	彈簧：半徑 {0}，總長 {1} 層，每 {2} 層一圈（約 {3} 圈），線徑 3
+Hint_Helix	螺旋：半徑 {0}，總長 {1} 層，每 {2} 層轉一圈（約 {3} 圈）
+Hint_TorusFlat	圓環：環半徑 {0}，深度 1 = 一圈平的環
+Hint_Torus	圓環：環半徑 {0}，管徑 {1}（沿視線方向厚 {2} 層）
+Hint_Pyramid	金字塔：底面邊長 {0}（在後面），尖端朝向你，長 {1} 層
+Hint_Cone	圓錐體：底面半徑 {0}（在後面），尖端朝向你，長 {1} 層
+Hint_Cylinder	圓柱體：半徑 {0}，沿視線方向長 {1} 層
+Hint_EllipsoidBall	橢圓球：半徑 {0}、視線方向 {1} 層，剛好是一顆球
+Hint_EllipsoidFlat	橢圓球：半徑 {0}，視線方向壓扁成 {1} 層
+Hint_EllipsoidLong	橢圓球：半徑 {0}，視線方向拉長成 {1} 層
+Hint_CapsuleBall	膠囊：半徑 {0}，深度比球的直徑（{1}）短，畫成球
+Hint_Capsule	膠囊：半徑 {0}，沿視線方向總長 {1} 層（含兩端半球）
+Hint_MirrorLeftRight	左右對稱（{0}，粉紅直線）
+Hint_MirrorUpDown	上下對稱（{0}，粉紅橫線）
+Hint_MirrorSight	{0} 對稱：另一半畫在對稱的另一層（目前這個視角看不到）
+Hint_MirrorCurrentView	目前視角：{0}
+Hint_Preview	在預覽上拖曳：左右轉動、上下改變俯角（實心體素可繞到下方往上看）。滾輪拉近／拉遠（目前 {0}%），雙擊還原。
+Msg_ClipboardSlice	剪貼簿：{0}第 {1} {2}（{3}×{4}）
+Main_TheClipboardIsEmptyCopy	剪貼簿是空的，先複製（Ctrl+C）。
+Msg_ClipboardSizeMismatch	尺寸不符：剪貼簿是 {0}×{1}，目前畫布是 {2}×{3}。
+Msg_SliceMoved	已把第 {0} {1}移到第 {2} {3}（可以 Ctrl+Z 復原）。
+Main_SelectTheAreaToRotate	先選取要旋轉的區域（矩形選取或魔術棒）。
+Msg_SelectionRotated	選取區已轉 {0}°（順時針為正）：可以拖曳、再轉（Ctrl+[ ]）、Enter 放下、Esc 取消；要繞別的軸轉，換一個視角。
+Main_ThisSlice	（此層）
+Main_AllSlicesOfThisFrame	（此幀所有層）
+Msg_Rotate90NeedsSquare	旋轉 90° 需要正方形的畫布，目前是 {0}×{1}；可以改用「旋轉 180°」，或換一個畫布是正方形的視角。
+Main_Rotate90Clockwise	順時針轉 90°
+Main_Rotate90CounterClockwise	逆時針轉 90°
+Msg_ShiftDescription	平移（右 {0}、下 {1}{2}）
+Main_WrapAround	，繞回
+Msg_NoCellsChanged	{0}：沒有任何格子改變。
+Msg_TransformDone	已{0}（可以 Ctrl+Z 復原）。
+Msg_ClipboardSelection	剪貼簿：選取區 {0}×{1}，{2} 層
+Msg_ClipboardSelectionCut	剪貼簿：選取區 {0}×{1}，{2} 層（已剪下）
+Main_Undo	還原
+Main_OpenFailed	開啟失敗
+Main_SaveFailed	儲存失敗
+ImportImage_StartLabel	第 {0} {1}
+Msg_ImportColoursQuantized	　顏色太多，已量化成 {0} 色（半透明變不透明）
+Msg_ImportDropped	　超出模型的 {0} {1}被丟掉
+Msg_ImportNoChange	匯入圖片：沒有任何格子改變（圖片是全透明、或跟原本一樣）。{0}
+Msg_ImageImported	已匯入 {0} {1}（{2} 個體素，從第 {3} {4}開始）{5}（可以 Ctrl+Z 復原）。
+Main_InflateTo3DChoose	膨脹成 3D：選一張圖片
+Msg_InflateNothing	膨脹：沒有寫出任何體素（圖片全透明或低於透明門檻）。{0}
+Msg_Inflated	已膨脹成 3D（{0} 個體素，{1}視角）{2}（可以 Ctrl+Z 復原）。
+Main_StopSpace	■ 停止 (Space)
+ExportGif_Describe	{0}×{1}、{2} 幀、每幀 {3} 毫秒、{4} 色{5}、{6} KB
+GifExporter_TooManyColoursQuantized	（顏色太多，已量化）
+Common_PleaseSpecifyTheOutputFile	請指定輸出檔案
+ExportGif_TooLarge	畫面 {0}×{1} 超過 GIF 的上限（65535）。請降低倍率。
+GifWriter_TheGIFWidthAndHeight	GIF 的寬高必須在 1 ~ 65535 之間
+GifWriter_ThereAreNoFrames	沒有任何幀
+GifWriter_TheFrameSizesDoNot	幀的大小不符
+ImageImport_ImagesPngBmpGifJpg	圖片 (*.png;*.bmp;*.gif;*.jpg;*.jpeg)|*.png;*.bmp;*.gif;*.jpg;*.jpeg|所有檔案 (*.*)|*.*
+ImageImport_TheImageIsEmpty	圖片是空的
+ImageImport_NotAnImage	{0} 不是可以讀取的圖片（{1}）
+ImageImport_TheWidthAndHeightOf	每層的寬高必須大於 0
+ExportSprite_DescribeCells	每格 {0}×{1}，{2} 個方向 × {3} 幀
+ExportSprite_DescribeAtlas	；圖集 {0}×{1}
+ExportSprite_DescribeSequence	；序列 {0} 個檔
+SpriteExporter_TheNumberOfDirectionsMust	方向數必須在 1 ~ 64 之間
+Common_TheScaleMustBeBetween	倍率必須在 1 ~ 16 之間
+Common_ThePaddingMustBeBetween	留白必須在 0 ~ 64 之間
+SpriteExporter_NoOutputWasSelected	沒有選擇輸出內容
+ExportSprite_TooManyCells	格子太多（{0}），上限 {1}
+Common_TheFileNameIsNot	檔名不合法
+ExportSprite_AtlasTooLarge	圖集 {0}×{1} 超過 {2} 像素（多數顯示卡的貼圖上限）。請減少方向數、降低倍率，或改用 PNG 序列。
+ExportStrip_Describe	每層 {0}×{1}、{2} 層 × {3} 幀；圖 {4}×{5}
+ExportStrip_TooLarge	圖 {0}×{1} 超過 {2} 像素（多數顯示卡的貼圖上限）。請降低倍率、啟用裁切，或減少層數／幀數。
+Help_FeatureOverview	功能總覽
+Help_NewDocument	新增文件
+Help_FileImportAndExport	檔案、匯入與匯出
+Help_CustomLengthWidthAndHeight	自訂長、寬、高（各 1~128 格），Ctrl+N。
+Help_OpenAndSave	開啟與儲存
+Help_SavesAsPstkAllFrames	存成 .pstk：所有幀、調色盤、骨架與部件標記都在裡面。Ctrl+O／Ctrl+S／Ctrl+Shift+S。
+Help_UnsavedChangesWarning	未儲存提醒
+Help_WhenThereAreChangesA	有修改時狀態列檔名後面會有「*」，關閉視窗或開新檔前會問你要不要存。
+Help_PutAPNGBMPGIF	PNG／BMP／GIF／JPG 放到目前這一層；可一次選多張（每張一層），或把疊層條帶切成多層。Ctrl+I。
+Help_ReadA2DImage	讀一張 2D 圖片，把輪廓往厚度方向鼓起來變成立體：選視角、截面（圓潤／平滑／錐形／平板）、前後對稱或單面、厚度，右邊即時預覽。Ctrl+Shift+I。
+Help_ExportPNG	匯出 PNG
+Help_PreRenderFixedAnglesInto	固定角度預先渲染成「圖集＋JSON」或「PNG 序列」，給遊戲用。
+Help_ExportGIF	匯出 GIF
+Help_AnAnimatedGIFAtA	固定角度的動畫 GIF，拿來預覽或分享。
+Help_ExportStackStrip	匯出疊層條帶
+Help_TheOriginalSpriteStackingFormat	Sprite Stacking 原始格式：每層一張平面圖排成一條（每幀一列）＋JSON，遊戲端自己疊起來再旋轉。
+Help_ViewAndCanvas	視角與畫布
+Help_SixEditingViews	六個編輯視角
+Help_TopBottomFrontBackLeft	頂部、底部、正面、背面、左側、右側，快捷鍵 1~6；畫布永遠是這個視角看到的「一層」。
+Help_TheSliceSliderTheMouse	層數滑桿、←／→、[ ]、PageUp／PageDown，或在層數面板上滾動滾輪。數字越大越靠近視角。
+Help_ChangeSlice	切換層（切片）
+Help_SliceThumbnailStrip	每層縮圖列
+Help_UnderTheSliceSliderThere	層數滑桿下面每一層（切片）各一張小圖，整層沒有顏色的層會用橘框標「空」；點一下跳到那一層；按住縮圖拖到別的位置放開，就把這一層搬過去（中間的層各挪一格，一筆復原，只動目前這一幀，拖到邊邊會自動捲動）；面板標題列也會寫還有幾層空白。
+Help_ShowTheNextSliceSemi	半透明顯示下一層；半透明顯示上一幀（橘色），對齊動畫用。
+Help_SemiTransparentReference	半透明參考
+Help_GridAndTransparencyCheckerboard	格線與透明棋盤
+Help_TheGridCanBeSwitched	格線可開關；透明格可選淺色或深色棋盤，設定會記住。
+Help_TheVoxelCoordinatesUnderThe	畫布右上角顯示游標所在的體素座標。
+Help_CoordinateDisplay	座標顯示
+Help_DrawingTools	繪圖工具
+Help_PencilAndEraser	畫筆與橡皮擦
+Help_TheLeftButtonPaintsThe	左鍵畫目前顏色，右鍵擦成透明（橡皮擦工具則左鍵就是擦）。
+Help_AFlatFillReplacesThe	平面填滿連通的同色區域；勾「立體填滿」則換掉整個立體連通的實心塊。
+Opt_Fill	填滿
+Help_ClickTheCanvasToPick	點畫布取色（點空白格＝選透明色），按著拖曳連續取色，快捷鍵 I。
+Opt_Eyedropper	吸管
+Opt_Line	直線
+Help_DragToPreviewAndThe	拖曳預覽、放開才畫；Shift 限制水平／垂直／45°，快捷鍵 L。
+Help_DragTheCornersByDefault	拖曳對角；預設外框，勾「填滿形狀」畫實心；Shift 變正方形，快捷鍵 R。
+Opt_Rectangle	矩形
+Opt_Ellipse	橢圓
+Help_DragTheBoundingRectangleShift	拖曳外接矩形；Shift 變正圓，快捷鍵 E。
+Lbl_MirrorSymmetry	鏡像對稱
+Help_AroundTheExactCentreOf	以模型正中央為軸，X／Y／Z 可同時開；畫筆、橡皮擦、填滿都會同步畫到對稱位置。
+Help_11BrushShapes	11 種筆刷形狀
+Help_SquareCircleCubeEllipsoidSpring	方形、圓形、立方體、橢圓球、彈簧、螺旋、圓環、金字塔、圓錐體、圓柱體、膠囊型；立體筆刷一筆就畫出一整團。
+Help_Size18DepthHow	粗細 1~8；深度＝同時往後面畫幾層（最多 128，受該視角的層數限制）。
+Help_SizeAndDepth	粗細與深度
+Help_SelectRectangleSelect	選取（矩形選取）
+Help_DragOutABoxThickness	拖曳拉出框，厚度＝筆刷深度；框內拖曳可搬移，浮起來時方向鍵微調，Enter 放下、Esc 取消。
+Help_SelectionAndEditing	選取與編輯
+Opt_MagicWand	魔術棒
+Help_SelectsTheConnectedRegionOf	選取相連的同色區域；Shift 加選、Ctrl 減選；可勾「全域同色」、設「容許誤差」與「羽化」。
+Help_CutCopyPasteDeleteSelect	剪下、複製、貼上、刪除、全選
+Help_CtrlXCVDelete	Ctrl+X／C／V、Delete、Ctrl+A；貼上後可拖曳到想要的位置再放下。
+Help_AnyAngleEditMenuOr	任意角度（編輯選單，或 Ctrl+]／Ctrl+[ 每次 15°），轉完還是浮動的，可再轉、再拖。
+Help_CopyTo1SliceCtrl	複製到 +1 層（Ctrl+D）、−1 層（Ctrl+Shift+D）、或一次複製到一段範圍；可勾「透明不覆蓋」。
+Menu_DuplicateSlice	複製圖層
+Help_ClearsTheWholeSliceSeen	把目前視角看到的這一層整個清掉。
+Menu_ClearThisSlice	清除此層
+Help_FlipHorizontallyFlipVertically	左右翻轉、上下翻轉、轉 90°／180°、平移（編輯選單）。
+Help_WholeSliceWholeFrameTransforms	整層／整幀變換
+Help_CtrlZUpTo200	Ctrl+Z，最多 200 步；筆畫、選取搬移、複製圖層、幀的增減、調色盤整理都能復原。
+Menu_Undo	復原
+Help_RGBAColourPicking	RGBA 取色
+Help_PickWithTheSquareAnd	方框＋兩條滑桿取色（含透明度），也可直接輸入 0~255。
+Help_ColourAndPalette	顏色與調色盤
+Help_AnotherWayToPickHue	另一種取色方式：色相、飽和度、明度。
+Help_HSVTab	HSV 分頁
+Help_SharedPalette	共用調色盤
+Help_UpTo255ColoursShared	最多 255 色，所有幀共用；畫下去才登記進調色盤；透明色永遠在第一格。
+Help_ToolsMenuPaletteRemovesColours	工具選單 > 調色盤：把所有幀都沒用到的顏色拿掉，空出色格。
+Menu_RemoveUnusedColours	清除沒用到的顏色
+Menu_MergeDuplicateColours	合併重複的顏色
+Help_ToolsMenuPaletteIdenticalColours	工具選單 > 調色盤：完全相同的顏色只留一格。
+Help_ImportExportPalette	匯入／匯出調色盤
+Help_GIMPPaletteGpl	GIMP 調色盤（.gpl）。
+Help_LayersAndPartAssembly	圖層與部件拼接
+Help_ToTheLeftOfThe	時間軸左邊是圖層清單：整份動畫共用，每一幀每個圖層各有一張圖格。上面的圖層蓋住下面的。畫筆、填滿、選取、匯入圖片、膨脹都作用在目前圖層；預覽、時間軸縮圖、播放與匯出看的是合成後的樣子。
+Help_MultipleLayers	多圖層
+Help_NewCtrlShiftNAbove	新增（Ctrl+Shift+N，在目前圖層上方）、複製、刪除、上移／下移、向下合併、拼合所有圖層；點一列切換目前圖層，左邊的勾＝顯示／隱藏，連點兩下改名。每個動作算一次復原（連圖層內容都會回來）。
+Help_LayerCommands	圖層指令
+Help_BackgroundReference	背景參考
+Help_WithSeveralLayersTheEdit	有多個圖層時，編輯畫布會把其他圖層的內容用半透明畫在目前圖層的透明處底下，方便對位。
+Common_ImportFileAsLayer	匯入檔案成圖層
+Help_LayerMenuReadsAnotherPstk	圖層選單：把另一個 .pstk（組件）讀進來，放在目前圖層上方成為新圖層。尺寸不同以中心對齊；顏色對應到目前的調色盤；組件只有一幀＝每一幀都放同一份。
+Help_LayerMenuShiftsAllVoxels	圖層選單：把目前圖層所有體素整塊平移 X／Y／Z 格（只動這一幀，或這個圖層在所有幀的內容）；超出模型的會丟掉，可復原。
+Help_Tool3DMagicWand	工具「3D 魔術棒」：點一個體素，選出立體相連的整塊部件（可改成只選同色、可含斜角相連），Shift 加選、Ctrl 減選。選到的部件在畫布上染黃色。
+Opt_3DMagicWand	3D 魔術棒
+Help_AfterSelectingAPartMove	選好部件後用方向鍵（Ctrl+↑／↓ 往前後）或面板按鈕整塊搬動，Delete 刪除，「抽到新圖層」把它剪到上方的新圖層，再向下合併就拼好了。
+Help_MoveAndExtractParts	移動與抽出部件
+Help_AnimationFrameByFrame	動畫（逐幀）
+Help_MultiFrameTimeline	多幀時間軸
+Help_AtTheBottomIsA	底部是每一幀的縮圖，點一下就切過去編輯。
+Help_AddBlankFrameDuplicateFrame	新增空白幀、複製此幀、刪除此幀、左移、右移。
+Help_FrameManagement	幀的管理
+Help_PlaybackAndSpeed	播放與速度
+Help_SpacePlaysPausesSpeed1	Space 播放／暫停，速度 1~30 幀/秒。
+Help_PressAndForThePrevious	按 , 與 . 切換上一幀、下一幀。
+Help_ChangeFrame	切換幀
+Help_ShownLiveOnTheRight	右側即時顯示；拖曳轉動與改俯角，滾輪拉近拉遠，雙擊還原。
+Help_LivePseudo3DPreview	即時偽 3D 預覽
+Help_3DPreview	3D 預覽
+Help_SolidVoxelsShowsWhatYou	實心體素（看到什麼顯示什麼）與層疊（Sprite Stacking 風格）。
+Help_TwoPreviewModes	兩種預覽方式
+Help_AutoRotateCanBeSwitched	自動旋轉可開關；光影可關閉改看純色。
+Help_AutoRotateAndShading	自動旋轉與光影
+Help_ShowsOnlyThePartBehind	只顯示目前切片以後面的部分，檢查內部。
+Help_CutOpenToSeeInside	切開看內部
+Help_CollapsibleFunctionBars	可收合的功能列
+Help_TheLeftColumnIsSplit	左欄分成視角、顏色、工具、筆刷、顯示五大類，可收起或展開，狀態會記住。
+Help_Interface	介面
+Help_TheTimelineAndTheSlice	時間軸、層數滑桿＋複製工具各有一條標題列，點一下收起，編輯畫布與預覽就多出空間；收起時空白鍵、, . 、←／→、[ ] 仍然有效，狀態會記住。
+Help_CollapsibleTimelineAndSlicePanels	可收起的時間軸與層數面板
+Help_WheelZones	滾輪分區
+Help_MouseOverTheLeftColumn	滑鼠在左欄＝捲動功能列、中間＝換層、右邊＝縮放 3D 預覽。
+Help_MouseTips	滑鼠提示
+Help_AlmostEveryButtonAndOption	幾乎每個按鈕、選項停一下都會顯示說明。
+Help_TheUserGuideInThe	說明選單的「使用教學…」（F1）：就是這份文件。
+Help_PixelStackingIsAnEditorFor	PixelStacking 是做「體素」模型與動畫的編輯器：模型是一疊一疊的平面（層），你從任一個方向編輯其中一層，右邊即時看到立體的樣子。
+Help_OverviewIntro	目前共有 {0} 項功能，分成 {1} 大類。左邊的頁籤有快速上手、建議做法、快捷鍵與常見問題。
+Help_CategoryTitle	{0}（{1} 項）
+Help_FeatureLine	{0}：{1}
+Help_QuickStart	快速上手
+Help_MakeYourFirstModelIn	做出你的第一個模型，大約五分鐘：
+Help_PressCtrlNForA	按 Ctrl+N 新增文件。第一次建議用 32 × 32 × 32（長 × 寬 × 高，各 1~128）；格子越多越細，但畫起來越慢。
+Help_PickAColourInThe	選顏色：左欄「顏色」用方框與滑桿調 RGBA，或點下面的色塊。顏色是「畫下去才登記」進調色盤的。
+Help_StartDrawingTheDefaultView	開始畫：預設是「頂部」視角，畫布上看到的是模型的一層。選「畫筆」，在畫布上左鍵畫、右鍵擦。
+Help_ChangeSliceScrollTheWheel	換層：按 ← 與 →，或 [ 與 ]。數字越大越靠近你。每一層畫一點，模型就長高了。
+Help_PaintIn3DWith	一筆就畫出立體：在左欄「筆刷」選「橢圓球」「立方體」「圓柱體」…，點一下就是一團；或把「深度」拉大，一次往後畫好幾層。
+Help_SeeTheResultThe3	看成果：右邊的 3D 預覽會即時更新。拖曳轉動，滾輪縮放，雙擊還原。
+Help_AddDetailFromAnotherAngle	換個角度補細節：按 1~6（頂、底、正、背、左、右）從別的方向編輯，正面看腳、側面看背，比較好對位。
+Help_SaveCtrlSSavesAs	存檔：Ctrl+S 存成 .pstk。有「*」代表還沒存。
+Help_ForGamesFileExportPNG	給遊戲用：檔案 → 匯出 PNG（預先渲染好的圖）、匯出 GIF（分享）、匯出疊層條帶（讓遊戲自己疊）。
+Help_WhenYouCanTFind	找不到某個功能時，把滑鼠停在它上面幾秒，幾乎每個控制項都有說明。
+Help_DrawingAndSelectionTips	繪圖與選取技巧
+Help_DrawFaster	讓畫圖更快
+Help_LeftRightSymmetricCharactersIn	左右對稱的角色：左欄「筆刷」勾「鏡像對稱」的 X，只畫半邊。要前後、上下對稱就勾 Y 或 Z；可同時開多個。畫布上的粉紅虛線就是對稱軸。
+Help_LargeAreasUseFillTick	大面積著色：用「填滿」。勾「立體填滿」會一次換掉整個立體連通的同色塊（點空白格不會動）。
+Help_CirclesBoxesLinesUseLine	畫圓、方框、直線：用「直線」「矩形」「橢圓」，拖曳時有預覽；Shift 變正圓、正方形、45° 線。
+Help_AWholeWallOrA	拉出整面牆、整根柱子：畫好一層後用「複製到範圍…」，或 Ctrl+D 連按往上疊。
+Help_3DBrushesEllipsoidFor	立體筆刷：橢圓球做頭（深度 = 2×半徑+1 就是正圓球）、膠囊型做手腳、圓環做甜甜圈或輪胎、螺旋與彈簧做線圈。深度決定沿視線方向的長度。
+Help_SelectingAndModifying	選取與修改
+Help_SelectDragsOutARectangle	「選取」拖出矩形，「魔術棒」點一下選相連的同色區域（Shift 加選、Ctrl 減選）。厚度＝筆刷深度，所以深度設大可以一次選好幾層。
+Help_TheMagicWandSTolerance	魔術棒的「容許誤差」讓相近的顏色一起選；「羽化」讓邊緣漸變（只往內）。
+Help_AfterSelectingYouCanCtrl	選好後可以 Ctrl+C／X／V，或直接在框內拖曳搬移；內容浮起來（搬移中、貼上後）時，方向鍵可以微調 1 格。Enter 放下，Esc 取消。
+Help_RotateSelectionEditMenuOr	「旋轉選取區」（編輯選單，或 Ctrl+] / Ctrl+[）可轉任意角度，沿視線軸、繞選取區中心。想繞別的軸，換到那個視角再轉。
+Help_TransformAllSlicesOfThe	「變換目前圖層的所有切片」可以把目前圖層整個翻轉、轉 90°、平移，等於整個圖層一起動。
+Help_WhenPastingTickDonT	貼上時勾「透明不覆蓋」，只會貼有顏色的格子，不會把底下原有的東西清掉。
+Help_DisplayAids	輔助顯示
+Help_ShowNextSliceSemiTransparent	「半透明顯示下一層」讓你知道後面那一層長什麼樣，對位用。「半透明顯示上一幀」（橘色）做動畫時很有用。
+Help_TickCutOpenToSee	右邊預覽勾「切開看內部」，只顯示目前這一層以後面的部分，可以檢查內部有沒有畫對。
+Help_ADocumentCanHaveMany	一個文件可以有很多幀，所有幀共用同一份調色盤與尺寸。最直接的做法就是一幀一幀畫：
+Help_FinishTheFirstFramePress	畫好第一幀。按「複製此幀」，複製出來的新幀會接在後面並切過去。
+Help_FineTuneTheNewFrame	在新幀上微調（手抬高一點、腳換個位置）。「半透明顯示上一幀」會用橘色標出上一幀的樣子，對位很方便。
+Help_Repeat1And2On	重複 1、2。底部時間軸可以點縮圖切換，「◀ 左移」「右移 ▶」調整順序，「刪除此幀」刪掉不要的。
+Help_PressSpaceOrPlayTo	按 Space 或「播放」看動畫，滑桿調速度（1~30 幀/秒）。, 與 . 切換上一幀、下一幀。
+Help_FileExportGIFToShare	檔案 → 匯出 GIF 分享，或匯出 PNG／疊層條帶給遊戲。
+Help_MultipleLayersLetYouSplit	多圖層讓你把角色拆成幾個物件（身體、帽子、武器…）分開畫、分開移動，最後合併成一個。時間軸左邊有圖層清單：
+Help_UpperLayersCoverLowerOnes	上面的圖層蓋住下面的；每個圖層在每一幀都有自己的內容。只有一個圖層時跟以前完全一樣。
+Help_TheCanvasEditsTheCurrent	畫布編輯的是「目前圖層」（清單裡藍框那列）；其他圖層會半透明地顯示在底下當參考。預覽、縮圖、匯出看的是合成結果。
+Help_NewAboveTheCurrentLayer	＋ 新增（在目前圖層上方）、⧉ 複製、✕ 刪除、▲▼ 調順序、⤓ 向下合併；左邊的勾＝顯示／隱藏；連點兩下改名。圖層選單還有「拼合所有圖層」。
+Help_ImportAComponentAndAssemble	匯入一個組件，拼到角色身上
+Help_LayerMenuImportFileAs	圖層選單 → 匯入檔案成圖層…，選另一個 .pstk（例如一頂帽子）。它會成為目前圖層上方的新圖層，尺寸不同時置中。
+Help_LayerMenuMoveLayerContent	圖層選單 → 移動圖層內容…，輸入 X／Y／Z 格數把整個組件移到位置（可以只動這一幀，或所有幀一起動）。
+Help_WhenItLooksRightPress	看起來對了，按 ⤓ 向下合併，組件就併進身體那一層了。想改回來按 Ctrl+Z。
+Help_UseThe3DMagic	用 3D 魔術棒把一個部件從模型裡拆出來
+Help_InTheLeftColumnChoose	左欄工具選「3D 魔術棒」，點模型上某個體素。跟它立體相連的整塊會被選起來（染黃色）。「只選同色」「斜角也算相連」可以調整範圍。
+Help_MoveItWithTheArrow	用方向鍵 ← → ↑ ↓ 移動，Ctrl+↑／↓ 往前／往後（依目前視角的方向）。想換視角就按 1~6，再接著移動。
+Help_PressMoveToNewLayer	按「抽到新圖層」，這一塊會被剪到新圖層，選取跟著過去，可以繼續移動；拼到位置後用「向下合併」合回去。
+Help_ImportedComponentsAndExtracted	匯入的組件、抽出來的部件都在「自己的圖層」裡，移錯了隨時 Ctrl+Z，或把那層刪掉重來，不會弄壞原本的角色。
+Help_RecommendedWorkflow	建議做法
+Help_Size	尺寸
+Help_StartSmall1632To	先用小尺寸（16~32）做出外形，確定了再放大。尺寸越大，每次預覽越慢，檔案也越大。
+Help_TheSizeIsDecidedWhen	尺寸要在新增時決定，之後不能改，所以先在小尺寸上把設計確定。
+Help_DrawingOrder	作畫順序
+Help_DecideThePaletteBeforeDrawing	先決定調色盤再畫。色格最多 255 個；畫完可以用「調色盤 → 清除沒用到的顏色／合併重複的顏色」整理。
+Help_SavingAndSafety	存檔與保險
+Help_PressCtrlSOftenBefore	常按 Ctrl+S。做大改動前先「另存新檔」留一份。復原最多 200 步，關掉程式就沒了。
+Help_OutputForGames	輸出給遊戲
+Help_IfTheGameOnlyNeeds	遊戲只要「顯示轉動的 3D 角色」：用「匯出 PNG」，選要的角度數，得到圖集（或 PNG 序列）＋ JSON。
+Help_IfTheGameWantsTo	遊戲想自己疊層、自己旋轉（Sprite Stacking）：用「匯出疊層條帶」。
+Help_JustSharingAnAnimationExport	只是要分享動畫：「匯出 GIF」。
+Help_ShortcutsAndMouse	快捷鍵與滑鼠
+Help_FileAndEdit	檔案與編輯
+Help_CtrlNNewCtrlO	Ctrl+N 新增、Ctrl+O 開啟、Ctrl+S 儲存、Ctrl+Shift+S 另存新檔、Ctrl+I 匯入圖片。
+Help_CtrlZUndoCtrlX	Ctrl+Z 復原。Ctrl+X 剪下、Ctrl+C 複製、Ctrl+V 貼上、Ctrl+A 全選、Delete 刪除選取。
+Help_CtrlDCopyToSlice	Ctrl+D 複製到 +1 層、Ctrl+Shift+D 複製到 −1 層。
+Help_CtrlRotatesTheSelection15	Ctrl+] 順時針旋轉選取區 15°、Ctrl+[ 逆時針 15°。
+Help_EnterDropsFloatingContentEsc	Enter 放下浮動內容、Esc 取消選取或形狀、方向鍵微調浮動內容 1 格。
+Help_ToolsAndViews	工具與視角
+Help_IEyedropperLLineR	I 吸管、L 直線、R 矩形、E 橢圓。其他工具用左欄點選。
+Help_1Top2Bottom3	1 頂部、2 底部、3 正面、4 背面、5 左側、6 右側。
+Help_AndPageDownAndPageUpChange	← 與 →、[ 與 ]、PageDown 與 PageUp：切換層（有浮動選取或 3D 魔術棒選取時，←→ 改成移動選取）。
+Help_AndPreviousAndNextFrame	, 與 .：切換上一幀、下一幀。Space：播放／暫停。F1：開啟這份教學。
+Help_Mouse	滑鼠
+Help_CanvasLeftButtonPaintsOr	畫布：左鍵畫（或套用目前工具）、右鍵擦／清除。
+Help_TheWheelDependsOnWhere	滾輪依游標位置分工：在左欄＝捲動功能列、在畫布上＝上下捲動（Shift＋滾輪左右捲動、Ctrl＋滾輪縮放）、在層數與複製工具面板＝換層、在右邊預覽欄＝縮放 3D 預覽。
+Help_3DPreviewDragTo	3D 預覽：拖曳轉動與改俯角，滾輪拉近拉遠，雙擊還原。
+Help_LineRectangleEllipseHoldShift	直線／矩形／橢圓：拖曳時按住 Shift 限制形狀；魔術棒與選取：Shift 加選、Ctrl 減選。
+Help_FAQ	常見問題
+Help_Drawing	畫圖
+Help_CanTSeeWhatYou	畫了看不到？確認目前的「層」是不是你想畫的那一層（畫布上方的數字）；也可能是顏色太透明（A 條）。
+Help_OneStrokePaintsSeveralSlices	一筆畫出好幾層？那是「深度」大於 1，或選了立體筆刷。要只畫一層就把深度設回 1、形狀選方形或圓形。
+Help_TheWheelIsnTDoing	滾輪不是我想要的？滾輪依游標位置：左欄捲動功能列、畫布上下捲動（Shift 左右、Ctrl 縮放）、層數面板換層、右邊縮放預覽。
+Help_Files	檔案
+Help_ImportedColoursReducedOrTurned	匯入的顏色變少或變成近似色？調色盤最多 255 色，空格不夠時新顏色會被量化；先用「清除沒用到的顏色」騰出空間。
+Help_OpeningOldFilesEveryOld	開啟舊檔？舊版的 .pstk 都能開；新版存的檔（含骨架）舊版程式不能開。
+Help_KeepsAskingWhetherToSave	關閉時一直問要不要存？狀態列檔名後面有「*」代表有未儲存的修改。
+Menu_CopyPromptForAI	複製「給 AI 的提示詞」
+Tip_LetAnAISuchAs	讓 Claude 等 AI 用命令列版 pstk.exe 幫你做模型：把這段話貼給 AI，它會先讀說明書再動手。
+Menu_OpenAIManual	開啟 AI 說明書…
+Tip_TheManualForAIsAI	給 AI 讀的說明書（AI說明書.md）：命令列版 pstk.exe 的全部用法與建議流程。
+Ai_PstkMissing	找不到命令列版 pstk.exe：{0}\n請重新建置專案（編輯器建置時會一起建 pstk.exe）。
+Main_PromptForAI	給 AI 的提示詞
+Main_CopiedThePromptForAI	已複製「給 AI 的提示詞」。貼給 Claude 等 AI，把最後一行換成你要做的事；它會先讀說明書再動手。
+Main_TheClipboardIsTemporarilyUnavailable	剪貼簿暫時無法使用，請稍後再試。
+Ai_ManualMissing	找不到說明書：{0}
+Main_AIManual	AI 說明書
+Help_FourLanguages	四國語言
+Help_TheToolsLanguageMenuSwitches	「工具 > 語言 / Language」選單可切換繁體中文、English、日本語、한국어，立刻生效，下次啟動沿用；第一次啟動跟著作業系統語言。
+Help_ForAI	給 AI 用
+Help_HelpMenuCopyPromptFor	說明選單的「複製給 AI 的提示詞」＋命令列版 pstk.exe（不開視窗；畫體素、匯入圖片、膨脹、圖層、魔術棒、骨架與預設庫、匯出都能下指令）；提示詞會要求 AI 先讀說明書（AI說明書.md）才能動手。
+Help_LanguageAndAI	語言與 AI
+Help_ChangeTheInterfaceLanguageTools	換介面語言？「工具 > 語言 / Language」選單：繁體中文、English、日本語、한국어，立刻生效並記住。
+Help_WantClaudeOrAnotherAI	想讓 Claude 等 AI 幫忙做模型？說明選單 →「複製給 AI 的提示詞」，貼給 AI，把最後一行換成你要做的事；提示詞會要求 AI 先讀說明書（pstk.exe manual）才能動手。
+Help_TheCommandLinePstkExe	命令列版 pstk.exe 放在 PixelStacking.exe 旁邊，不開視窗，做出來的 .pstk 可以直接用編輯器開啟。AI 改的檔案如果同時開在編輯器裡，要重新開啟才看得到（編輯器不會自動重讀）。
+Lbl_Outline	輪廓線
+Opt_OutlineSilhouette	外輪廓
+Tip_OutlineSilhouette	模型外圍加一圈線，線的顏色是它旁邊的底色加深。線會長在模型外面（匯出的圖會大一圈）。
+Opt_OutlineCreases	面折線
+Tip_OutlineCreases	模型內部：不同朝向的面交界（頂面與側面…），以及前面的東西壓在後面東西上的邊，畫上底色加深的線。層疊模式沒有面的概念，這項在那裡不作用。
+Lbl_OutlineWidth	線寬
+Tip_OutlineWidth	線寬（畫出來的圖上的像素數：預覽圖或匯出的圖）。匯出倍率大的時候選粗一點。
+Lbl_OutlineTone	深淺
+Opt_OutlineLight	淺
+Opt_OutlineMedium	中
+Opt_OutlineDark	深
+Tip_OutlineTone	線的顏色＝底色乘上這個比例：淺 70%、中 55%、深 35%。
+Common_ExportOutline	輪廓線（沿用預覽的設定）
+Common_ExportOutlineHint	外輪廓會佔用模型外面的像素，圖會比沒有輪廓時大一圈。線寬、深淺、畫哪幾種線都跟預覽一樣。
+Help_OutlineDescription	預覽與匯出（PNG／GIF）都能加：外輪廓（模型外圍一圈）與面折線（面與面的交界、前後交疊的邊），線色是底色加深，線寬 1~3、深淺可調。在預覽面板的「輪廓線」。
+Help_EdgesHardToSee	實心顯示時邊緣不明顯？打開預覽面板的「輪廓線」：外輪廓讓模型和背景分開，面折線讓方塊的邊角更清楚；匯出 PNG／GIF 時勾「輪廓線」就會一起畫進去。
+PosePresets_Skirt	裙子
+PosePresets_FrontHair	前髮（瀏海）
+PosePresets_BackHair	後髮
+PosePresets_Ahoge	呆毛（天線）
+PosePresets_HairAccessory	髮飾
+PosePresets_Cape	披風
+PosePresets_LeftEar	左耳
+PosePresets_RightEar	右耳
+Lbl_CanvasZoom	倍率
+Opt_ZoomFit	適合視窗
+Tip_CanvasZoom	編輯畫布每一格的放大倍率。「適合視窗」會自動撐到最大；選固定倍率後，畫布超出視窗時可用捲軸、滾輪或滑鼠中鍵拖曳來移動。也可以在畫布上按住 Ctrl 滾動滾輪縮放（以游標位置為中心）。
+Help_CanvasZoom	畫布倍率：右上角的「倍率」選單可固定編輯畫布每格的大小（1×~64×），放大到超出視窗時用捲軸、滾輪或滑鼠中鍵拖曳來移動；在畫布上按住 Ctrl 滾動滾輪也能縮放（以游標為中心）。預設「適合視窗」會自動撐到最大。
+Tip_CanvasScroll	編輯畫布的捲軸（放大到超出視窗時才能用）。游標在畫布上時：滾輪＝上下捲動、Shift＋滾輪＝左右捲動，滑鼠中鍵拖曳也能平移。
+Help_CanvasScroll	畫布捲動：放大到超出視窗時，畫布右邊與下方的捲軸可以拖曳；游標在畫布上時，滾輪上下捲動、Shift＋滾輪左右捲動、Ctrl＋滾輪縮放。換層改用 ←／→、[ ]、PageUp／PageDown。
+Lbl_EditViewMarker	編輯視角
+Tip_PreviewGizmo	預覽左下角的座標軸：紅 X、綠 Y、藍 Z，實線的一端朝向你，淡色的一端背向你。黃色圓圈是左邊編輯畫布現在的觀看位置；模型裡的黃色半透明框是正在編輯的那一層。
+Opt_ShowEditLayerFrame	顯示編輯中的層框
+Tip_ShowEditLayerFrame	在預覽的模型裡，用黃色虛線框標出左邊畫布正在編輯的那一層。框是疊在畫面上的，不會被方塊遮住；嫌擋到就取消勾選。（左下角的座標軸不受影響。）
+Cube_Top	頂
+Cube_Bottom	底
+Cube_Front	前
+Cube_Back	後
+Cube_Left	左
+Cube_Right	右
+Lbl_PreviewViewButtons	預覽視角
+Tip_PresetViewButtons	把預覽轉到從這一面看（同時停止自動旋轉）：前＝從 +Y 看、後＝從 −Y、右＝從 +X、左＝從 −X、頂＝從上往下、底＝從下往上。這跟左邊編輯視角的方向定義一樣。
+Tip_ViewCube	視角方塊：點一個面，預覽就轉到從那一面看（同時停止自動旋轉）。方塊會跟著預覽轉動；黃色邊框的面是左邊編輯畫布現在看的方向。

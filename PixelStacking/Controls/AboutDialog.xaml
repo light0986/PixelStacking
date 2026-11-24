@@ -1,0 +1,46 @@
+﻿<Window x:Class="PixelStacking.Controls.AboutDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Style="{StaticResource DialogWindowStyle}"
+        Title="{DynamicResource Menu_About}"
+        SizeToContent="WidthAndHeight" ResizeMode="NoResize" ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner"
+        Background="#FF252526" Foreground="#FFDDDDDD">
+
+    <Window.Resources>
+        <!-- 標籤（作者／AI助理）的顏色 -->
+        <SolidColorBrush x:Key="LabelBrush" Color="#FF9CDCFE"/>
+    </Window.Resources>
+
+    <!-- 整個視窗的內容：上方圖片、中間兩行文字、右下角確定鈕。要改格局就改這裡。
+         邊距 Margin = 左,上,右,下。 -->
+    <StackPanel Margin="28,22,28,18" MinWidth="260">
+
+        <!-- 圖片：兔子圖的背景是透明的，直接放在深色底上黑色輪廓會看不清楚，所以墊白底。
+             圖片填滿整張卡片，並且依照 CardShape 的圓角切邊（WPF 的 Border 本身不會裁掉子元素超出圓角的部分，
+             所以用 OpacityMask 讓整組內容跟著 CardShape 的形狀）。
+             要改大小：改這個 Grid 的 Width / Height；要改圓角：只改 CardShape 的 CornerRadius
+             （= 邊長的一半就是正圓）。 -->
+        <Grid Width="100" Height="100" HorizontalAlignment="Center" Margin="0,0,0,14">
+            <Grid.OpacityMask>
+                <VisualBrush Visual="{Binding ElementName=CardShape}"/>
+            </Grid.OpacityMask>
+            <Border x:Name="CardShape" Background="White" CornerRadius="50"/>
+            <Image x:Name="RabbitImage" Stretch="UniformToFill"
+                   RenderOptions.BitmapScalingMode="HighQuality"
+                   Source="/PixelStacking;component/Resources/rabbit.png"/>
+        </Grid>
+
+        <!-- 文字 -->
+        <TextBlock FontSize="15" Margin="0,4">
+            <Run Foreground="{StaticResource LabelBrush}" Text="{DynamicResource Lbl_Author}"/><Run Text="light0986"/>
+        </TextBlock>
+        <TextBlock FontSize="15" Margin="0,4">
+            <Run Foreground="{StaticResource LabelBrush}" Text="{DynamicResource Lbl_AIAssistant}"/><Run Text="Claude Sonnet5.5"/>
+        </TextBlock>
+
+        <!-- 確定鈕（Enter / Esc 也能關）。樣式用 App.xaml 裡全程式共用的按鈕樣式，不用在這裡設定 -->
+        <Button Content="{DynamicResource Btn_OK}" Width="80" IsDefault="True" IsCancel="True"
+                HorizontalAlignment="Center" Margin="0,18,0,0" Click="Ok_Click"/>
+    </StackPanel>
+</Window>

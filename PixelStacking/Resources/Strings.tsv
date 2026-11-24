@@ -1,0 +1,885 @@
+﻿# zh<TAB>en<TAB>ja<TAB>ko  (generated; \n = newline)
+剪下(_T)	Cu_t	切り取り(_T)	잘라내기(_T)
+複製(_C)	_Copy	コピー(_C)	복사(_C)
+貼上(_P)	_Paste	貼り付け(_P)	붙여넣기(_P)
+關於	About	バージョン情報	정보
+作者: 	Author: 	作者: 	작성자:
+AI助理: 	AI assistant: 	AIアシスタント: 	AI 어시스턴트:
+確定	OK	OK	확인
+光影（依面向調整明暗）	Shading (light and dark by facing)	シェーディング（面の向きで明暗をつける）	음영 (면의 방향에 따라 명암)
+裁掉共同的空白（錨點記在 JSON）	Trim the common empty margin (anchor is saved in the JSON)	共通の余白をトリミング（アンカーはJSONに記録）	공통 여백 자르기 (앵커는 JSON에 기록)
+兩者都要	Both	両方	둘 다
+圖集＋JSON	Atlas + JSON	アトラス＋JSON	아틀라스 + JSON
+PNG 序列	PNG sequence	PNGシーケンス	PNG 시퀀스
+匯出	Export	エクスポート	내보내기
+關閉	Close	閉じる	닫기
+選擇位置…	Choose location…	場所を選択…	위치 선택…
+匯出 PNG（固定角度，給遊戲用）	Export PNG (fixed angles, for games)	PNGをエクスポート（固定角度・ゲーム用）	PNG 내보내기 (고정 각도, 게임용)
+輸出檔案	Output file	出力ファイル	출력 파일
+圖集用這個檔名（.png），JSON 同名，PNG 序列放在「檔名_frames」資料夾。同名檔案會被覆蓋。	The atlas uses this file name (.png); the JSON has the same name; the PNG sequence goes into a "name_frames" folder. Files with the same name are overwritten.	アトラスはこのファイル名（.png）、JSONは同名、PNGシーケンスは「ファイル名_frames」フォルダに出力します。同名のファイルは上書きされます。	아틀라스는 이 파일 이름(.png)을 쓰고, JSON은 같은 이름, PNG 시퀀스는 「파일이름_frames」 폴더에 저장됩니다. 같은 이름의 파일은 덮어씁니다.
+角度	Angle	角度	각도
+水平旋轉	Yaw	水平回転	수평 회전
+度　俯角	deg   Pitch	度　仰角	도　피치
+度	deg	度	도
+預設是目前預覽的角度。俯角：90 = 正上方、0 = 側視、負值 = 從下往上看。	Defaults to the current preview angle. Pitch: 90 = straight down, 0 = side view, negative = looking up from below.	初期値は現在のプレビュー角度です。仰角: 90 = 真上、0 = 横から、負の値 = 下から見上げる。	기본값은 현재 미리보기 각도입니다. 피치: 90 = 바로 위, 0 = 옆모습, 음수 = 아래에서 올려다봄.
+方向數	Directions	方向数	방향 수
+繞一圈平均分成幾個方向（1 = 只有上面那個角度）	How many directions around a full turn (1 = only the angle above)	1周を何方向に等分するか（1 = 上の角度だけ）	한 바퀴를 몇 방향으로 나눌지 (1 = 위의 각도만)
+畫面	Image	画像	이미지
+每個格子在圖上佔幾個像素（最近鄰，不會模糊）	How many pixels each cell takes in the image (nearest neighbour, never blurry)	1セルが画像で占めるピクセル数（ニアレストネイバー、ぼやけません）	한 칸이 이미지에서 차지하는 픽셀 수 (최근접 방식, 흐려지지 않음)
+整數倍率	Integer scale	整数倍率	정수 배율
+裁切後四邊多留幾個像素	Extra pixels kept on each side after trimming	トリミング後に四辺へ残すピクセル数	자른 뒤 네 변에 남길 픽셀 수
+留白	Padding	余白	여백
+輸出內容	Output	出力内容	출력 내용
+圖集：每列一個方向、每欄一幀。透明與半透明都完整保留（32 位元 PNG）。	Atlas: one direction per row, one frame per column. Transparent and semi-transparent pixels are fully kept (32-bit PNG).	アトラス: 1行が1方向、1列が1フレーム。透明・半透明も完全に保持します（32ビットPNG）。	아틀라스: 한 행이 한 방향, 한 열이 한 프레임. 투명/반투명도 그대로 유지됩니다 (32비트 PNG).
+正在取消…	Cancelling…	キャンセル中…	취소하는 중…
+請選擇輸出檔案。	Please choose an output file.	出力ファイルを選んでください。	출력 파일을 선택하세요.
+水平旋轉請輸入數字。	Please enter a number for the yaw.	水平回転には数値を入力してください。	수평 회전에는 숫자를 입력하세요.
+俯角請輸入 -90 ~ 90 的數字。	Please enter a number from -90 to 90 for the pitch.	仰角には -90 ～ 90 の数値を入力してください。	피치에는 -90 ~ 90 사이의 숫자를 입력하세요.
+方向數請輸入 1 ~ 64 的整數。	Please enter a whole number from 1 to 64 for the directions.	方向数には 1 ～ 64 の整数を入力してください。	방향 수에는 1 ~ 64 사이의 정수를 입력하세요.
+倍率請輸入 1 ~ 16 的整數。	Please enter a whole number from 1 to 16 for the scale.	倍率には 1 ～ 16 の整数を入力してください。	배율에는 1 ~ 16 사이의 정수를 입력하세요.
+留白請輸入 0 ~ 64 的整數。	Please enter a whole number from 0 to 64 for the padding.	余白には 0 ～ 64 の整数を入力してください。	여백에는 0 ~ 64 사이의 정수를 입력하세요.
+共 {0} 個方向 × {1} 幀 = {2} 格。	{0} directions × {1} frames = {2} cells.	{0} 方向 × {1} フレーム = {2} セル。	{0}방향 × {1}프레임 = {2}칸.
+每格最大 {0}×{1}（{2}）。	Largest cell {0}×{1} ({2}).	1セルの最大サイズ {0}×{1}（{2}）。	한 칸 최대 {0}×{1} ({2}).
+裁切後通常小很多	usually much smaller after trimming	トリミング後はたいてい大幅に小さくなります	자르고 나면 보통 훨씬 작아짐
+未裁切	not trimmed	トリミングなし	자르지 않음
+取消	Cancel	キャンセル	취소
+匯出中…	Exporting…	エクスポート中…	내보내는 중…
+已取消。	Cancelled.	キャンセルしました。	취소되었습니다.
+裁掉共同的空白	Trim the common empty margin	共通の余白をトリミング	공통 여백 자르기
+無限循環播放（不勾 = 只播一次）	Loop forever (unchecked = play once)	無限ループ再生（オフ = 1回だけ再生）	무한 반복 재생 (해제 = 한 번만 재생)
+最上層排在最左邊（預設最底層在最左邊）	Top layer goes leftmost (default: bottom layer leftmost)	最上位を一番左に並べる（既定は最下位が一番左）	맨 위 레이어를 맨 왼쪽에 배치 (기본: 맨 아래가 맨 왼쪽)
+透明	Transparent	透明	투명
+白	White	白	흰색
+黑	Black	黒	검정
+深灰	Dark gray	ダークグレー	진회색
+匯出疊層條帶（Sprite Stacking）	Export stack strip (Sprite Stacking)	スタックストリップをエクスポート（Sprite Stacking）	스택 스트립 내보내기 (Sprite Stacking)
+匯出 GIF（固定角度的動畫）	Export GIF (animation at a fixed angle)	GIFをエクスポート（固定角度のアニメーション）	GIF 내보내기 (고정 각도 애니메이션)
+同名檔案會被覆蓋。動畫的速度用「時間軸」上設定的每秒幀數。	Files with the same name are overwritten. The animation speed is the frames per second set on the timeline.	同名のファイルは上書きされます。アニメーションの速度はタイムラインで設定したフレーム毎秒です。	같은 이름의 파일은 덮어씁니다. 애니메이션 속도는 타임라인에 설정한 초당 프레임 수입니다.
+圖用這個檔名（.png），JSON 同名。同名檔案會被覆蓋。	The image uses this file name (.png); the JSON has the same name. Files with the same name are overwritten.	画像はこのファイル名（.png）、JSONは同名で出力します。同名のファイルは上書きされます。	이미지는 이 파일 이름(.png)을 쓰고 JSON은 같은 이름입니다. 같은 이름의 파일은 덮어씁니다.
+背景	Background	背景	배경
+GIF 的透明只有「有／沒有」，半透明的邊緣會被二選一	GIF transparency is only on/off; semi-transparent edges are forced to one or the other	GIFの透明は「あり／なし」だけなので、半透明の縁はどちらかに振り分けられます	GIF 투명은 「있음/없음」뿐이라 반투명 가장자리는 둘 중 하나로 정해집니다
+從正上方往下看，每一層切成一張平面圖，由左到右排成一條，每一幀一列。顏色是調色盤的原色，不加光影。遊戲端把每層依序往上疊、再旋轉，就是 Sprite Stacking。	Looking straight down, each slice becomes a flat picture; they are laid out left to right in one strip, one row per frame. Colours are the raw palette colours with no shading. The game stacks the slices upward and rotates them, which is Sprite Stacking.	真上から見て、各スライスを1枚の平面画像にし、左から右へ1本のストリップに並べます（1フレームが1行）。色はパレットの元の色で、陰影は付きません。ゲーム側でスライスを順に上へ重ねて回転させれば Sprite Stacking になります。	바로 위에서 내려다본 각 슬라이스를 평면 이미지 한 장으로 만들어 왼쪽에서 오른쪽으로 한 줄로 늘어놓습니다 (프레임 하나가 한 행). 색은 팔레트의 원래 색이고 음영은 없습니다. 게임에서 슬라이스를 차례로 위로 쌓고 회전시키면 Sprite Stacking이 됩니다.
+共 {0} 幀，每秒 {1} 幀。每幀最大 {2}×{3}（{4}）。	{0} frames, {1} per second. Largest frame {2}×{3} ({4}).	{0} フレーム、毎秒 {1} フレーム。1フレームの最大サイズ {2}×{3}（{4}）。	{0}프레임, 초당 {1}프레임. 프레임당 최대 {2}×{3} ({4}).
+共 {0} 層 × {1} 幀。每層最大 {2}×{3}，整張圖最大 {4}×{5}（上限 {6}）。	{0} slices × {1} frames. Largest slice {2}×{3}, whole image up to {4}×{5} (limit {6}).	{0} スライス × {1} フレーム。1スライスの最大サイズ {2}×{3}、画像全体の最大 {4}×{5}（上限 {6}）。	{0}슬라이스 × {1}프레임. 슬라이스당 최대 {2}×{3}, 전체 이미지 최대 {4}×{5} (한도 {6}).
+使用教學	User guide	使い方ガイド	사용 안내
+把這一張圖橫向切成多層（疊層條帶）	Cut this one image horizontally into slices (stack strip)	この1枚の画像を横にスライスに分ける（スタックストリップ）	이 이미지 한 장을 가로로 잘라 여러 슬라이스로 만들기 (스택 스트립)
+只覆蓋有顏色的格子（透明的地方保留原本的內容）	Only overwrite cells that have colour (keep what was there under transparent pixels)	色のあるセルだけ上書き（透明な部分は元の内容を残す）	색이 있는 칸만 덮어쓰기 (투명한 곳은 기존 내용 유지)
+匯入圖片	Import image	画像をインポート	이미지 가져오기
+放在一{0}（目前這{1}）	Put on one {0} (the current {1})	1つの{0}に配置（現在の{1}）	{0} 하나에 배치 (현재 {1})
+每個檔案一{0}（依檔名順序，從{1}往上放）	One {0} per file (in file-name order, from {1} upward)	ファイル1つにつき{0}1つ（ファイル名順に、{1}から上へ）	파일마다 {0} 하나 (파일 이름 순서로 {1}부터 위로)
+完成：{0}\n{1}	Done: {0}\n{1}	完了: {0}\n{1}	완료: {0}\n{1}
+匯出失敗：{0}	Export failed: {0}	エクスポートに失敗しました: {0}	내보내기 실패: {0}
+置中（超出的裁掉、不夠的補透明）	Centered (anything outside is cropped, gaps are filled with transparent)	中央に配置（はみ出しはカット、足りない部分は透明で埋める）	가운데 배치 (벗어난 부분은 자르고 모자란 부분은 투명으로 채움)
+左上角對齊	Align top-left	左上に揃える	왼쪽 위에 맞춤
+縮放成剛好等於畫布（最近鄰）	Scale to exactly the canvas size (nearest neighbour)	キャンバスのサイズにぴったり拡縮（ニアレストネイバー）	캔버스 크기에 딱 맞게 확대/축소 (최근접 방식)
+要匯入 {0} 張圖片，畫布是 {1}×{2}：	Importing {0} images; the canvas is {1}×{2}:	{0} 枚の画像をインポートします。キャンバスは {1}×{2} です:	이미지 {0}장을 가져옵니다. 캔버스는 {1}×{2}입니다:
+放法	Placement	配置方法	배치 방법
+每{0}寬	Width per {0}	{0}あたりの幅	{0}당 너비
+像素（從{0}開始，由左到右依序往上放）	pixels (starting at {0}, placed upward from left to right)	ピクセル（{0}から始めて、左から右へ順に上へ配置）	픽셀 ({0}부터 시작해 왼쪽에서 오른쪽으로 차례로 위로 배치)
+條帶只取第一列；最後不滿一層寬的部分補透明。匯出的疊層條帶就是這種格式。	The strip uses only the first row; a leftover part narrower than one slice is padded with transparent. The exported stack strip uses this format.	ストリップは最初の1行だけを使い、1スライスの幅に満たない端は透明で埋めます。エクスポートしたスタックストリップはこの形式です。	스트립은 첫 번째 행만 사용하고, 한 슬라이스 너비에 못 미치는 끝부분은 투명으로 채웁니다. 내보낸 스택 스트립이 이 형식입니다.
+尺寸不一樣時	When the sizes differ	サイズが違うとき	크기가 다를 때
+顏色會對應到調色盤：已經有的直接用，新的佔用空格；空格不夠時會量化（半透明會變不透明）。整個匯入算一次復原。	Colours are mapped to the palette: existing ones are reused, new ones take free slots; if there are not enough slots they are quantized (semi-transparent becomes opaque). The whole import is one undo step.	色はパレットに割り当てられます。既にある色はそのまま使い、新しい色は空きスロットを使います。空きが足りないときは減色されます（半透明は不透明になります）。インポート全体が1回の取り消し単位です。	색은 팔레트에 대응됩니다. 이미 있는 색은 그대로 쓰고 새 색은 빈 칸을 차지하며, 빈 칸이 모자라면 색을 줄입니다 (반투명은 불투명이 됨). 가져오기 전체가 한 번의 실행 취소입니다.
+匯入	Import	インポート	가져오기
+每層寬度請輸入 1 ~ 4096 的整數。	Please enter a whole number from 1 to 4096 for the width per slice.	スライスあたりの幅には 1 ～ 4096 の整数を入力してください。	슬라이스당 너비에는 1 ~ 4096 사이의 정수를 입력하세요.
+最厚處自動（最大內切圓直徑，圓盤變球）	Auto thickest point (largest inscribed circle; a disc becomes a ball)	最も厚い所は自動（最大内接円の直径。円盤は球になります）	가장 두꺼운 곳 자동 (최대 내접원 지름, 원판은 구가 됨)
+套用前先清空這一幀	Clear this frame before applying	適用前にこのフレームを空にする	적용하기 전에 이 프레임 비우기
+膨脹成 3D	Inflate to 3D	3Dに膨張	3D로 부풀리기
+{0}（厚度沿 {1} 軸）	{0} (thickness along the {1} axis)	{0}（厚みは {1} 軸方向）	{0} (두께는 {1}축 방향)
+置中（超出的裁掉）	Centered (anything outside is cropped)	中央に配置（はみ出しはカット）	가운데 배치 (벗어난 부분은 자름)
+等比縮放放進畫布	Scale proportionally to fit the canvas	縦横比を保ってキャンバスに収める	비율을 유지하며 캔버스에 맞춤
+拉伸成畫布大小	Stretch to the canvas size	キャンバスのサイズに引き伸ばす	캔버스 크기에 맞게 늘리기
+平板（直接擠出）	Flat (just extruded)	フラット（そのまま押し出し）	평판 (그대로 돌출)
+平滑（S 形）	Smooth (S curve)	スムーズ（S字）	부드럽게 (S자)
+錐形（像屋頂）	Cone (like a roof)	円錐（屋根のように）	원뿔 (지붕처럼)
+圓潤（像氣球）	Round (like a balloon)	丸み（風船のように）	둥글게 (풍선처럼)
+只往觀看者鼓（背面平）	Bulge only toward the viewer (flat back)	見る側にだけ膨らませる（背面は平ら）	보는 쪽으로만 부풀림 (뒷면은 평평)
+前後對稱	Symmetric front and back	前後対称	앞뒤 대칭
+只往遠處鼓（正面平）	Bulge only away from the viewer (flat front)	奥側にだけ膨らませる（正面は平ら）	먼 쪽으로만 부풀림 (앞면은 평평)
+{0} 格	{0} cells	{0} セル	{0}칸
+自動	Auto	自動	자동
+放哪個視角	Which view the image is in	画像を置くビュー	이미지를 놓을 시점
+透明門檻（alpha）	Transparency threshold (alpha)	透明のしきい値（アルファ）	투명 기준값 (알파)
+鼓起的方式	How it bulges	膨らみ方	부풀리는 방식
+最厚	Thickest	最大の厚み	가장 두껍게
+最薄（邊緣）	Thinnest (edge)	最小の厚み（縁）	가장 얇게 (가장자리)
+長到最厚的距離	Distance to reach the thickest	最も厚くなるまでの距離	가장 두꺼워지는 거리
+平滑	Smoothing	スムージング	매끄럽게
+預覽（拖曳下方滑桿轉動）	Preview (drag the slider below to rotate)	プレビュー（下のスライダーで回転）	미리보기 (아래 슬라이더로 회전)
+膨脹	Inflate	膨張	부풀리기
+圖片裡沒有有顏色的像素（全透明，或低於透明門檻）。	The image has no coloured pixels (fully transparent, or below the transparency threshold).	画像に色のあるピクセルがありません（完全に透明、または透明のしきい値未満）。	이미지에 색이 있는 픽셀이 없습니다 (완전히 투명하거나 투명 기준값 미만).
+畫布 {0}×{1}、厚度方向最多 {2} 格；這樣會產生 {3} 個體素，最厚 {4} 格。	Canvas {0}×{1}, up to {2} cells of thickness; this produces {3} voxels, thickest {4} cells.	キャンバス {0}×{1}、厚み方向は最大 {2} セル。{3} 個のボクセルが作られ、最大の厚みは {4} セルです。	캔버스 {0}×{1}, 두께 방향 최대 {2}칸. 복셀 {3}개가 만들어지고 가장 두꺼운 곳은 {4}칸입니다.
+{0} 格區域（外框 {1}×{2}）	{0} cell area (bounds {1}×{2})	{0} セルの領域（外枠 {1}×{2}）	{0}칸 영역 (바깥 틀 {1}×{2})
+（邊緣羽化）	(feathered edge)	（縁をぼかし）	(가장자리 페더)
+（已旋轉 {0}°）	(rotated {0}°)	（{0}° 回転済み）	({0}° 회전됨)
+{0} {1}，{2} 層	{0} {1}, {2} slices	{0} {1}、{2} スライス	{0} {1}, {2}슬라이스
+移動中	Moving	移動中	이동 중
+貼上中	Pasting	貼り付け中	붙여넣는 중
+（拖曳移動、方向鍵微調、[ ] 換層；點框外或 Enter 放下，Esc 取消）	(drag to move, arrow keys to nudge, [ ] to change slice; click outside the box or press Enter to drop, Esc to cancel)	（ドラッグで移動、矢印キーで微調整、[ ] でスライス切替。枠の外をクリックするか Enter で確定、Esc で取り消し）	(드래그로 이동, 방향키로 미세 조정, [ ]로 슬라이스 전환. 상자 밖을 클릭하거나 Enter로 놓기, Esc로 취소)
+選取 {0}，{1} 層（深度）	Selected {0}, {1} slices (depth)	選択 {0}、{1} スライス（深さ）	선택 {0}, {1}슬라이스 (깊이)
+顯示／隱藏這個圖層（隱藏的圖層不參與預覽與匯出，內容還在）	Show / hide this layer (hidden layers are left out of the preview and exports; their content stays)	このレイヤーの表示／非表示（非表示のレイヤーはプレビューとエクスポートに含まれませんが、内容は残ります）	이 레이어 표시/숨김 (숨긴 레이어는 미리보기와 내보내기에서 제외되지만 내용은 남아 있음)
+點一下＝編輯這個圖層；連點兩下＝改名	Click = edit this layer; double-click = rename	クリック＝このレイヤーを編集、ダブルクリック＝名前の変更	클릭 = 이 레이어 편집, 더블 클릭 = 이름 바꾸기
+{0} 空	{0} empty	{0} 空	{0} 비어 있음
+只動目前這一幀	Only this frame	現在のフレームだけ	현재 프레임만
+這個圖層在所有幀的內容都一起動	The content of this layer in every frame moves together	このレイヤーの全フレームの内容を一緒に動かす	이 레이어의 모든 프레임 내용을 함께 이동
+移動圖層內容	Move layer content	レイヤーの内容を移動	레이어 내용 이동
+把圖層「{0}」的所有體素整塊平移：	Shift all voxels of layer "{0}" as one block:	レイヤー「{0}」のボクセルをすべてまとめて平行移動します:	레이어 「{0}」의 복셀을 모두 한 덩어리로 이동합니다:
+單位是格（−{0} ~ {1}）。X 往右為正、Y 往前（正面視角的觀看者那一側）為正、Z 往上為正。超出模型的體素會被丟掉，可以 Ctrl+Z 復原。	Units are cells (−{0} ~ {1}). X is positive to the right, Y is positive toward the front (the viewer's side in the Front view), Z is positive upward. Voxels moved outside the model are dropped; Ctrl+Z undoes it.	単位はセルです（−{0} ～ {1}）。X は右が正、Y は手前（正面ビューの見る側）が正、Z は上が正。モデルの外に出たボクセルは捨てられます。Ctrl+Z で元に戻せます。	단위는 칸입니다 (−{0} ~ {1}). X는 오른쪽이 양수, Y는 앞쪽(정면 시점에서 보는 쪽)이 양수, Z는 위쪽이 양수입니다. 모델 밖으로 나간 복셀은 버려지며 Ctrl+Z로 되돌릴 수 있습니다.
+移動	Move	移動	이동
+X、Y、Z 都要是 −{0} ~ {1} 的整數。	X, Y and Z must each be a whole number from −{0} to {1}.	X、Y、Z はそれぞれ −{0} ～ {1} の整数にしてください。	X, Y, Z는 각각 −{0} ~ {1} 사이의 정수여야 합니다.
+三個方向都是 0，沒有東西要移動。	All three directions are 0, so there is nothing to move.	3方向とも 0 なので、移動するものがありません。	세 방향이 모두 0이라 이동할 것이 없습니다.
+新增	New	新規	새로 만들기
+長 (X)	Length (X)	長さ (X)	길이 (X)
+畫布的水平格數	Horizontal cells of the canvas	キャンバスの水平方向のセル数	캔버스의 가로 칸 수
+畫布的垂直格數	Vertical cells of the canvas	キャンバスの垂直方向のセル数	캔버스의 세로 칸 수
+寬 (Y)	Width (Y)	幅 (Y)	너비 (Y)
+往上疊的層數	Number of slices stacked upward	上に積み重ねるスライス数	위로 쌓는 슬라이스 수
+高 (層數)	Height (slices)	高さ (スライス数)	높이 (슬라이스 수)
+建立	Create	作成	만들기
+建立新的空白動畫（各 {0}~{1}）：	Create a new blank animation ({0}~{1} each):	新しい空のアニメーションを作成します（各 {0}～{1}）:	새 빈 애니메이션을 만듭니다 (각 {0}~{1}):
+目前開著的內容不會自動儲存，沒存的變更會遺失。	What is open now is not saved automatically; unsaved changes will be lost.	いま開いている内容は自動保存されません。保存していない変更は失われます。	지금 열려 있는 내용은 자동으로 저장되지 않으며, 저장하지 않은 변경 사항은 사라집니다.
+長、寬、高都必須是 {0}~{1} 的整數。	Length, width and height must each be a whole number from {0} to {1}.	長さ・幅・高さはそれぞれ {0}～{1} の整数にしてください。	길이, 너비, 높이는 각각 {0}~{1} 사이의 정수여야 합니다.
+{0} × {1} × {2} = {3} 格，每幀存檔約 {4}。	{0} × {1} × {2} = {3} cells, about {4} per frame when saved.	{0} × {1} × {2} = {3} セル、保存すると1フレームあたり約 {4}。	{0} × {1} × {2} = {3}칸, 저장하면 프레임당 약 {4}.
+\n偏大：畫布編輯在 64 以內會比較順手，太大的模型也很難畫。	\nOn the large side: editing the canvas is easier at 64 or below, and very large models are hard to draw.	\n大きめです: キャンバスの編集は64以下のほうが扱いやすく、大きすぎるモデルは描きにくくなります。	\n큰 편입니다: 캔버스 편집은 64 이하가 다루기 쉽고, 너무 큰 모델은 그리기 어렵습니다.
+複製到範圍	Copy to range	範囲にコピー	범위로 복사
+第	From	開始	시작
+到 第	to	終了	끝
+{0}（共 {1} {2}）	{0} (of {1} {2})	{0}（全 {1} {2}）	{0} (전체 {1}{2})
+把目前這{0}（第 {1} {2}）複製到：	Copy the current {0} ({1} {2}) to:	現在の{0}（{1} {2}）のコピー先:	현재 {0}({1} {2})을(를) 복사할 곳:
+範圍內其他每一層都會被覆蓋（可以 Ctrl+Z 復原）。	Every other slice in the range will be overwritten (Ctrl+Z undoes it).	範囲内の他のスライスはすべて上書きされます（Ctrl+Z で元に戻せます）。	범위 안의 다른 슬라이스는 모두 덮어쓰이며 Ctrl+Z로 되돌릴 수 있습니다.
+請輸入整數。	Please enter a whole number.	整数を入力してください。	정수를 입력하세요.
+範圍必須在 1 ~ {0} 之間。	The range must be between 1 and {0}.	範囲は 1 ～ {0} の間にしてください。	범위는 1 ~ {0} 사이여야 합니다.
+旋轉選取區	Rotate selection	選択範囲を回転	선택 영역 회전
+再轉	Rotate by	回転量	회전량
+目前已經轉了 {0}°，繞選取區的正中心再轉：	It has already been rotated {0}°; rotate again around the exact centre of the selection:	すでに {0}° 回転しています。選択範囲の中心を軸にさらに回転します:	이미 {0}° 회전되어 있습니다. 선택 영역의 정중앙을 축으로 더 회전합니다:
+繞選取區的正中心旋轉（沿著視線方向，每一層一起轉）：	Rotate around the exact centre of the selection (along the line of sight; every slice rotates together):	選択範囲の中心を軸に回転します（視線方向に沿って、すべてのスライスが一緒に回ります）:	선택 영역의 정중앙을 축으로 회전합니다 (시선 방향을 따라 모든 슬라이스가 함께 회전):
+正數 = 順時針、負數 = 逆時針。轉完還是浮動的內容，可以拖曳、再轉，Enter 放下、Esc 取消。	Positive = clockwise, negative = counter-clockwise. The result is still floating: drag it, rotate again, Enter to drop, Esc to cancel.	正の値 = 時計回り、負の値 = 反時計回り。回転後も浮動状態なので、ドラッグしたりさらに回したりできます。Enter で確定、Esc で取り消し。	양수 = 시계 방향, 음수 = 반시계 방향. 회전 후에도 떠 있는 상태라 드래그하거나 더 회전할 수 있으며 Enter로 놓고 Esc로 취소합니다.
+請輸入數字（可以是負數、小數）。	Please enter a number (negative and decimals are allowed).	数値を入力してください（負の値や小数も可）。	숫자를 입력하세요 (음수와 소수도 가능).
+角度請在 -3600 ~ 3600 之間。	The angle must be between -3600 and 3600.	角度は -3600 ～ 3600 の間にしてください。	각도는 -3600 ~ 3600 사이여야 합니다.
+尚未儲存	Not saved yet	未保存	저장되지 않음
+儲存	Save	保存	저장
+不儲存	Don't save	保存しない	저장 안 함
+「{0}」有尚未儲存的變更。要先儲存嗎？	"{0}" has unsaved changes. Save first?	「{0}」には未保存の変更があります。先に保存しますか？	「{0}」에 저장하지 않은 변경 사항이 있습니다. 먼저 저장할까요?
+選「不儲存」會丟掉上次儲存之後的所有修改，無法復原。	"Don't save" throws away every change since the last save, and cannot be undone.	「保存しない」を選ぶと、前回保存してからの変更はすべて破棄され、元に戻せません。	「저장 안 함」을 고르면 마지막 저장 이후의 모든 변경 사항이 버려지며 되돌릴 수 없습니다.
+超出的部分從另一邊繞回來（環狀）	Wrap around: what goes past one edge comes back on the other (torus)	はみ出した部分を反対側から戻す（ループ）	벗어난 부분이 반대쪽에서 다시 나타남 (순환)
+平移	Shift	平行移動	이동
+往右	Right	右へ	오른쪽
+往下	Down	下へ	아래쪽
+格	cells	セル	칸
+平移{0}（畫布 {1}×{2}）：	Shift {0} (canvas {1}×{2}):	{0}を平行移動（キャンバス {1}×{2}）:	{0} 이동 (캔버스 {1}×{2}):
+負數＝往左／往上。沒有勾選繞回的話，移出畫布的部分會被丟掉。	Negative = left / up. Without wrap-around, whatever is moved off the canvas is dropped.	負の値 = 左／上。ループにしない場合、キャンバスの外に出た部分は捨てられます。	음수 = 왼쪽/위쪽. 순환을 켜지 않으면 캔버스 밖으로 나간 부분은 버려집니다.
+請輸入整數（可以是負數）。	Please enter a whole number (negative is allowed).	整数を入力してください（負の値も可）。	정수를 입력하세요 (음수도 가능).
+最多移動一整個畫布：左右 ±{0}、上下 ±{1}。	At most one whole canvas: ±{0} horizontally, ±{1} vertically.	最大でキャンバス1枚分: 左右 ±{0}、上下 ±{1}。	최대 캔버스 하나만큼: 좌우 ±{0}, 상하 ±{1}.
+圖層 1	Layer 1	レイヤー 1	레이어 1
+尺寸必須大於 0	The size must be greater than 0	サイズは 0 より大きくしてください	크기는 0보다 커야 합니다
+沒有幀	No frames	フレームがありません	프레임이 없습니다
+幀的尺寸不一致	The frames are not all the same size	フレームのサイズが揃っていません	프레임 크기가 서로 다릅니다
+圖層數量已達上限	The maximum number of layers has been reached	レイヤー数の上限に達しました	레이어 수가 한도에 도달했습니다
+不是 PixelStacking 檔案	Not a PixelStacking file	PixelStacking のファイルではありません	PixelStacking 파일이 아닙니다
+不支援的檔案版本：{0}	Unsupported file version: {0}	サポートされていないファイルバージョン: {0}	지원하지 않는 파일 버전: {0}
+檔案尺寸不合理	The file size is not reasonable	ファイルのサイズが不正です	파일 크기가 올바르지 않습니다
+檔案資料不完整	The file data is incomplete	ファイルのデータが不完全です	파일 데이터가 불완전합니다
+圖層數量不合理	The number of layers is not reasonable	レイヤー数が不正です	레이어 수가 올바르지 않습니다
+圖層名稱不合理	The layer name is not reasonable	レイヤー名が不正です	레이어 이름이 올바르지 않습니다
+部件數量不合理	The number of parts is not reasonable	パーツ数が不正です	파트 수가 올바르지 않습니다
+身體平移不是數字	The body translation is not a number	身体の平行移動が数値ではありません	몸 이동값이 숫자가 아닙니다
+部件資料不合理	The part data is not reasonable	パーツのデータが不正です	파트 데이터가 올바르지 않습니다
+部件的軸不合理	The part's axis is not reasonable	パーツの軸が不正です	파트의 축이 올바르지 않습니다
+部件的樞軸、角度或平移不是數字	The part's pivot, angle or translation is not a number	パーツのピボット・角度・平行移動が数値ではありません	파트의 피벗, 각도 또는 이동값이 숫자가 아닙니다
+部件的上一層不存在	The part's parent does not exist	パーツの親が存在しません	파트의 상위 파트가 없습니다
+部件的上下層關係有循環	The parent/child relationships of the parts form a loop	パーツの親子関係がループしています	파트의 상하 관계가 순환합니다
+角度不是數字	The angle is not a number	角度が数値ではありません	각도가 숫자가 아닙니다
+畫布尺寸不符	The canvas sizes do not match	キャンバスのサイズが一致しません	캔버스 크기가 일치하지 않습니다
+旋轉 90° 需要正方形的畫布	Rotating by 90° needs a square canvas	90°回転には正方形のキャンバスが必要です	90° 회전에는 정사각형 캔버스가 필요합니다
+固定值	Constant	固定値	고정값
+轉圈（0 到 1）	Full turn (0 to 1)	一周（0 ～ 1）	한 바퀴 (0 ~ 1)
+來回擺動（正弦）	Swing back and forth (sine)	往復スイング（サイン波）	왕복 흔들기 (사인파)
+單向擺動（只往一邊）	One-way swing (one side only)	片側スイング（一方向のみ）	한쪽 흔들기 (한 방향만)
+弧形（升到最大再回來）	Arc (rises to the max then comes back)	弧（最大まで上がって戻る）	호 (최대까지 올라갔다가 돌아옴)
+揮動（−1 到 +1）	Wave (−1 to +1)	ウェーブ（−1 ～ +1）	흔들기 (−1 ~ +1)
+彈跳（像球落地）	Bounce (like a ball landing)	バウンス（ボールが落ちるように）	바운스 (공이 떨어지듯)
+緩入（先慢後快）	Ease in (slow then fast)	イーズイン（遅い→速い）	이즈 인 (느리다가 빠르게)
+緩入緩出（兩頭慢）	Ease in-out (slow at both ends)	イーズインアウト（両端が遅い）	이즈 인아웃 (양 끝이 느림)
+緩出（先快後慢）	Ease out (fast then slow)	イーズアウト（速い→遅い）	이즈 아웃 (빠르다가 느리게)
+線性（等速）	Linear (constant speed)	リニア（等速）	선형 (등속)
+回彈（衝過頭再彈回）	Back (overshoots then returns)	バック（行き過ぎて戻る）	백 (지나쳤다가 되돌아옴)
+右大腿	Right thigh	右の太もも	오른쪽 허벅지
+左大腿	Left thigh	左の太もも	왼쪽 허벅지
+左小腿	Left shin	左のすね	왼쪽 정강이
+右小腿	Right shin	右のすね	오른쪽 정강이
+左上臂	Left upper arm	左の上腕	왼쪽 위팔
+右上臂	Right upper arm	右の上腕	오른쪽 위팔
+右前臂	Right forearm	右の前腕	오른쪽 아래팔
+左前臂	Left forearm	左の前腕	왼쪽 아래팔
+頭	Head	頭	머리
+軀幹／腰	Torso / waist	胴体／腰	몸통/허리
+左翅膀	Left wing	左の翼	왼쪽 날개
+右翅膀	Right wing	右の翼	오른쪽 날개
+尾巴第 1 節	Tail segment 1	尾 第1節	꼬리 1마디
+尾巴第 2 節	Tail segment 2	尾 第2節	꼬리 2마디
+尾巴第 3 節	Tail segment 3	尾 第3節	꼬리 3마디
+旋轉件（螺旋槳）	Rotor (propeller)	回転パーツ（プロペラ）	회전부 (프로펠러)
+整個身體	Whole body	身体全体	몸 전체
+雙腿與雙臂交替前後擺，膝蓋在腿往前時彎曲，身體上下輕微起伏。擺動方向不對時，勾該通道的「反向」。	Legs and arms swing back and forth in turn, the knee bends as the leg comes forward, and the body bobs slightly. If a swing goes the wrong way, tick "Reverse" on that channel.	脚と腕が交互に前後へ振れ、脚が前に出るときにひざが曲がり、体が少し上下します。振りの向きが逆なら、そのチャンネルの「反転」にチェックしてください。	다리와 팔이 번갈아 앞뒤로 흔들리고, 다리가 앞으로 나올 때 무릎이 굽혀지며 몸이 살짝 오르내립니다. 흔들리는 방향이 반대면 해당 채널의 「반전」을 체크하세요.
+走路	Walk	歩く	걷기
+跟走路同一套，擺幅更大、膝蓋彎更多、身體起伏更高。	The same set as Walk, with a bigger swing, more knee bend and a higher body bob.	歩くと同じ構成で、振りが大きく、ひざの曲がりも深く、体の上下動も大きくなります。	걷기와 같은 구성에 흔들림이 더 크고 무릎도 더 굽히며 몸의 오르내림도 더 큽니다.
+跑步	Run	走る	달리기
+待機（呼吸）	Idle (breathing)	待機（呼吸）	대기 (호흡)
+身體慢慢上下起伏，手臂與頭微微晃動。	The body slowly rises and falls, with the arms and head swaying slightly.	体がゆっくり上下し、腕と頭がわずかに揺れます。	몸이 천천히 오르내리고 팔과 머리가 살짝 흔들립니다.
+揮手	Wave	手を振る	손 흔들기
+右手舉高，前臂左右擺動。	The right hand is raised and the forearm swings left and right.	右手を上げ、前腕を左右に振ります。	오른손을 들고 아래팔을 좌우로 흔듭니다.
+攻擊（揮砍）	Attack (slash)	攻撃（斬り）	공격 (베기)
+右臂從後往前揮下，身體跟著前傾。一次性動作。	The right arm swings down from behind and the body leans forward. A one-time action.	右腕を後ろから前へ振り下ろし、体が前に傾きます。1回だけのアクションです。	오른팔이 뒤에서 앞으로 내리쳐지고 몸이 앞으로 기웁니다. 한 번만 하는 동작입니다.
+身體整個跳起再落下，雙腿先彎、雙臂上舉。一次性動作。	The whole body jumps up and lands again; the legs bend first and the arms go up. A one-time action.	体全体が跳び上がって着地します。先に脚が曲がり、腕が上がります。1回だけのアクションです。	몸 전체가 뛰어올랐다가 착지합니다. 다리가 먼저 굽혀지고 팔이 올라갑니다. 한 번만 하는 동작입니다.
+跳躍	Jump	ジャンプ	점프
+靜態姿勢（只產生 1 幀）：大腿與小腿各彎 90°，身體降低。	Static pose (makes only 1 frame): thighs and shins each bent 90°, body lowered.	静止ポーズ（1フレームだけ作成）: 太ももとすねをそれぞれ90°曲げ、体を低くします。	정지 포즈 (프레임 1개만 만듦): 허벅지와 정강이를 각각 90° 굽히고 몸을 낮춥니다.
+坐下	Sit down	座る	앉기
+鞠躬	Bow	お辞儀	인사
+軀幹往前彎再起來，頭微微低下。一次性動作。	The torso bends forward and comes back up, with the head dipping slightly. A one-time action.	胴体が前に曲がって戻り、頭が少し下がります。1回だけのアクションです。	몸통이 앞으로 굽혔다가 돌아오고 머리가 살짝 숙여집니다. 한 번만 하는 동작입니다.
+點頭／搖頭	Nod / shake head	うなずき／首振り	끄덕임/가로젓기
+頭來回轉動。轉軸怎麼設就決定它是點頭還是搖頭。	The head turns back and forth. How the axis is set decides whether it is a nod or a shake.	頭が行ったり来たり回ります。軸の設定によって、うなずきか首振りかが決まります。	머리가 왔다 갔다 돕니다. 축을 어떻게 설정하느냐에 따라 끄덕임인지 가로젓기인지 정해집니다.
+兩邊翅膀上下拍動（右邊預設反向，因為鏡像），身體跟著微微起伏。	Both wings flap up and down (the right one is reversed by default because of mirroring) and the body bobs slightly.	両方の翼が上下に羽ばたきます（右はミラーのため初期設定で反転）。体も少し上下します。	양쪽 날개가 위아래로 펄럭입니다 (오른쪽은 좌우 대칭이라 기본으로 반전됨). 몸도 살짝 오르내립니다.
+拍翅膀	Flap wings	羽ばたき	날갯짓
+搖尾巴	Wag tail	尻尾を振る	꼬리 흔들기
+三節尾巴依序擺動，每節慢一點點（波浪）。	Three tail segments swing one after another, each a little later (a wave).	3つの尾の節が順に振れ、節ごとに少しずつ遅れます（波）。	꼬리 세 마디가 차례로 흔들리며 마디마다 조금씩 늦어집니다 (물결).
+旋轉（螺旋槳）	Spin (propeller)	回転（プロペラ）	회전 (프로펠러)
+旋轉件轉滿一圈，最後一幀剛好接回第一幀。	The rotating part makes a full turn, and the last frame joins right back to the first.	回転パーツが1周し、最後のフレームが最初のフレームにちょうどつながります。	회전부가 한 바퀴 돌고 마지막 프레임이 첫 프레임으로 딱 이어집니다.
+幀數要在 1 ~ {0} 之間	The number of frames must be between 1 and {0}	フレーム数は 1 ～ {0} の間にしてください	프레임 수는 1 ~ {0} 사이여야 합니다
+切片尺寸不符	The slice sizes do not match	スライスのサイズが一致しません	슬라이스 크기가 일치하지 않습니다
+頂部	Top	上面	위
+底部	Bottom	下面	아래
+正面	Front	正面	정면
+背面	Back	背面	후면
+左側	Left	左側面	왼쪽
+右側	Right	右側面	오른쪽
+頂部（從上往下看）　→ +X　↓ +Y	Top (looking down)　→ +X　↓ +Y	上面（真上から）　→ +X　↓ +Y	위 (위에서 내려다봄)　→ +X　↓ +Y
+底部（從下往上看）　→ +X　↓ −Y	Bottom (looking up)　→ +X　↓ −Y	下面（真下から）　→ +X　↓ −Y	아래 (아래에서 올려다봄)　→ +X　↓ −Y
+正面（站在 +Y 側）　→ +X　↑ +Z	Front (standing on the +Y side)　→ +X　↑ +Z	正面（+Y側に立つ）　→ +X　↑ +Z	정면 (+Y 쪽에 서서)　→ +X　↑ +Z
+背面（站在 −Y 側）　→ −X　↑ +Z	Back (standing on the −Y side)　→ −X　↑ +Z	背面（−Y側に立つ）　→ −X　↑ +Z	후면 (−Y 쪽에 서서)　→ −X　↑ +Z
+左側（站在 −X 側）　→ +Y　↑ +Z	Left (standing on the −X side)　→ +Y　↑ +Z	左側面（−X側に立つ）　→ +Y　↑ +Z	왼쪽 (−X 쪽에 서서)　→ +Y　↑ +Z
+右側（站在 +X 側）　→ −Y　↑ +Z	Right (standing on the +X side)　→ −Y　↑ +Z	右側面（+X側に立つ）　→ −Y　↑ +Z	오른쪽 (+X 쪽에 서서)　→ −Y　↑ +Z
+部件標記長度不符	The part marker lengths do not match	パーツマーカーの長さが一致しません	파트 표시 길이가 일치하지 않습니다
+圖層數量不符	The number of layers does not match	レイヤー数が一致しません	레이어 수가 일치하지 않습니다
+圖格尺寸不符	The cel sizes do not match	セルのサイズが一致しません	셀 크기가 일치하지 않습니다
+圖層	Layers	レイヤー	레이어
+圖層（{0}）	Layers ({0})	レイヤー（{0}）	레이어 ({0})
+圖層 {0}	Layer {0}	レイヤー {0}	레이어 {0}
+{0} 複本	{0} copy	{0} のコピー	{0} 복사본
+只剩一個圖層，不能刪除。	Only one layer is left, so it cannot be deleted.	レイヤーが1つしか残っていないため、削除できません。	레이어가 하나만 남아 삭제할 수 없습니다.
+最底下的圖層沒有可以合併的下一層。	The bottom layer has no layer below it to merge into.	一番下のレイヤーには、結合できる下のレイヤーがありません。	맨 아래 레이어에는 병합할 아래 레이어가 없습니다.
+拼合所有圖層	Flatten all layers	すべてのレイヤーを統合	모든 레이어 병합
+有隱藏的圖層，拼合時它們會被丟掉（可以 Ctrl+Z 復原）。要繼續嗎？	Some layers are hidden and will be discarded when flattening (Ctrl+Z undoes it). Continue?	非表示のレイヤーがあり、統合すると破棄されます（Ctrl+Z で元に戻せます）。続行しますか？	숨긴 레이어가 있으며 병합하면 버려집니다 (Ctrl+Z로 되돌릴 수 있음). 계속할까요?
+這個圖層的名稱：	Name of this layer:	このレイヤーの名前:	이 레이어의 이름:
+圖層名稱	Layer name	レイヤー名	레이어 이름
+名稱不能是空的。	The name cannot be empty.	名前を空にはできません。	이름을 비워둘 수 없습니다.
+匯入失敗	Import failed	インポートに失敗しました	가져오기 실패
+圖層數量已達上限。	The maximum number of layers has been reached.	レイヤー数の上限に達しました。	레이어 수가 한도에 도달했습니다.
+　新增 {0} 個顏色	   {0} new colours added	　新しい色を {0} 個追加	　새 색 {0}개 추가됨
+　顏色太多，已量化成 {0} 色	   too many colours; quantized to {0} colours	　色が多すぎるため {0} 色に減色	　색이 너무 많아 {0}색으로 줄임
+（尺寸 {0}×{1}×{2}，已置中對齊）	(size {0}×{1}×{2}, centred)	（サイズ {0}×{1}×{2}、中央に揃えました）	(크기 {0}×{1}×{2}, 가운데 맞춤)
+已匯入「{0}」成新圖層{1}{2}（可以 Ctrl+Z 復原）。	Imported "{0}" as a new layer{1}{2} (Ctrl+Z undoes it).	「{0}」を新しいレイヤーとしてインポートしました{1}{2}（Ctrl+Z で元に戻せます）。	「{0}」을(를) 새 레이어로 가져왔습니다{1}{2} (Ctrl+Z로 되돌릴 수 있음).
+這個圖層沒有任何體素，沒有東西可以移動。	This layer has no voxels, so there is nothing to move.	このレイヤーにはボクセルがないため、移動するものがありません。	이 레이어에는 복셀이 없어 이동할 것이 없습니다.
+已把圖層「{0}」平移 ({1}, {2}, {3})：{4} 個體素{5}{6}（可以 Ctrl+Z 復原）。	Shifted layer "{0}" by ({1}, {2}, {3}): {4} voxels{5}{6} (Ctrl+Z undoes it).	レイヤー「{0}」を ({1}, {2}, {3}) だけ移動しました: {4} 個のボクセル{5}{6}（Ctrl+Z で元に戻せます）。	레이어 「{0}」을(를) ({1}, {2}, {3})만큼 이동했습니다: 복셀 {4}개{5}{6} (Ctrl+Z로 되돌릴 수 있음).
+，{0} 個超出模型被丟掉	, {0} fell outside the model and were dropped	、{0} 個がモデルの外に出て捨てられました	, {0}개가 모델 밖으로 나가 버려졌습니다
+（{0} 幀）	 ({0} frames)	（{0} フレーム）	 ({0}프레임)
+點一個體素，選出跟它立體相連的整塊（點空白＝取消）。Shift 加選、Ctrl 減選。選好後用下面的按鈕或方向鍵搬移。	Click a voxel to select the whole block that is connected to it in 3D (click empty space = deselect). Shift adds, Ctrl subtracts. Then move it with the buttons below or the arrow keys.	ボクセルをクリックすると、立体的につながった塊全体が選択されます（空白をクリック＝選択解除）。Shift で追加、Ctrl で除外。選択後は下のボタンか矢印キーで動かします。	복셀을 클릭하면 3D로 이어진 덩어리 전체가 선택됩니다 (빈 곳 클릭 = 선택 해제). Shift는 추가, Ctrl은 제외. 선택한 뒤 아래 버튼이나 방향키로 옮기세요.
+已選 {0} 個體素。方向鍵 ← → ↑ ↓ 移動、Ctrl+↑／↓ 往前／往後、Delete 刪除、Esc 取消選取。	{0} voxels selected. Arrow keys ← → ↑ ↓ move, Ctrl+↑/↓ forward/back, Delete deletes, Esc deselects.	{0} 個のボクセルを選択中。矢印キー ← → ↑ ↓ で移動、Ctrl+↑／↓ で手前／奥、Delete で削除、Esc で選択解除。	복셀 {0}개 선택됨. 방향키 ← → ↑ ↓로 이동, Ctrl+↑/↓로 앞/뒤, Delete로 삭제, Esc로 선택 해제.
+再移動就會超出模型邊界，沒有移動。	Moving further would leave the model, so nothing was moved.	これ以上動かすとモデルの外に出るため、移動しませんでした。	더 이동하면 모델 밖으로 나가므로 이동하지 않았습니다.
+已移動 {0} 個體素（可以 Ctrl+Z 復原）。	Moved {0} voxels (Ctrl+Z undoes it).	{0} 個のボクセルを移動しました（Ctrl+Z で元に戻せます）。	복셀 {0}개를 이동했습니다 (Ctrl+Z로 되돌릴 수 있음).
+已刪除 {0} 個體素（可以 Ctrl+Z 復原）。	Deleted {0} voxels (Ctrl+Z undoes it).	{0} 個のボクセルを削除しました（Ctrl+Z で元に戻せます）。	복셀 {0}개를 삭제했습니다 (Ctrl+Z로 되돌릴 수 있음).
+先用 3D 魔術棒選一塊部件。	Select a part with the 3D magic wand first.	先に3Dマジックワンドでパーツを選択してください。	먼저 3D 마술봉으로 파트를 선택하세요.
+部件	Part	パーツ	파트
+已把 {0} 個體素抽到新圖層「{1}」（可以移動它、再向下合併；Ctrl+Z 復原）。	Moved {0} voxels onto the new layer "{1}" (you can move it and merge it down; Ctrl+Z undoes it).	{0} 個のボクセルを新しいレイヤー「{1}」へ移しました（動かして下のレイヤーに結合できます。Ctrl+Z で元に戻せます）。	복셀 {0}개를 새 레이어 「{1}」로 옮겼습니다 (옮긴 뒤 아래로 병합할 수 있음, Ctrl+Z로 되돌림).
+最小化	Minimize	最小化	최소화
+最大化	Maximize	最大化	최대화
+檔案(_F)	File(_F)	ファイル(_F)	파일(_F)
+新增…	New…	新規…	새로 만들기…
+開啟…	Open…	開く…	열기…
+另存新檔…	Save as…	名前を付けて保存…	다른 이름으로 저장…
+匯入圖片…	Import image…	画像をインポート…	이미지 가져오기…
+把 PNG／BMP／GIF／JPG 讀進來放在目前這一層（可以一次選多張，每張一層；或把疊層條帶切成多層）。顏色對應到調色盤，整個匯入算一次復原。	Read a PNG/BMP/GIF/JPG and put it on the current slice (you can pick several, one per slice; or cut a stack strip into several slices). Colours are mapped to the palette; the whole import is one undo step.	PNG／BMP／GIF／JPG を読み込んで現在のスライスに置きます（複数選択すると1枚ずつ各スライスに、またはスタックストリップを複数スライスに分割）。色はパレットに割り当てられ、インポート全体が1回の取り消し単位になります。	PNG/BMP/GIF/JPG를 읽어 현재 슬라이스에 놓습니다 (여러 장을 고르면 슬라이스마다 한 장씩, 또는 스택 스트립을 여러 슬라이스로 나눔). 색은 팔레트에 대응되며 가져오기 전체가 한 번의 실행 취소입니다.
+膨脹成 3D…	Inflate to 3D…	3Dに膨張…	3D로 부풀리기…
+讀一張 2D 圖片，把它的輪廓往厚度方向鼓起來變成立體（可以調厚度、截面形狀、前後對稱或單面），有即時預覽。算一次復原。	Read a 2D image and bulge its outline in the thickness direction into a solid (you can set the thickness, cross-section shape, and symmetric or single-sided), with a live preview. One undo step.	2D画像を読み込み、その輪郭を厚み方向に膨らませて立体にします（厚み・断面の形・前後対称／片面を調整可能、リアルタイムプレビューあり）。1回の取り消し単位です。	2D 이미지를 읽어 윤곽을 두께 방향으로 부풀려 입체로 만듭니다 (두께, 단면 모양, 앞뒤 대칭/한쪽 면 조절 가능, 실시간 미리보기). 한 번의 실행 취소입니다.
+匯出 PNG…	Export PNG…	PNGをエクスポート…	PNG 내보내기…
+固定角度預先渲染成圖集＋JSON 或 PNG 序列，給遊戲使用	Pre-render fixed angles into an atlas + JSON or a PNG sequence for use in games	固定角度を事前レンダリングして、アトラス＋JSONまたはPNGシーケンスとしてゲームで使えるようにします	고정 각도를 미리 렌더링해 아틀라스 + JSON 또는 PNG 시퀀스로 게임에서 쓸 수 있게 합니다
+匯出 GIF…	Export GIF…	GIFをエクスポート…	GIF 내보내기…
+固定角度的動畫 GIF（速度用動畫的每秒幀數），拿來預覽或分享	An animated GIF at a fixed angle (the speed uses the animation's frames per second), for previewing or sharing	固定角度のアニメーションGIF（速度はアニメーションのフレーム毎秒を使用）。プレビューや共有に	고정 각도의 애니메이션 GIF (속도는 애니메이션의 초당 프레임 수 사용), 미리보기나 공유용
+匯出疊層條帶…	Export stack strip…	スタックストリップをエクスポート…	스택 스트립 내보내기…
+Sprite Stacking 原始格式：從正上方往下看，每一層一張平面圖排成一條（每幀一列）＋JSON，遊戲端把每層疊起來再旋轉	Original Sprite Stacking format: looking straight down, one flat picture per slice laid out in a strip (one row per frame) + JSON; the game stacks the slices and rotates them	Sprite Stacking の元の形式: 真上から見て、スライスごとに1枚の平面画像をストリップに並べ（1フレーム1行）＋JSON。ゲーム側でスライスを重ねて回転させます	원래의 Sprite Stacking 형식: 바로 위에서 본 슬라이스마다 평면 이미지 한 장을 한 줄로 늘어놓고(프레임당 한 행) + JSON. 게임에서 슬라이스를 쌓고 회전시킵니다
+結束	Exit	終了	종료
+編輯(_E)	Edit(_E)	編集(_E)	편집(_E)
+剪下	Cut	切り取り	잘라내기
+複製	Copy	コピー	복사
+貼上	Paste	貼り付け	붙여넣기
+全選	Select all	すべて選択	모두 선택
+複製到 +1 層	Copy to slice +1	スライス +1 にコピー	슬라이스 +1로 복사
+複製到 −1 層	Copy to slice −1	スライス −1 にコピー	슬라이스 −1로 복사
+複製到範圍…	Copy to range…	範囲にコピー…	범위로 복사…
+順時針 15°	Clockwise 15°	時計回り 15°	시계 방향 15°
+逆時針 15°	Counter-clockwise 15°	反時計回り 15°	반시계 방향 15°
+順時針 5°	Clockwise 5°	時計回り 5°	시계 방향 5°
+逆時針 5°	Counter-clockwise 5°	反時計回り 5°	반시계 방향 5°
+順時針 90°	Clockwise 90°	時計回り 90°	시계 방향 90°
+逆時針 90°	Counter-clockwise 90°	反時計回り 90°	반시계 방향 90°
+指定角度…	Specify angle…	角度を指定…	각도 지정…
+變換此層	Transform this slice	このスライスを変形	이 슬라이스 변형
+左右翻轉	Flip horizontally	左右反転	좌우 반전
+上下翻轉	Flip vertically	上下反転	상하 반전
+順時針轉 90°（正方形畫布）	Rotate 90° clockwise (square canvas)	時計回りに90°回転（正方形のキャンバス）	시계 방향 90° 회전 (정사각형 캔버스)
+逆時針轉 90°（正方形畫布）	Rotate 90° counter-clockwise (square canvas)	反時計回りに90°回転（正方形のキャンバス）	반시계 방향 90° 회전 (정사각형 캔버스)
+旋轉 180°	Rotate 180°	180°回転	180° 회전
+平移…	Shift…	平行移動…	이동…
+變換目前圖層的所有切片	Transform all slices of the current layer	現在のレイヤーのすべてのスライスを変形	현재 레이어의 모든 슬라이스 변형
+圖層(_L)	Layer(_L)	レイヤー(_L)	레이어(_L)
+新增圖層	New layer	新規レイヤー	새 레이어
+刪除圖層	Delete layer	レイヤーを削除	레이어 삭제
+上移一層	Move up one	1つ上へ	한 칸 위로
+下移一層	Move down one	1つ下へ	한 칸 아래로
+目前圖層疊到下面那一層上，合成一層（所有幀）	Lay the current layer onto the one below and combine them into one layer (all frames)	現在のレイヤーを下のレイヤーに重ねて1つに結合します（全フレーム）	현재 레이어를 아래 레이어 위에 겹쳐 하나로 합칩니다 (모든 프레임)
+向下合併	Merge down	下のレイヤーに結合	아래로 병합
+把所有看得見的圖層疊成一個圖層；隱藏的圖層會被丟掉	Stack all visible layers into one layer; hidden layers are discarded	表示中のレイヤーをすべて重ねて1つにします。非表示のレイヤーは破棄されます	보이는 레이어를 모두 겹쳐 하나로 만듭니다. 숨긴 레이어는 버려집니다
+匯入檔案成圖層…	Import file as layer…	ファイルをレイヤーとしてインポート…	파일을 레이어로 가져오기…
+把另一個 .pstk（組件）讀進來，放在目前圖層上方成為新圖層：尺寸不同以中心對齊，顏色對應到目前的調色盤。之後可以用「移動圖層內容」或 3D 魔術棒把它拼到位置，再向下合併。	Read another .pstk (a component) and put it above the current layer as a new layer: if the sizes differ it is centred, and its colours are mapped to the current palette. Afterwards you can place it with "Move layer content" or the 3D magic wand, then merge it down.	別の .pstk（コンポーネント）を読み込み、現在のレイヤーの上に新しいレイヤーとして置きます。サイズが違う場合は中央揃えになり、色は現在のパレットに割り当てられます。そのあと「レイヤーの内容を移動」や3Dマジックワンドで位置を合わせ、下のレイヤーに結合できます。	다른 .pstk(구성 요소)를 읽어 현재 레이어 위에 새 레이어로 놓습니다. 크기가 다르면 가운데 맞춤이 되고 색은 현재 팔레트에 대응됩니다. 이후 「레이어 내용 이동」이나 3D 마술봉으로 위치를 맞춘 뒤 아래로 병합할 수 있습니다.
+移動圖層內容…	Move layer content…	レイヤーの内容を移動…	레이어 내용 이동…
+把目前圖層的所有體素整塊平移 X／Y／Z 格（只動這一幀或所有幀）	Shift all voxels of the current layer by X/Y/Z cells as one block (this frame only, or all frames)	現在のレイヤーのボクセルをすべて X／Y／Z セル分まとめて平行移動（このフレームのみ、または全フレーム）	현재 레이어의 모든 복셀을 X/Y/Z칸만큼 한 덩어리로 이동 (이 프레임만 또는 모든 프레임)
+部件抽到新圖層	Move part to new layer	パーツを新規レイヤーへ	파트를 새 레이어로
+把 3D 魔術棒選到的部件抽到新圖層	Move the part selected with the 3D magic wand to a new layer	3Dマジックワンドで選択したパーツを新規レイヤーへ移す	3D 마술봉으로 선택한 파트를 새 레이어로 옮김
+工具(_T)	Tools(_T)	ツール(_T)	도구(_T)
+調色盤(_P)	Palette(_P)	パレット(_P)	팔레트(_P)
+把所有幀都沒有任何體素用到的顏色從調色盤拿掉，空出色格。可以 Ctrl+Z 復原。	Remove colours that no voxel in any frame uses from the palette, freeing slots. Ctrl+Z undoes it.	どのフレームのボクセルも使っていない色をパレットから取り除き、スロットを空けます。Ctrl+Z で元に戻せます。	어떤 프레임의 복셀도 쓰지 않는 색을 팔레트에서 빼서 칸을 비웁니다. Ctrl+Z로 되돌릴 수 있습니다.
+調色盤裡完全相同的顏色只留一格，其他格的體素改指向它。可以 Ctrl+Z 復原。	Keep only one slot for identical colours in the palette; voxels in the other slots are pointed to it. Ctrl+Z undoes it.	パレット内の全く同じ色を1つのスロットだけ残し、他のスロットのボクセルをそこへ付け替えます。Ctrl+Z で元に戻せます。	팔레트에서 완전히 같은 색은 한 칸만 남기고 다른 칸의 복셀은 그쪽을 가리키게 합니다. Ctrl+Z로 되돌릴 수 있습니다.
+匯入調色盤…	Import palette…	パレットをインポート…	팔레트 가져오기…
+讀取 GIMP 調色盤（.gpl）：新的顏色附加進空的色格，已經有的略過，不會動到現有的顏色與模型。	Read a GIMP palette (.gpl): new colours are added to empty slots and existing ones are skipped; existing colours and the model are untouched.	GIMPパレット（.gpl）を読み込みます。新しい色は空きスロットに追加し、既にある色はスキップします。既存の色とモデルは変更されません。	GIMP 팔레트(.gpl)를 읽습니다. 새 색은 빈 칸에 추가하고 이미 있는 색은 건너뛰며 기존 색과 모델은 건드리지 않습니다.
+匯出調色盤…	Export palette…	パレットをエクスポート…	팔레트 내보내기…
+把目前調色盤的所有顏色存成 GIMP 調色盤（.gpl）。半透明顏色的透明度記在名稱裡（a=128）。	Save all colours of the current palette as a GIMP palette (.gpl). The opacity of semi-transparent colours is recorded in the name (a=128).	現在のパレットの全色をGIMPパレット（.gpl）として保存します。半透明色の不透明度は名前に記録されます（a=128）。	현재 팔레트의 모든 색을 GIMP 팔레트(.gpl)로 저장합니다. 반투명 색의 불투명도는 이름에 기록됩니다 (a=128).
+語言 / Language	語言 / Language	語言 / Language	語言 / Language
+說明(_H)	Help(_H)	ヘルプ(_H)	도움말(_H)
+使用教學…	User guide…	使い方ガイド…	사용 안내…
+功能總覽（目前有哪些功能）、快速上手、建議做法、快捷鍵與常見問題。	Feature overview (what the tool can do), quick start, recommended workflow, shortcuts and FAQ.	機能一覧（今できること）、クイックスタート、おすすめの手順、ショートカット、よくある質問。	기능 개요(현재 있는 기능), 빠른 시작, 권장 작업 방식, 단축키, 자주 묻는 질문.
+時間軸（幀與播放）	Timeline (frames and playback)	タイムライン（フレームと再生）	타임라인 (프레임과 재생)
+點一下收起或展開：收起時只剩這一條，編輯畫布與預覽可以用掉下面的空間。空白鍵播放、, . 切換幀仍然有效。	Click to collapse or expand: when collapsed only this bar is left, and the edit canvas and preview can use the space below. Space to play and , . to change frames still work.	クリックで折りたたみ／展開: 折りたたむとこのバーだけが残り、編集キャンバスとプレビューが下の領域を使えます。スペースキーでの再生や , . でのフレーム切替は引き続き使えます。	클릭하면 접기/펼치기: 접으면 이 막대만 남고 편집 캔버스와 미리보기가 아래 공간을 쓸 수 있습니다. 스페이스 재생과 , . 프레임 전환은 그대로 작동합니다.
+▶ 播放 (Space)	▶ Play (Space)	▶ 再生 (Space)	▶ 재생 (Space)
+速度	Speed	速度	속도
+新增空白幀	Add blank frame	空のフレームを追加	빈 프레임 추가
+複製此幀	Duplicate frame	フレームを複製	프레임 복제
+刪除此幀	Delete frame	フレームを削除	프레임 삭제
+◀ 左移	◀ Move left	◀ 左へ移動	◀ 왼쪽으로
+右移 ▶	Move right ▶	右へ移動 ▶	오른쪽으로 ▶
+（, . 切換上一幀／下一幀）	(, . = previous / next frame)	（, . = 前／次のフレーム）	(, . = 이전/다음 프레임)
+＋	＋	＋	＋
+在目前圖層上方新增一個空白圖層（Ctrl+Shift+N）。第一次新增時，原本的內容變成「圖層 1」。	Add a blank layer above the current one (Ctrl+Shift+N). The first time, the existing content becomes "Layer 1".	現在のレイヤーの上に空のレイヤーを追加します（Ctrl+Shift+N）。初回は元の内容が「レイヤー 1」になります。	현재 레이어 위에 빈 레이어를 추가합니다 (Ctrl+Shift+N). 처음 추가하면 기존 내용이 「레이어 1」이 됩니다.
+複製目前圖層（連同每一幀的內容），放在它的正上方	Duplicate the current layer (with every frame's content), placing it directly above	現在のレイヤーを（全フレームの内容ごと）複製し、すぐ上に置きます	현재 레이어를 (모든 프레임의 내용과 함께) 복제해 바로 위에 놓습니다
+刪除目前圖層（至少要留一個；可以 Ctrl+Z 復原）	Delete the current layer (at least one must remain; Ctrl+Z undoes it)	現在のレイヤーを削除します（最低1つは残す必要があります。Ctrl+Z で元に戻せます）	현재 레이어를 삭제합니다 (최소 하나는 남아야 함, Ctrl+Z로 되돌릴 수 있음)
+把目前圖層往上移一格（蓋住更多東西）	Move the current layer up one (it covers more)	現在のレイヤーを1つ上へ（より多くを覆います）	현재 레이어를 한 칸 위로 (더 많이 덮음)
+把目前圖層往下移一格	Move the current layer down one	現在のレイヤーを1つ下へ	현재 레이어를 한 칸 아래로
+向下合併：目前圖層疊到它下面那一層上，兩層變成一層（所有幀）	Merge down: lay the current layer onto the one below, making the two one layer (all frames)	下のレイヤーに結合: 現在のレイヤーを下のレイヤーに重ねて2つを1つにします（全フレーム）	아래로 병합: 현재 레이어를 아래 레이어 위에 겹쳐 두 레이어를 하나로 만듭니다 (모든 프레임)
+圖層清單（最上面的圖層蓋住下面的）。點一列＝編輯那個圖層；左邊的勾＝顯示／隱藏；連點兩下＝改名。畫筆、填滿、選取、匯入圖片、膨脹都作用在目前圖層。	Layer list (upper layers cover lower ones). Click a row = edit that layer; the tick on the left = show / hide; double-click = rename. The pencil, fill, selection, image import and inflate all act on the current layer.	レイヤー一覧（上のレイヤーが下を覆います）。行をクリック＝そのレイヤーを編集、左のチェック＝表示／非表示、ダブルクリック＝名前の変更。ペン・塗りつぶし・選択・画像インポート・膨張はすべて現在のレイヤーに作用します。	레이어 목록 (위 레이어가 아래를 덮음). 행 클릭 = 그 레이어 편집, 왼쪽 체크 = 표시/숨김, 더블 클릭 = 이름 바꾸기. 연필, 채우기, 선택, 이미지 가져오기, 부풀리기는 모두 현재 레이어에 적용됩니다.
+視角（編輯畫布）	View (edit canvas)	ビュー（編集キャンバス）	시점 (편집 캔버스)
+頂部 (1)	Top (1)	上面 (1)	위 (1)
+底部 (2)	Bottom (2)	下面 (2)	아래 (2)
+正面 (3)	Front (3)	正面 (3)	정면 (3)
+背面 (4)	Back (4)	背面 (4)	후면 (4)
+左側 (5)	Left (5)	左側面 (5)	왼쪽 (5)
+右側 (6)	Right (6)	右側面 (6)	오른쪽 (6)
+顏色（RGBA）與調色盤	Colour (RGBA) and palette	色（RGBA）とパレット	색(RGBA)과 팔레트
+方框：左右 = R、上下 = G；第一條 = B、第二條 = A（透明度）。點或拖曳取色，也可以直接輸入 0~255。	Square: left-right = R, up-down = G; first bar = B, second bar = A (opacity). Click or drag to pick, or type 0–255 directly.	四角: 左右 = R、上下 = G。1本目 = B、2本目 = A（不透明度）。クリックまたはドラッグで選択、0～255 を直接入力することもできます。	사각형: 좌우 = R, 상하 = G, 첫 번째 막대 = B, 두 번째 막대 = A(불투명도). 클릭하거나 드래그해서 고르며 0~255를 직접 입력해도 됩니다.
+調色盤（點選取色；畫下去才會記進調色盤）	Palette (click to pick; a colour is only recorded in the palette once you paint with it)	パレット（クリックで選択。描いたときに初めてパレットに記録されます）	팔레트 (클릭해서 선택, 칠해야 비로소 팔레트에 기록됨)
+工具	Tools	ツール	도구
+畫筆	Pencil	ペン	연필
+橡皮擦	Eraser	消しゴム	지우개
+選取	Select	選択	선택
+拖曳拉出選取框（厚度 = 筆刷深度）。Ctrl+C 複製、Ctrl+X 剪下、Ctrl+V 貼上、Delete 刪除；在選取框內拖曳可以搬移。	Drag out a selection box (thickness = brush depth). Ctrl+C copy, Ctrl+X cut, Ctrl+V paste, Delete delete; drag inside the box to move it.	ドラッグして選択枠を作ります（厚み = ブラシの深さ）。Ctrl+C コピー、Ctrl+X 切り取り、Ctrl+V 貼り付け、Delete 削除。枠の中をドラッグすると移動できます。	드래그해서 선택 상자를 만듭니다 (두께 = 브러시 깊이). Ctrl+C 복사, Ctrl+X 잘라내기, Ctrl+V 붙여넣기, Delete 삭제. 상자 안을 드래그하면 이동됩니다.
+按下設起點、拖曳到終點再放開。用目前的筆刷（形狀／粗細／深度／立體筆刷）畫；左鍵畫目前顏色、右鍵清除。按住 Shift 限制成水平／垂直／45°。Esc 取消。快捷鍵 L。	Press to set the start, drag to the end and release. Draws with the current brush (shape / size / depth / 3D brush); left button draws the current colour, right button erases. Hold Shift to constrain to horizontal / vertical / 45°. Esc cancels. Shortcut L.	押して始点を決め、終点までドラッグして離します。現在のブラシ（形状／太さ／深さ／立体ブラシ）で描画。左ボタン＝現在の色、右ボタン＝消去。Shift で水平／垂直／45°に制限。Esc で取り消し。ショートカット L。	눌러서 시작점을 정하고 끝점까지 드래그한 뒤 놓습니다. 현재 브러시(모양/굵기/깊이/입체 브러시)로 그리며 왼쪽 버튼은 현재 색, 오른쪽 버튼은 지우기. Shift를 누르면 수평/수직/45°로 제한. Esc로 취소. 단축키 L.
+拖曳拉出矩形的對角再放開；預設只畫外框，勾「填滿形狀」畫實心。按住 Shift 變正方形。左鍵畫、右鍵清除。Esc 取消。快捷鍵 R。	Drag out the corners of a rectangle and release; by default only the outline is drawn, tick "Fill shape" for solid. Hold Shift for a square. Left draws, right erases. Esc cancels. Shortcut R.	ドラッグして長方形の対角を決め、離して描画。既定では枠線のみで、「図形を塗りつぶす」にチェックすると中まで塗ります。Shift で正方形。左で描画、右で消去。Esc で取り消し。ショートカット R。	드래그해서 사각형의 대각선을 정하고 놓습니다. 기본은 테두리만 그리며 「도형 채우기」를 체크하면 속까지 칠합니다. Shift는 정사각형. 왼쪽은 그리기, 오른쪽은 지우기. Esc로 취소. 단축키 R.
+拖曳拉出橢圓的外接矩形再放開；預設只畫外圈，勾「填滿形狀」畫實心。按住 Shift 變正圓。左鍵畫、右鍵清除。Esc 取消。快捷鍵 E。	Drag out the bounding rectangle of an ellipse and release; by default only the outline is drawn, tick "Fill shape" for solid. Hold Shift for a circle. Left draws, right erases. Esc cancels. Shortcut E.	ドラッグして楕円の外接長方形を決め、離して描画。既定では輪郭のみで、「図形を塗りつぶす」にチェックすると中まで塗ります。Shift で正円。左で描画、右で消去。Esc で取り消し。ショートカット E。	드래그해서 타원의 바깥 사각형을 정하고 놓습니다. 기본은 테두리만 그리며 「도형 채우기」를 체크하면 속까지 칠합니다. Shift는 정원. 왼쪽은 그리기, 오른쪽은 지우기. Esc로 취소. 단축키 E.
+點畫布上的體素，把它的顏色變成畫筆顏色（點到空白格＝選透明色）。按著拖曳可以連續取色。快捷鍵 I。	Click a voxel on the canvas to make its colour the brush colour (clicking an empty cell picks the transparent colour). Hold and drag to keep picking. Shortcut I.	キャンバス上のボクセルをクリックして、その色をブラシの色にします（空白セルをクリックすると透明色）。押したままドラッグで連続して取得。ショートカット I。	캔버스의 복셀을 클릭하면 그 색이 브러시 색이 됩니다 (빈 칸을 클릭하면 투명색). 누른 채 드래그하면 계속 추출됩니다. 단축키 I.
+點一下選取目前這一層裡「相連的同色區域」（點空白處就選相連的空白）。Shift+點＝加入選取、Ctrl+點＝從選取中減去。厚度 = 筆刷深度。選好之後可以複製、剪下、刪除，或在選取區上拖曳搬移。	Click to select the "connected region of the same colour" in the current slice (clicking empty space selects the connected empty area). Shift+click = add to the selection, Ctrl+click = subtract. Thickness = brush depth. Once selected you can copy, cut, delete, or drag the selection to move it.	クリックすると、現在のスライス内の「つながった同じ色の領域」を選択します（空白をクリックするとつながった空白を選択）。Shift+クリック＝選択に追加、Ctrl+クリック＝選択から除外。厚み = ブラシの深さ。選択後はコピー・切り取り・削除ができ、選択範囲をドラッグして移動することもできます。	클릭하면 현재 슬라이스에서 「이어진 같은 색 영역」을 선택합니다 (빈 곳을 클릭하면 이어진 빈 영역 선택). Shift+클릭 = 선택에 추가, Ctrl+클릭 = 선택에서 제외. 두께 = 브러시 깊이. 선택 후 복사, 잘라내기, 삭제하거나 선택 영역을 드래그해 옮길 수 있습니다.
+點一個體素，選出跟它「立體相連」的整塊部件（預設所有有顏色的相連體素；可以改成只選同色）。選好後用方向鍵或下面的按鈕整塊搬動，或抽到新圖層，拼到別的地方。Shift+點＝加選、Ctrl+點＝減選。	Click a voxel to select the whole part that is connected to it in 3D (by default all connected coloured voxels; can be changed to same colour only). Then move it as a block with the arrow keys or the buttons below, or move it to a new layer and assemble it elsewhere. Shift+click = add, Ctrl+click = subtract.	ボクセルをクリックすると、それと「立体的につながった」パーツ全体を選択します（既定ではつながった色付きボクセルすべて。同色のみに変更可）。選択後は矢印キーか下のボタンで塊ごと動かしたり、新しいレイヤーに移して別の場所に組み立てたりできます。Shift+クリック＝追加、Ctrl+クリック＝除外。	복셀을 클릭하면 3D로 「이어진」 파트 전체를 선택합니다 (기본은 이어진 색 있는 복셀 전부, 같은 색만으로 바꿀 수 있음). 선택 후 방향키나 아래 버튼으로 덩어리째 옮기거나 새 레이어로 옮겨 다른 곳에 조립할 수 있습니다. Shift+클릭 = 추가, Ctrl+클릭 = 제외.
+左鍵畫／填色、右鍵擦／清除該區	Left button draws / fills, right button erases / clears the region	左ボタンで描画／塗りつぶし、右ボタンで消去／領域クリア	왼쪽 버튼은 그리기/채우기, 오른쪽 버튼은 지우기/영역 비우기
+3D 魔術棒（部件）	3D magic wand (parts)	3Dマジックワンド（パーツ）	3D 마술봉 (파트)
+只選同色	Same colour only	同色のみ	같은 색만
+勾選：只選跟點到的體素同色而且相連的；不勾：選所有相連的有顏色體素（不管顏色）	Ticked: only voxels of the same colour that are connected to the clicked one; unticked: all connected coloured voxels (any colour)	オン: クリックしたボクセルと同じ色でつながったものだけ。オフ: つながった色付きボクセルすべて（色は問わない）	체크: 클릭한 복셀과 같은 색으로 이어진 것만, 해제: 이어진 색 있는 복셀 전부 (색 무관)
+斜角相連也算（26 連通）	Diagonals count as connected (26-connected)	斜めも接続とみなす（26連結）	대각선도 이어진 것으로 봄 (26 연결)
+預設只算共用一個面的鄰居（6 連通）；勾選後共用邊或角的斜向鄰居也算相連	By default only neighbours sharing a face count (6-connected); when ticked, diagonal neighbours sharing an edge or corner also count as connected	既定では面を共有する隣だけが対象です（6連結）。オンにすると辺や角を共有する斜めの隣も接続とみなします	기본은 면을 공유하는 이웃만 이어진 것으로 봅니다 (6 연결). 체크하면 모서리나 꼭짓점을 공유하는 대각선 이웃도 이어진 것으로 봅니다
+整塊往左一格（方向鍵 ←）	Move the whole block one cell left (arrow key ←)	塊全体を1セル左へ（矢印キー ←）	덩어리 전체를 한 칸 왼쪽으로 (방향키 ←)
+整塊往右一格（方向鍵 →）	Move the whole block one cell right (arrow key →)	塊全体を1セル右へ（矢印キー →）	덩어리 전체를 한 칸 오른쪽으로 (방향키 →)
+整塊往上一格（方向鍵 ↑）	Move the whole block one cell up (arrow key ↑)	塊全体を1セル上へ（矢印キー ↑）	덩어리 전체를 한 칸 위로 (방향키 ↑)
+整塊往下一格（方向鍵 ↓）	Move the whole block one cell down (arrow key ↓)	塊全体を1セル下へ（矢印キー ↓）	덩어리 전체를 한 칸 아래로 (방향키 ↓)
+整塊往觀看者的方向移一片（Ctrl+↑），切片滑桿會跟著	Move the whole block one slice toward the viewer (Ctrl+↑); the slice slider follows	塊全体を見る側へ1スライス移動（Ctrl+↑）。スライススライダーも追従します	덩어리 전체를 보는 쪽으로 한 슬라이스 이동 (Ctrl+↑), 슬라이스 슬라이더도 따라갑니다
+往前	Forward	手前へ	앞으로
+整塊往遠離觀看者的方向移一片（Ctrl+↓）	Move the whole block one slice away from the viewer (Ctrl+↓)	塊全体を見る側から遠ざける方向へ1スライス移動（Ctrl+↓）	덩어리 전체를 보는 쪽에서 멀어지는 방향으로 한 슬라이스 이동 (Ctrl+↓)
+往後	Back	奥へ	뒤로
+把選到的部件從目前圖層剪下來，放進它上面的新圖層（選取跟著過去）。拼好之後再用「向下合併」合起來。	Cut the selected part out of the current layer and put it in a new layer above it (the selection follows). When it is assembled, use "Merge down" to combine it.	選択したパーツを現在のレイヤーから切り出し、その上の新しいレイヤーに入れます（選択も一緒に移ります）。組み上がったら「下のレイヤーに結合」で合体させます。	선택한 파트를 현재 레이어에서 잘라내어 그 위의 새 레이어에 넣습니다 (선택도 따라감). 조립이 끝나면 「아래로 병합」으로 합칩니다.
+抽到新圖層	Move to new layer	新規レイヤーへ移動	새 레이어로 이동
+刪除選取	Delete selection	選択を削除	선택 삭제
+刪除選到的體素（Delete）	Delete the selected voxels (Delete)	選択したボクセルを削除（Delete）	선택한 복셀 삭제 (Delete)
+填滿形狀（矩形／橢圓）	Fill shapes (rectangle / ellipse)	図形を塗りつぶす（長方形／楕円）	도형 채우기 (사각형/타원)
+矩形與橢圓工具用：勾選 = 畫實心，不勾 = 只畫外框。	For the rectangle and ellipse tools: ticked = draw solid, unticked = outline only.	長方形・楕円ツール用: オン = 塗りつぶし、オフ = 輪郭のみ。	사각형/타원 도구용: 체크 = 속까지 칠함, 해제 = 테두리만.
+立體填滿	3D fill	3D塗りつぶし	3D 채우기
+勾選：換掉整個體積中連通的同色實心塊（點空白格不會動）。不勾：只填目前切片裡連通的同色區域。	Ticked: replaces the connected solid block of the same colour in the whole volume (clicking an empty cell does nothing). Unticked: fills only the connected same-colour region in the current slice.	オン: ボリューム全体でつながった同色の塊を置き換えます（空白セルをクリックしても何も起きません）。オフ: 現在のスライス内でつながった同色領域だけを塗ります。	체크: 전체 부피에서 이어진 같은 색 덩어리를 바꿉니다 (빈 칸을 클릭해도 아무 일 없음). 해제: 현재 슬라이스에서 이어진 같은 색 영역만 채웁니다.
+全域同色	Global same colour	全体の同色	전체 같은 색
+魔術棒用：勾選＝選取目前這一層裡「所有」同色的格子（不要求相連）。不勾＝只選跟點到的格子相連的同色區域。	For the magic wand: ticked = select ALL cells of the same colour in the current slice (connection not required). Unticked = only the same-colour region connected to the clicked cell.	マジックワンド用: オン＝現在のスライス内の同色のセルを「すべて」選択（つながっている必要なし）。オフ＝クリックしたセルとつながった同色の領域だけ。	마술봉용: 체크 = 현재 슬라이스에서 같은 색 칸을 「전부」 선택 (이어져 있지 않아도 됨). 해제 = 클릭한 칸과 이어진 같은 색 영역만.
+魔術棒容許誤差	Magic wand tolerance	マジックワンドの許容差	마술봉 허용 오차
+魔術棒用：0 = 只選完全同色。數字越大，顏色越接近的也一起選進來（R、G、B、A 四個通道都跟點到的顏色相差不超過這個數字）。透明格只跟透明格算同色。	For the magic wand: 0 = only exactly the same colour. The larger the number, the more similar colours are also selected (each of R, G, B and A differs from the clicked colour by no more than this number). Transparent cells only count as the same as transparent cells.	マジックワンド用: 0 = 完全に同じ色だけ。数字が大きいほど近い色も選択されます（R・G・B・A の各チャンネルがクリックした色との差でこの数以内）。透明セルは透明セルとだけ同じ色とみなされます。	마술봉용: 0 = 정확히 같은 색만. 숫자가 클수록 비슷한 색도 함께 선택됩니다 (R, G, B, A 각 채널이 클릭한 색과 이 숫자 이내로 차이남). 투명 칸은 투명 칸하고만 같은 색으로 봅니다.
+魔術棒羽化（格）	Magic wand feather (cells)	マジックワンドのぼかし（セル）	마술봉 페더 (칸)
+魔術棒用：0 = 硬邊。N = 選取區邊緣「往內」N 格漸變（最外圈只選到一小部分，越往內越多）。刪除時邊緣只淡掉一部分，複製／剪下／搬移／貼上時邊緣以半透明混進底下原有的顏色（會用掉調色盤的空格）。選取當下就決定，之後再拉滑桿不影響已選好的區域。	For the magic wand: 0 = hard edge. N = the selection edge fades "inward" over N cells (the outermost ring is only slightly selected, more toward the inside). When deleting, the edge is only partly faded; when copying / cutting / moving / pasting, the edge is blended into the colours underneath as semi-transparent (this uses free palette slots). It is decided at the moment of selection; moving the slider later does not affect an already-made selection.	マジックワンド用: 0 = ぼかしなし。N = 選択範囲の縁が「内側へ」N セルかけて徐々に変化します（一番外側はわずかに選択され、内側ほど強くなります）。削除では縁が部分的にだけ薄くなり、コピー／切り取り／移動／貼り付けでは縁が半透明で下の色に混ざります（パレットの空きスロットを使います）。選択した時点で決まり、後からスライダーを動かしても選択済みの範囲には影響しません。	마술봉용: 0 = 딱딱한 가장자리. N = 선택 영역 가장자리가 「안쪽으로」 N칸에 걸쳐 점점 바뀝니다 (가장 바깥쪽은 조금만 선택되고 안쪽일수록 많아짐). 삭제할 때는 가장자리가 일부만 옅어지고, 복사/잘라내기/이동/붙여넣기에서는 가장자리가 반투명으로 아래 색과 섞입니다 (팔레트 빈 칸을 사용). 선택하는 순간 정해지며 나중에 슬라이더를 움직여도 이미 선택한 영역에는 영향이 없습니다.
+筆刷	Brush	ブラシ	브러시
+以模型正中央為軸（用模型的 X／Y／Z 軸，任何視角都一致）。開啟後，畫筆、橡皮擦（含立體筆刷）與填滿改到的每一格，都會在對稱的位置也改成同樣的值；可以同時開好幾個軸。選取、貼上不受影響。畫布上的粉紅虛線是落在這個視角平面上的對稱軸，粉紅框是對稱位置的游標。	Mirrors around the exact centre of the model (using the model's X / Y / Z axes, the same in every view). When on, every cell changed by the pencil, eraser (including 3D brushes) and fill is also set to the same value at the mirrored position; several axes can be on at once. Selection and paste are not affected. The pink dashed lines on the canvas are the mirror axes lying in this view's plane, and the pink box is the cursor at the mirrored position.	モデルの中心を軸にミラーします（モデルの X／Y／Z 軸基準で、どのビューでも同じ）。オンにすると、ペン・消しゴム（立体ブラシ含む）・塗りつぶしで変更したセルは、対称の位置でも同じ値に変更されます。複数の軸を同時にオンにできます。選択と貼り付けには影響しません。キャンバス上のピンクの破線はこのビューの平面上にある対称軸、ピンクの枠は対称位置のカーソルです。	모델의 정중앙을 축으로 대칭합니다 (모델의 X/Y/Z 축 기준이라 어느 시점에서나 같음). 켜면 연필, 지우개(입체 브러시 포함), 채우기로 바꾼 칸이 대칭 위치에서도 같은 값으로 바뀝니다. 여러 축을 동시에 켤 수 있습니다. 선택과 붙여넣기에는 영향이 없습니다. 캔버스의 분홍 점선은 이 시점의 평면에 놓인 대칭 축이고 분홍 상자는 대칭 위치의 커서입니다.
+X 軸對稱（長的方向左右對稱）	Mirror on X (left-right symmetric along the length)	X軸ミラー（長さ方向で左右対称）	X축 대칭 (길이 방향 좌우 대칭)
+Y 軸對稱（寬的方向前後對稱）	Mirror on Y (front-back symmetric along the width)	Y軸ミラー（幅方向で前後対称）	Y축 대칭 (너비 방향 앞뒤 대칭)
+Z 軸對稱（高的方向上下對稱）	Mirror on Z (up-down symmetric along the height)	Z軸ミラー（高さ方向で上下対称）	Z축 대칭 (높이 방향 위아래 대칭)
+形狀	Shape	形状	모양
+方形	Square	四角	사각형
+平面方形，粗細 = 邊長。再用「深度」往後面疊幾層。	Flat square, size = side length. Use "Depth" to stack more slices behind.	平面の四角形、太さ = 一辺の長さ。「深さ」で後ろに何スライス重ねるかを指定します。	평면 사각형, 굵기 = 한 변의 길이. 「깊이」로 뒤에 몇 슬라이스를 쌓을지 정합니다.
+圓形	Circle	円	원
+平面圓形，粗細 = 直徑。再用「深度」往後面疊幾層。	Flat circle, size = diameter. Use "Depth" to stack more slices behind.	平面の円、太さ = 直径。「深さ」で後ろに何スライス重ねるかを指定します。	평면 원, 굵기 = 지름. 「깊이」로 뒤에 몇 슬라이스를 쌓을지 정합니다.
+立方體	Cube	立方体	정육면체
+立體筆刷：以點到的格子與目前這一層為中心，粗細 = 邊長（左右、上下、前後都是這麼多格）。不使用深度。超出模型的部分自動裁掉。	3D brush: centred on the clicked cell and the current slice; size = side length (this many cells left-right, up-down and front-back). Depth is not used. Anything outside the model is cropped automatically.	立体ブラシ: クリックしたセルと現在のスライスを中心に、太さ = 一辺の長さ（左右・上下・前後とも同じセル数）。深さは使いません。モデルの外にはみ出す部分は自動でカットされます。	입체 브러시: 클릭한 칸과 현재 슬라이스를 중심으로 굵기 = 한 변의 길이 (좌우, 상하, 앞뒤 모두 같은 칸 수). 깊이는 쓰지 않습니다. 모델 밖으로 나간 부분은 자동으로 잘립니다.
+橢圓球	Ellipsoid	楕円体	타원체
+立體筆刷：粗細 = 畫布上（左右、上下）的半徑，視線方向的總長 = 筆刷深度。深度 = 2×半徑+1 時就是球，比較短是扁的、比較長是拉長的橄欖球形。以點到的格子與目前這一層為中心。	3D brush: size = the radius on the canvas (left-right, up-down), total length along the line of sight = brush depth. Depth = 2×radius+1 gives a ball; shorter is flattened, longer is a stretched rugby-ball shape. Centred on the clicked cell and the current slice.	立体ブラシ: 太さ = キャンバス上（左右・上下）の半径、視線方向の全長 = ブラシの深さ。深さ = 2×半径+1 なら球、短いと平たく、長いとラグビーボールのように伸びます。クリックしたセルと現在のスライスが中心です。	입체 브러시: 굵기 = 캔버스 위(좌우, 상하)의 반지름, 시선 방향 전체 길이 = 브러시 깊이. 깊이 = 2×반지름+1이면 구, 짧으면 납작하고 길면 럭비공처럼 길쭉해집니다. 클릭한 칸과 현재 슬라이스가 중심입니다.
+彈簧	Spring	バネ	스프링
+立體筆刷：跟「螺旋」一樣的螺旋線，但線是粗的（線徑 3 格），所以每「半徑+6」層才轉一圈，圈與圈之間不會黏在一起。粗細 = 彈簧半徑，軸沿視線方向，總長 = 筆刷深度。	3D brush: the same helix as "Helix", but the wire is thick (3 cells), so it turns once every "radius+6" slices and the coils do not stick together. Size = spring radius, axis along the line of sight, total length = brush depth.	立体ブラシ: 「螺旋」と同じ螺旋ですが線が太い（線径 3 セル）ので、「半径+6」スライスごとに1回転し、巻き同士がくっつきません。太さ = バネの半径、軸は視線方向、全長 = ブラシの深さ。	입체 브러시: 「나선」과 같은 나선이지만 선이 굵어서(선 지름 3칸) 「반지름+6」 슬라이스마다 한 바퀴 돌며 고리끼리 달라붙지 않습니다. 굵기 = 스프링 반지름, 축은 시선 방향, 전체 길이 = 브러시 깊이.
+螺旋	Helix	螺旋	나선
+立體筆刷：一條 1 個體素粗的連續螺旋線。粗細 = 螺旋半徑，軸沿視線方向（以點到的格子為軸），總長 = 筆刷深度，每「半徑+4」層轉一圈。從最後面那一層的右邊開始，往前面在畫布上順時針轉。	3D brush: one continuous helix 1 voxel thick. Size = helix radius, axis along the line of sight (through the clicked cell), total length = brush depth, one turn every "radius+4" slices. It starts at the right side of the rearmost slice and turns clockwise on the canvas toward the front.	立体ブラシ: 太さ1ボクセルの連続した螺旋。太さ = 螺旋の半径、軸は視線方向（クリックしたセルを通る）、全長 = ブラシの深さ、「半径+4」スライスごとに1回転。一番奥のスライスの右側から始まり、手前に向かってキャンバス上で時計回りに回ります。	입체 브러시: 굵기 1복셀의 이어진 나선. 굵기 = 나선 반지름, 축은 시선 방향 (클릭한 칸을 지남), 전체 길이 = 브러시 깊이, 「반지름+4」 슬라이스마다 한 바퀴. 맨 뒤 슬라이스의 오른쪽에서 시작해 앞쪽으로 캔버스에서 시계 방향으로 돕니다.
+圓環	Torus	トーラス	토러스
+立體筆刷（甜甜圈）：粗細 = 環的半徑（點到的格子是正中央的洞），管子的粗細（管徑）= 筆刷深度，也就是沿視線方向厚幾層。環平躺在畫布上；深度 1 = 一圈平的環。以目前這一層為中心。	3D brush (donut): size = ring radius (the clicked cell is the hole in the middle); the tube thickness (tube diameter) = brush depth, i.e. how many slices thick along the line of sight. The ring lies flat on the canvas; depth 1 = one flat ring. Centred on the current slice.	立体ブラシ（ドーナツ）: 太さ = リングの半径（クリックしたセルが中央の穴）、チューブの太さ（管径）= ブラシの深さ（視線方向に何スライス分の厚みか）。リングはキャンバスに平らに置かれ、深さ 1 = 平らなリング1周。現在のスライスが中心です。	입체 브러시 (도넛): 굵기 = 고리 반지름 (클릭한 칸이 가운데 구멍), 관의 굵기(관 지름) = 브러시 깊이, 즉 시선 방향으로 몇 슬라이스 두께인지. 고리는 캔버스에 평평하게 놓이며 깊이 1 = 평평한 고리 한 줄. 현재 슬라이스가 중심입니다.
+金字塔	Pyramid	ピラミッド	피라미드
+立體筆刷：粗細 = 正方形底面的邊長，軸沿視線方向（垂直於畫布），長度 = 筆刷深度。底面在最後面（邊長最大），尖端朝向你（逐層變小）。以點到的格子與目前這一層為中心。	3D brush: size = side length of the square base, axis along the line of sight (perpendicular to the canvas), length = brush depth. The base is at the back (largest side) and the tip points toward you (shrinking slice by slice). Centred on the clicked cell and the current slice.	立体ブラシ: 太さ = 正方形の底面の一辺、軸は視線方向（キャンバスに垂直）、長さ = ブラシの深さ。底面が一番奥（辺が最大）、先端が手前を向きます（スライスごとに小さくなる）。クリックしたセルと現在のスライスが中心です。	입체 브러시: 굵기 = 정사각형 밑면의 한 변, 축은 시선 방향 (캔버스에 수직), 길이 = 브러시 깊이. 밑면은 맨 뒤(변이 가장 큼)에 있고 뾰족한 끝이 앞쪽을 향합니다 (슬라이스마다 작아짐). 클릭한 칸과 현재 슬라이스가 중심입니다.
+圓錐體	Cone	円錐	원뿔
+立體筆刷：粗細 = 底面半徑，軸沿視線方向（垂直於畫布），長度 = 筆刷深度。底面在最後面（半徑最大），尖端朝向你（逐層變小）。以點到的格子與目前這一層為中心。	3D brush: size = base radius, axis along the line of sight (perpendicular to the canvas), length = brush depth. The base is at the back (largest radius) and the tip points toward you (shrinking slice by slice). Centred on the clicked cell and the current slice.	立体ブラシ: 太さ = 底面の半径、軸は視線方向（キャンバスに垂直）、長さ = ブラシの深さ。底面が一番奥（半径が最大）、先端が手前を向きます（スライスごとに小さくなる）。クリックしたセルと現在のスライスが中心です。	입체 브러시: 굵기 = 밑면 반지름, 축은 시선 방향 (캔버스에 수직), 길이 = 브러시 깊이. 밑면은 맨 뒤(반지름이 가장 큼)에 있고 뾰족한 끝이 앞쪽을 향합니다 (슬라이스마다 작아짐). 클릭한 칸과 현재 슬라이스가 중심입니다.
+圓柱體	Cylinder	円柱	원기둥
+立體筆刷：粗細 = 半徑，軸沿視線方向（垂直於畫布），長度 = 筆刷深度；每一層都是同樣的圓盤、兩端是平的。以點到的格子與目前這一層為中心。	3D brush: size = radius, axis along the line of sight (perpendicular to the canvas), length = brush depth; every slice is the same disc and both ends are flat. Centred on the clicked cell and the current slice.	立体ブラシ: 太さ = 半径、軸は視線方向（キャンバスに垂直）、長さ = ブラシの深さ。どのスライスも同じ円盤で、両端は平らです。クリックしたセルと現在のスライスが中心です。	입체 브러시: 굵기 = 반지름, 축은 시선 방향 (캔버스에 수직), 길이 = 브러시 깊이. 모든 슬라이스가 같은 원판이고 양 끝은 평평합니다. 클릭한 칸과 현재 슬라이스가 중심입니다.
+膠囊型	Capsule	カプセル	캡슐
+立體筆刷：粗細 = 半徑，軸沿視線方向（垂直於畫布），軸向總長 = 筆刷深度（含兩端半球；深度比球的直徑還短時就是一顆球）。以點到的格子與目前這一層為中心。	3D brush: size = radius, axis along the line of sight (perpendicular to the canvas), total axial length = brush depth (including the two hemispheres; if the depth is shorter than the ball's diameter it is just a ball). Centred on the clicked cell and the current slice.	立体ブラシ: 太さ = 半径、軸は視線方向（キャンバスに垂直）、軸方向の全長 = ブラシの深さ（両端の半球を含む。深さが球の直径より短いときは球になります）。クリックしたセルと現在のスライスが中心です。	입체 브러시: 굵기 = 반지름, 축은 시선 방향 (캔버스에 수직), 축 방향 전체 길이 = 브러시 깊이 (양 끝 반구 포함, 깊이가 구의 지름보다 짧으면 그냥 구가 됨). 클릭한 칸과 현재 슬라이스가 중심입니다.
+粗細（邊長）	Size (side length)	太さ（一辺の長さ）	굵기 (한 변의 길이)
+深度	Depth	深さ	깊이
+1 = 只畫目前這一層。2 以上 = 同時畫目前這一層，以及沿視線方向往後面（遠離你、切片編號變小）的幾層。適用畫筆、橡皮擦與（平面）填滿；立體填滿本來就跨層，不使用深度。	1 = draw only the current slice. 2 or more = draw the current slice and also that many slices behind it along the line of sight (away from you, slice numbers getting smaller). Works with the pencil, eraser and (flat) fill; 3D fill already spans slices and does not use depth.	1 = 現在のスライスだけ描画。2以上 = 現在のスライスと、視線方向の後ろ（見る側から遠ざかる方向、スライス番号が小さくなる）にあるその数のスライスにも同時に描画します。ペン・消しゴム・（平面の）塗りつぶしで使えます。3D塗りつぶしは元からスライスをまたぐため、深さは使いません。	1 = 현재 슬라이스만 그림. 2 이상 = 현재 슬라이스와 시선 방향 뒤쪽(보는 쪽에서 멀어짐, 슬라이스 번호가 작아짐)의 그만큼의 슬라이스에도 동시에 그립니다. 연필, 지우개, (평면) 채우기에서 쓸 수 있고 3D 채우기는 원래 슬라이스를 가로지르므로 깊이를 쓰지 않습니다.
+只畫目前這一層	Draw only the current slice	現在のスライスだけに描画	현재 슬라이스에만 그리기
+顯示	Display	表示	표시
+半透明顯示下一層	Show next slice semi-transparent	次のスライスを半透明で表示	다음 슬라이스를 반투명으로 표시
+半透明顯示上一幀（橘）	Show previous frame semi-transparent (orange)	前のフレームを半透明で表示（オレンジ）	이전 프레임을 반투명으로 표시 (주황)
+格線	Grid	グリッド	격자
+淺色透明棋盤	Light transparency checkerboard	明るい透明チェッカー	밝은 투명 체크무늬
+透明（沒有顏色）的格子用什麼底：勾選 = 白／淺灰棋盤（一般繪圖軟體的樣子），不勾 = 深灰棋盤。畫布、調色盤色塊、顏色預覽、透明度條一起換，下次開啟也會記住。	What to show behind transparent (colourless) cells: ticked = white / light-grey checkerboard (like most paint programs), unticked = dark-grey checkerboard. The canvas, palette swatches, colour preview and opacity bar all switch together, and it is remembered next time.	透明（色なし）のセルの下地: オン = 白／明るいグレーのチェッカー（一般的なペイントソフトと同じ）、オフ = ダークグレーのチェッカー。キャンバス・パレットの色見本・色プレビュー・不透明度バーが一緒に切り替わり、次回も記憶されます。	투명(색 없음) 칸의 바탕: 체크 = 흰색/밝은 회색 체크무늬 (일반 그림 프로그램처럼), 해제 = 진회색 체크무늬. 캔버스, 팔레트 색 칸, 색 미리보기, 불투명도 막대가 함께 바뀌며 다음에도 기억됩니다.
+座標 —	Coordinates —	座標 —	좌표 —
+層數與複製工具	Slices and copy tools	スライスとコピーツール	슬라이스와 복사 도구
+點一下收起或展開：層數滑桿、剪下／複製／貼上、複製到其他層。收起後 [ ]、PageUp／PageDown、←／→ 仍然可以切換層。	Click to collapse or expand: the layer slider, cut/copy/paste and copy-to-other-layers. While collapsed, [ ], PageUp/PageDown and ←/→ still change layers.	クリックで折りたたみ／展開：レイヤースライダー、切り取り／コピー／貼り付け、他のレイヤーへのコピー。折りたたみ中も [ ]、PageUp/PageDown、←/→ でレイヤーを切り替えられます。	클릭하여 접거나 펼치기: 레이어 슬라이더, 잘라내기/복사/붙여넣기, 다른 레이어로 복사. 접은 상태에서도 [ ], PageUp/PageDown, ←/→ 로 레이어를 전환할 수 있습니다.
+←／→、[ ]、PageUp / PageDown 或在這個面板上滾動滾輪，都可以切換切片（數字越大越靠近視角）	←/→, [ ], PageUp / PageDown, or the mouse wheel over this panel, switch slices (a higher number is closer to the viewer)	←/→、[ ]、PageUp / PageDown、またはこのパネル上のホイールでスライスを切り替えられます（数字が大きいほど視点に近い）	←/→, [ ], PageUp / PageDown 또는 이 패널 위에서 휠을 굴려 슬라이스를 전환할 수 있습니다(숫자가 클수록 시점에 가까움)
+每一層（切片）的縮圖。橘框＋「空」＝這一層完全沒有顏色；藍框＝正在編輯的這一層。點一下跳到那一層；按住縮圖拖到別的位置再放開，就把這一層搬過去（中間的層各挪一格，可以 Ctrl+Z 復原，只動目前這一幀）。	A thumbnail of every slice. Orange frame + "empty" = this slice has no colour at all; blue frame = the slice being edited. Click to jump to that slice; press a thumbnail and drag it elsewhere before releasing to move this slice there (the slices in between each shift by one; Ctrl+Z undoes it; only the current frame is affected).	すべてのスライスのサムネイル。オレンジの枠＋「空」＝そのスライスには色がまったくない、青い枠＝編集中のスライス。クリックでそのスライスへ移動。サムネイルを押したまま別の位置へドラッグして離すと、そのスライスをそこへ移動します（間のスライスは1つずつずれます。Ctrl+Z で元に戻せます。現在のフレームのみ）。	모든 슬라이스의 썸네일. 주황 테두리 + 「비어 있음」 = 그 슬라이스에 색이 전혀 없음, 파란 테두리 = 편집 중인 슬라이스. 클릭하면 그 슬라이스로 이동하고, 썸네일을 누른 채 다른 위치로 드래그해서 놓으면 이 슬라이스를 거기로 옮깁니다 (사이의 슬라이스는 한 칸씩 밀림, Ctrl+Z로 되돌릴 수 있음, 현재 프레임만 해당).
+剪下 (Ctrl+X)	Cut (Ctrl+X)	切り取り (Ctrl+X)	잘라내기 (Ctrl+X)
+有選取區：把選取的內容剪下（原位置清成透明）。沒有選取區什麼都不做。	With a selection: cut the selected content (the original place becomes transparent). With no selection nothing happens.	選択範囲があるとき: 選択内容を切り取ります（元の場所は透明になります）。選択範囲がなければ何も起きません。	선택 영역이 있으면 선택한 내용을 잘라냅니다 (원래 자리는 투명해짐). 선택 영역이 없으면 아무 일도 없습니다.
+複製 (Ctrl+C)	Copy (Ctrl+C)	コピー (Ctrl+C)	복사 (Ctrl+C)
+有選取區：複製選取的內容（厚度 = 筆刷深度）。沒有選取區：複製目前視角看到的整個這一層。	With a selection: copy the selected content (thickness = brush depth). With no selection: copy the whole current slice as seen in this view.	選択範囲があるとき: 選択内容をコピーします（厚み = ブラシの深さ）。選択範囲がないとき: 現在のビューに見えているスライス全体をコピーします。	선택 영역이 있으면 선택한 내용을 복사합니다 (두께 = 브러시 깊이). 선택 영역이 없으면 현재 시점에서 보이는 슬라이스 전체를 복사합니다.
+貼上 (Ctrl+V)	Paste (Ctrl+V)	貼り付け (Ctrl+V)	붙여넣기 (Ctrl+V)
+貼上選取區的內容：會出現在畫布左上角，拖曳到想要的位置，點框外或按 Enter 放下。貼上整層時直接取代目前這一層。	Paste the selection: it appears at the top-left of the canvas; drag it where you want it and click outside the box or press Enter to drop it. Pasting a whole slice replaces the current slice directly.	選択内容を貼り付けます。キャンバスの左上に現れるので、好きな位置までドラッグし、枠の外をクリックするか Enter で確定します。スライス全体を貼り付けた場合は現在のスライスを直接置き換えます。	선택한 내용을 붙여넣습니다. 캔버스 왼쪽 위에 나타나며 원하는 위치로 드래그한 뒤 상자 밖을 클릭하거나 Enter로 놓습니다. 슬라이스 전체를 붙여넣으면 현재 슬라이스를 그대로 바꿉니다.
+複製到 +1 層 (Ctrl+D)	Copy to slice +1 (Ctrl+D)	スライス +1 にコピー (Ctrl+D)	슬라이스 +1로 복사 (Ctrl+D)
+把這一層複製到編號 +1（更靠近視角）的那一層，並跳過去，連按就能一路疊上去	Copy this slice to the slice numbered +1 (closer to the viewer) and jump there; press repeatedly to stack upward	このスライスを番号 +1（見る側に近い）のスライスへコピーして移動します。連打すると上へ積み重ねられます	이 슬라이스를 번호 +1(보는 쪽에 더 가까움) 슬라이스로 복사하고 이동합니다. 연달아 누르면 계속 위로 쌓입니다
+複製到 −1 層 (Ctrl+Shift+D)	Copy to slice −1 (Ctrl+Shift+D)	スライス −1 にコピー (Ctrl+Shift+D)	슬라이스 −1로 복사 (Ctrl+Shift+D)
+把這一層複製到編號 −1 的那一層，並跳過去	Copy this slice to the slice numbered −1 and jump there	このスライスを番号 −1 のスライスへコピーして移動します	이 슬라이스를 번호 −1 슬라이스로 복사하고 이동합니다
+把這一層一次複製到一段範圍內的每一層（例如把一個輪廓往上拉出整面牆）	Copy this slice to every slice in a range at once (for example, pull an outline up into a whole wall)	このスライスを範囲内のすべてのスライスに一度にコピーします（例: 輪郭を上へ引き伸ばして壁一面を作る）	이 슬라이스를 범위 안의 모든 슬라이스에 한 번에 복사합니다 (예: 윤곽을 위로 끌어올려 벽 한 면 만들기)
+透明不覆蓋	Don't overwrite transparent	透明部分は上書きしない	투명은 덮어쓰지 않음
+勾選：只複製／貼上有顏色的格子，不會把目標原本的內容清掉（疊加；貼上選取區時就是小畫家的「透明選取」）	Ticked: only copy / paste cells that have colour, without clearing what was in the target (overlay; when pasting a selection this is the paint program's "transparent selection")	オン: 色のあるセルだけをコピー／貼り付けし、コピー先の元の内容は消しません（重ね合わせ。選択範囲の貼り付けではペイントソフトの「透明選択」になります）	체크: 색이 있는 칸만 복사/붙여넣고 대상의 원래 내용은 지우지 않습니다 (겹치기. 선택 영역을 붙여넣을 때는 그림판의 「투명 선택」과 같음)
+把目前畫布上這一層的顏色全部清掉（只清這一層，可以 Ctrl+Z 復原）	Clear all colours of this slice on the canvas (only this slice; Ctrl+Z undoes it)	キャンバス上のこのスライスの色をすべて消去します（このスライスのみ。Ctrl+Z で元に戻せます）	캔버스의 이 슬라이스 색을 모두 지웁니다 (이 슬라이스만, Ctrl+Z로 되돌릴 수 있음)
+剪貼簿：（空）	Clipboard: (empty)	クリップボード:（空）	클립보드: (비어 있음)
+預覽方式	Preview mode	プレビュー方式	미리보기 방식
+實心體素	Solid voxels	ソリッドボクセル	꽉 찬 복셀
+每個像素往畫面裡看，第一個看到的格子是什麼顏色就顯示什麼顏色（不分層）	Each pixel looks into the scene and shows the colour of the first cell it sees (no slices)	各ピクセルが奥を見て、最初に見えたセルの色をそのまま表示します（スライス分けなし）	각 픽셀이 화면 안쪽을 보고 처음 보이는 칸의 색을 그대로 표시합니다 (슬라이스 구분 없음)
+層疊	Stacked	スタック	겹쌓기
+Sprite Stacking 風格：把每一層當平面疊起來	Sprite Stacking style: each slice is stacked as a flat plane	Sprite Stacking 風: 各スライスを平面として重ねます	Sprite Stacking 방식: 각 슬라이스를 평면으로 쌓습니다
+自動旋轉	Auto-rotate	自動回転	자동 회전
+切開看內部（只顯示目前切片以後面的部分）	Cut open to see inside (shows only the part behind the current slice)	断面で内部を表示（現在のスライスより奥の部分だけを表示）	잘라서 안쪽 보기 (현재 슬라이스 뒤쪽 부분만 표시)
+光影（依面向調整明暗，取消勾選＝純色）	Shading (light and dark by facing; unticked = flat colours)	シェーディング（面の向きで明暗をつける。オフ＝単色）	음영 (면의 방향에 따라 명암, 해제 = 단색)
+在預覽上拖曳：左右轉動、上下改變俯角（實心體素可繞到下方往上看）。滾輪拉近／拉遠（目前 100%），雙擊還原。	Drag on the preview: left/right to rotate, up/down to change the pitch (solid voxels can go around underneath and look up). Mouse wheel to zoom (now 100%), double-click to reset.	プレビュー上でドラッグ: 左右で回転、上下で仰角を変更（ソリッドボクセルは下に回り込んで見上げられます）。ホイールでズーム（現在 100%）、ダブルクリックでリセット。	미리보기에서 드래그: 좌우로 회전, 상하로 피치 변경 (꽉 찬 복셀은 아래로 돌아가 올려다볼 수 있음). 휠로 확대/축소 (현재 100%), 더블 클릭으로 초기화.
+（未命名）	(untitled)	（無題）	(제목 없음)
+{0}　長{1} × 寬{2} × 高{3}　{4} 幀	{0}　Length {1} × Width {2} × Height {3}　{4} frames	{0}　長さ{1} × 幅{2} × 高さ{3}　{4} フレーム	{0}　길이 {1} × 너비 {2} × 높이 {3}　{4}프레임
+第 {0} / {1} 幀	Frame {0} / {1}	フレーム {0} / {1}	프레임 {0} / {1}
+第 {0} / {1} 幀　{2} 幀/秒	Frame {0} / {1}　{2} fps	フレーム {0} / {1}　{2} fps	프레임 {0} / {1}　{2} fps
+切片	Slice	スライス	슬라이스
+層	Slice	スライス	슬라이스
+第 {0} / {1} {2}（{3} 軸）	{2} {0} / {1} ({3} axis)	{2} {0} / {1}（{3} 軸）	{2} {0} / {1} ({3}축)
+第 {0} / {1} {2}{3}{4}	{2} {0} / {1}{3}{4}	{2} {0} / {1}{3}{4}	{2} {0} / {1}{3}{4}
+　圖層「{0}」	　Layer "{0}"	　レイヤー「{0}」	　레이어 「{0}」
+　{0} {1}空白	　{1}s empty: {0}	　空の{1}: {0}	　비어 있는 {1}: {0}
+座標 X{0}  Y{1}  Z{2}	Coordinates X{0}  Y{1}  Z{2}	座標 X{0}  Y{1}  Z{2}	좌표 X{0}  Y{1}  Z{2}
+整個模型換成目前畫筆顏色	Replace with the current brush colour across the whole model	モデル全体を現在のブラシの色に置き換える	모델 전체를 현재 브러시 색으로 바꾸기
+把這個顏色在所有幀、所有體素上換成目前調色盤（RGBA／HSV）上的顏色。可以 Ctrl+Z 復原。	Replace this colour in every frame and every voxel with the colour on the current palette (RGBA / HSV). Ctrl+Z undoes it.	この色を、全フレーム・全ボクセルで、現在のパレット（RGBA／HSV）上の色に置き換えます。Ctrl+Z で元に戻せます。	이 색을 모든 프레임과 모든 복셀에서 현재 팔레트(RGBA/HSV)의 색으로 바꿉니다. Ctrl+Z로 되돌릴 수 있습니다.
+刪除這個顏色（用到它的體素變透明）	Delete this colour (voxels using it become transparent)	この色を削除（使っているボクセルは透明になります）	이 색 삭제 (이 색을 쓰는 복셀은 투명해짐)
+色格 {0}　RGBA ({1}, {2}, {3}, {4})\n{5}	Palette slot {0}　RGBA ({1}, {2}, {3}, {4})\n{5}	パレットスロット {0}　RGBA ({1}, {2}, {3}, {4})\n{5}	팔레트 칸 {0}　RGBA ({1}, {2}, {3}, {4})\n{5}
+沒有任何體素用到這個顏色	No voxel uses this colour	この色を使っているボクセルはありません	이 색을 쓰는 복셀이 없습니다
+所有幀共 {0} 個體素用到\n（點一下取色、右鍵換色或刪除）	Used by {0} voxels across all frames\n(click to pick, right-click to replace or delete)	全フレームで {0} 個のボクセルが使用\n（クリックで選択、右クリックで置換または削除）	모든 프레임에서 복셀 {0}개가 사용 중\n(클릭해서 선택, 오른쪽 클릭으로 바꾸기 또는 삭제)
+{0}（可以 Ctrl+Z 復原）。	{0} (Ctrl+Z undoes it).	{0}（Ctrl+Z で元に戻せます）。	{0} (Ctrl+Z로 되돌릴 수 있음).
+已清掉 {0} 個沒用到的顏色	Removed {0} unused colours	使っていない色を {0} 個削除しました	쓰지 않는 색 {0}개를 제거했습니다
+沒有需要清掉的顏色：每個顏色都有體素在用。	No colours to remove: every colour is used by some voxel.	削除する色はありません。すべての色がボクセルに使われています。	제거할 색이 없습니다. 모든 색을 어떤 복셀이 쓰고 있습니다.
+已合併 {0} 個重複的顏色（改了 {1} 個體素的色格）	Merged {0} duplicate colours (changed the palette slot of {1} voxels)	重複した色を {0} 個結合しました（{1} 個のボクセルのスロットを変更）	중복된 색 {0}개를 병합했습니다 (복셀 {1}개의 팔레트 칸을 바꿈)
+沒有重複的顏色。	There are no duplicate colours.	重複した色はありません。	중복된 색이 없습니다.
+目前畫筆是「透明色」，沒有顏色可以拿來換；要拿掉這個顏色請用「刪除這個顏色」。	The current brush is the "transparent colour", so there is no colour to replace with; to remove this colour use "Delete this colour".	現在のブラシは「透明色」のため、置き換える色がありません。この色を取り除くには「この色を削除」を使ってください。	현재 브러시가 「투명색」이라 바꿀 색이 없습니다. 이 색을 없애려면 「이 색 삭제」를 쓰세요.
+已把色格 {0} 換成目前畫筆顏色（整個模型的這個顏色都跟著變）	Replaced palette slot {0} with the current brush colour (every use of this colour in the model changed with it)	パレットスロット {0} を現在のブラシの色に置き換えました（モデル内のこの色がすべて一緒に変わります）	팔레트 칸 {0}을(를) 현재 브러시 색으로 바꿨습니다 (모델에서 이 색을 쓰던 곳이 모두 함께 바뀜)
+已把色格 {0} 合併到調色盤裡本來就有的同色格（{1} 個體素改指向它）	Merged palette slot {0} into the existing slot of the same colour ({1} voxels now point to it)	パレットスロット {0} を、既にある同じ色のスロットに結合しました（{1} 個のボクセルがそちらを指します）	팔레트 칸 {0}을(를) 팔레트에 이미 있던 같은 색 칸에 병합했습니다 (복셀 {1}개가 그쪽을 가리킴)
+這格本來就是目前畫筆的顏色。	This slot is already the current brush colour.	このスロットは既に現在のブラシの色です。	이 칸은 이미 현재 브러시 색입니다.
+這格已經是空的。	This slot is already empty.	このスロットは既に空です。	이 칸은 이미 비어 있습니다.
+已刪除色格 {0}（{1} 個體素變成透明）	Deleted palette slot {0} ({1} voxels became transparent)	パレットスロット {0} を削除しました（{1} 個のボクセルが透明になりました）	팔레트 칸 {0}을(를) 삭제했습니다 (복셀 {1}개가 투명해짐)
+GIMP 調色盤 (*.gpl)|*.gpl	GIMP palette (*.gpl)|*.gpl	GIMPパレット (*.gpl)|*.gpl	GIMP 팔레트 (*.gpl)|*.gpl
+GIMP 調色盤 (*.gpl)|*.gpl|所有檔案 (*.*)|*.*	GIMP palette (*.gpl)|*.gpl|All files (*.*)|*.*	GIMPパレット (*.gpl)|*.gpl|すべてのファイル (*.*)|*.*	GIMP 팔레트 (*.gpl)|*.gpl|모든 파일 (*.*)|*.*
+已匯出 {0} 個顏色：{1}	Exported {0} colours: {1}	{0} 色をエクスポートしました: {1}	색 {0}개를 내보냈습니다: {1}
+匯出失敗	Export failed	エクスポートに失敗しました	내보내기 실패
+這個檔案裡找不到任何顏色（要是 GIMP 調色盤 .gpl，每行「R G B 名稱」）。	No colours were found in this file (it must be a GIMP palette .gpl, each line "R G B name").	このファイルに色が見つかりません（GIMPパレット .gpl で、各行が「R G B 名前」の形式である必要があります）。	이 파일에서 색을 찾을 수 없습니다 (GIMP 팔레트 .gpl이어야 하며 각 줄이 「R G B 이름」 형식).
+已匯入 {0} 個新顏色	Imported {0} new colours	新しい色を {0} 個インポートしました	새 색 {0}개를 가져왔습니다
+沒有新增任何顏色（讀到 {0} 個，全都已經在調色盤裡）。	No colours were added (read {0}; all of them are already in the palette).	追加された色はありません（{0} 色を読み込みましたが、すべて既にパレットにあります）。	추가된 색이 없습니다 ({0}개를 읽었지만 모두 이미 팔레트에 있음).
+　調色盤滿了，{0} 個放不進去。	   The palette is full; {0} did not fit.	　パレットがいっぱいで、{0} 色は入りませんでした。	　팔레트가 가득 차서 {0}개는 들어가지 못했습니다.
+透明色：選了它，畫筆畫下去＝清成透明（等同橡皮擦），填滿＝清空該區	Transparent colour: when selected, painting clears to transparent (same as the eraser) and fill clears the region	透明色: 選択すると、描画は透明にクリア（消しゴムと同じ）、塗りつぶしは領域のクリアになります	투명색: 선택하면 칠하기는 투명으로 지우기(지우개와 같음), 채우기는 영역 비우기가 됩니다
+透明色	Transparent colour	透明色	투명색
+目前畫筆是「透明色」：畫下去＝清成透明（等同橡皮擦），填滿＝清空該區。	The current brush is the "transparent colour": painting clears to transparent (same as the eraser) and fill clears the region.	現在のブラシは「透明色」です。描画は透明にクリア（消しゴムと同じ）、塗りつぶしは領域のクリアになります。	현재 브러시는 「투명색」입니다. 칠하기는 투명으로 지우기(지우개와 같음), 채우기는 영역 비우기가 됩니다.
+調色盤 255 格已滿，這筆改用最接近的顏色。	All 255 palette slots are full; this stroke used the closest colour instead.	パレットの255スロットがすべて埋まっているため、このストロークは最も近い色を使いました。	팔레트 255칸이 모두 차서 이번 획은 가장 가까운 색을 썼습니다.
+粗細（彈簧半徑）	Size (spring radius)	太さ（バネの半径）	굵기 (스프링 반지름)
+粗細（螺旋半徑）	Size (helix radius)	太さ（螺旋の半径）	굵기 (나선 반지름)
+粗細（環半徑）	Size (ring radius)	太さ（リングの半径）	굵기 (고리 반지름)
+粗細（底面邊長）	Size (base side length)	太さ（底面の一辺）	굵기 (밑면 한 변)
+粗細（半徑）	Size (radius)	太さ（半径）	굵기 (반지름)
+粗細（直徑）	Size (diameter)	太さ（直径）	굵기 (지름)
+立體填滿本來就會跨層連通，不使用深度	3D fill already connects across slices, so depth is not used	3D塗りつぶしは元からスライスをまたいでつながるため、深さは使いません	3D 채우기는 원래 슬라이스를 가로질러 이어지므로 깊이를 쓰지 않습니다
+只填目前這一層	Fill only the current slice	現在のスライスだけを塗る	현재 슬라이스만 채우기
+以目前層連通的區域為範本，同時填往後 {0} 層（切片編號變小的方向）	Uses the region connected in the current slice as the template and fills {0} more slices behind it as well (the direction where slice numbers get smaller)	現在のスライスでつながった領域をひな形にして、その後ろ {0} スライス（スライス番号が小さくなる方向）も同時に塗ります	현재 슬라이스에서 이어진 영역을 본으로 삼아 그 뒤 {0}개 슬라이스(슬라이스 번호가 작아지는 방향)도 함께 채웁니다
+同時畫目前層與往後 {0} 層（切片編號變小的方向）	Draws on the current slice and {0} more slices behind it (the direction where slice numbers get smaller)	現在のスライスと、その後ろ {0} スライス（スライス番号が小さくなる方向）に同時に描画します	현재 슬라이스와 그 뒤 {0}개 슬라이스(슬라이스 번호가 작아지는 방향)에 동시에 그립니다
+選取：只選目前這一層	Selection: only the current slice	選択: 現在のスライスだけ	선택: 현재 슬라이스만
+選取：目前層與往後 {0} 層	Selection: the current slice and {0} more behind it	選択: 現在のスライスとその後ろ {0} スライス	선택: 현재 슬라이스와 그 뒤 {0}개 슬라이스
+3D 魔術棒：點一個體素選出整塊立體相連的部件，不使用深度	3D magic wand: click a voxel to select the whole block connected to it in 3D; depth is not used	3Dマジックワンド: ボクセルをクリックして、立体的につながった塊全体を選択します。深さは使いません	3D 마술봉: 복셀을 클릭하면 3D로 이어진 덩어리 전체를 선택합니다. 깊이는 쓰지 않습니다
+吸管：只取點到的那一格（目前這一層）的顏色，不使用深度	Eyedropper: takes only the colour of the clicked cell (in the current slice); depth is not used	スポイト: クリックしたセル（現在のスライス）の色だけを取得します。深さは使いません	스포이트: 클릭한 칸(현재 슬라이스)의 색만 가져옵니다. 깊이는 쓰지 않습니다
+立方體：邊長 {0}，前後左右上下一樣長，不使用深度	Cube: side {0}, equal in all directions; depth is not used	立方体: 一辺 {0}、全方向同じ長さ。深さは使いません	정육면체: 한 변 {0}, 모든 방향이 같은 길이. 깊이는 쓰지 않습니다
+彈簧：半徑 {0}，總長 {1} 層，每 {2} 層一圈（約 {3} 圈），線徑 3	Spring: radius {0}, total length {1} slices, one turn every {2} slices (about {3} turns), wire diameter 3	バネ: 半径 {0}、全長 {1} スライス、{2} スライスごとに1回転（約 {3} 回転）、線径 3	스프링: 반지름 {0}, 전체 길이 {1}슬라이스, {2}슬라이스마다 한 바퀴 (약 {3}바퀴), 선 지름 3
+螺旋：半徑 {0}，總長 {1} 層，每 {2} 層轉一圈（約 {3} 圈）	Helix: radius {0}, total length {1} slices, one turn every {2} slices (about {3} turns)	螺旋: 半径 {0}、全長 {1} スライス、{2} スライスごとに1回転（約 {3} 回転）	나선: 반지름 {0}, 전체 길이 {1}슬라이스, {2}슬라이스마다 한 바퀴 (약 {3}바퀴)
+圓環：環半徑 {0}，深度 1 = 一圈平的環	Torus: ring radius {0}; depth 1 = one flat ring	トーラス: リング半径 {0}、深さ 1 = 平らなリング1周	토러스: 고리 반지름 {0}, 깊이 1 = 평평한 고리 한 줄
+圓環：環半徑 {0}，管徑 {1}（沿視線方向厚 {2} 層）	Torus: ring radius {0}, tube diameter {1} ({2} slices thick along the line of sight)	トーラス: リング半径 {0}、管径 {1}（視線方向に {2} スライスの厚み）	토러스: 고리 반지름 {0}, 관 지름 {1} (시선 방향으로 {2}슬라이스 두께)
+金字塔：底面邊長 {0}（在後面），尖端朝向你，長 {1} 層	Pyramid: base side {0} (at the back), tip toward you, {1} slices long	ピラミッド: 底面の一辺 {0}（奥側）、先端は手前向き、長さ {1} スライス	피라미드: 밑면 한 변 {0} (뒤쪽), 뾰족한 끝이 앞쪽, 길이 {1}슬라이스
+圓錐體：底面半徑 {0}（在後面），尖端朝向你，長 {1} 層	Cone: base radius {0} (at the back), tip toward you, {1} slices long	円錐: 底面の半径 {0}（奥側）、先端は手前向き、長さ {1} スライス	원뿔: 밑면 반지름 {0} (뒤쪽), 뾰족한 끝이 앞쪽, 길이 {1}슬라이스
+圓柱體：半徑 {0}，沿視線方向長 {1} 層	Cylinder: radius {0}, {1} slices long along the line of sight	円柱: 半径 {0}、視線方向に {1} スライスの長さ	원기둥: 반지름 {0}, 시선 방향으로 {1}슬라이스 길이
+橢圓球：半徑 {0}、視線方向 {1} 層，剛好是一顆球	Ellipsoid: radius {0}, {1} slices along the line of sight, which is exactly a ball	楕円体: 半径 {0}、視線方向 {1} スライス。ちょうど球になります	타원체: 반지름 {0}, 시선 방향 {1}슬라이스로 딱 구가 됩니다
+橢圓球：半徑 {0}，視線方向壓扁成 {1} 層	Ellipsoid: radius {0}, flattened to {1} slices along the line of sight	楕円体: 半径 {0}、視線方向に {1} スライスへ押しつぶし	타원체: 반지름 {0}, 시선 방향으로 {1}슬라이스로 납작하게
+橢圓球：半徑 {0}，視線方向拉長成 {1} 層	Ellipsoid: radius {0}, stretched to {1} slices along the line of sight	楕円体: 半径 {0}、視線方向に {1} スライスへ引き伸ばし	타원체: 반지름 {0}, 시선 방향으로 {1}슬라이스로 길게
+膠囊：半徑 {0}，深度比球的直徑（{1}）短，畫成球	Capsule: radius {0}; the depth is shorter than the ball's diameter ({1}), so it is drawn as a ball	カプセル: 半径 {0}。深さが球の直径（{1}）より短いため、球として描画します	캡슐: 반지름 {0}, 깊이가 구의 지름({1})보다 짧아 구로 그립니다
+膠囊：半徑 {0}，沿視線方向總長 {1} 層（含兩端半球）	Capsule: radius {0}, total length {1} slices along the line of sight (including both hemispheres)	カプセル: 半径 {0}、視線方向の全長 {1} スライス（両端の半球を含む）	캡슐: 반지름 {0}, 시선 방향 전체 길이 {1}슬라이스 (양 끝 반구 포함)
+左右對稱（{0}，粉紅直線）	Left-right symmetric ({0}, pink vertical line)	左右対称（{0}、ピンクの縦線）	좌우 대칭 ({0}, 분홍 세로선)
+上下對稱（{0}，粉紅橫線）	Up-down symmetric ({0}, pink horizontal line)	上下対称（{0}、ピンクの横線）	상하 대칭 ({0}, 분홍 가로선)
+{0} 對稱：另一半畫在對稱的另一層（目前這個視角看不到）	{0} symmetric: the other half is drawn on the mirrored slice (not visible in this view)	{0} 対称: もう半分は対称位置の別のスライスに描かれます（このビューでは見えません）	{0} 대칭: 나머지 절반은 대칭 위치의 다른 슬라이스에 그려집니다 (이 시점에서는 안 보임)
+目前視角：{0}	Current view: {0}	現在のビュー: {0}	현재 시점: {0}
+在預覽上拖曳：左右轉動、上下改變俯角（實心體素可繞到下方往上看）。滾輪拉近／拉遠（目前 {0}%），雙擊還原。	Drag on the preview: left/right to rotate, up/down to change the pitch (solid voxels can go around underneath and look up). Mouse wheel to zoom (now {0}%), double-click to reset.	プレビュー上でドラッグ: 左右で回転、上下で仰角を変更（ソリッドボクセルは下に回り込んで見上げられます）。ホイールでズーム（現在 {0}%）、ダブルクリックでリセット。	미리보기에서 드래그: 좌우로 회전, 상하로 피치 변경 (꽉 찬 복셀은 아래로 돌아가 올려다볼 수 있음). 휠로 확대/축소 (현재 {0}%), 더블 클릭으로 초기화.
+剪貼簿：{0}第 {1} {2}（{3}×{4}）	Clipboard: {0} {1} {2} ({3}×{4})	クリップボード: {0} {1} {2}（{3}×{4}）	클립보드: {0} {1} {2} ({3}×{4})
+剪貼簿是空的，先複製（Ctrl+C）。	The clipboard is empty; copy first (Ctrl+C).	クリップボードが空です。先にコピーしてください（Ctrl+C）。	클립보드가 비어 있습니다. 먼저 복사하세요 (Ctrl+C).
+尺寸不符：剪貼簿是 {0}×{1}，目前畫布是 {2}×{3}。	Size mismatch: the clipboard is {0}×{1}, the current canvas is {2}×{3}.	サイズが合いません: クリップボードは {0}×{1}、現在のキャンバスは {2}×{3} です。	크기가 맞지 않습니다: 클립보드는 {0}×{1}, 현재 캔버스는 {2}×{3}입니다.
+已把第 {0} {1}移到第 {2} {3}（可以 Ctrl+Z 復原）。	Moved {0} {1} to {2} {3} (Ctrl+Z undoes it).	{0} {1} を {2} {3} へ移動しました（Ctrl+Z で元に戻せます）。	{0} {1}을(를) {2} {3}(으)로 옮겼습니다 (Ctrl+Z로 되돌릴 수 있음).
+先選取要旋轉的區域（矩形選取或魔術棒）。	Select the area to rotate first (rectangle select or magic wand).	先に回転させる範囲を選択してください（矩形選択またはマジックワンド）。	먼저 회전할 영역을 선택하세요 (사각형 선택 또는 마술봉).
+選取區已轉 {0}°（順時針為正）：可以拖曳、再轉（Ctrl+[ ]）、Enter 放下、Esc 取消；要繞別的軸轉，換一個視角。	The selection has been rotated {0}° (clockwise is positive): drag it, rotate again (Ctrl+[ ]), Enter to drop, Esc to cancel; to rotate around another axis, switch to another view.	選択範囲を {0}° 回転しました（時計回りが正）。ドラッグしたり、さらに回転（Ctrl+[ ]）したりできます。Enter で確定、Esc で取り消し。別の軸で回すにはビューを切り替えてください。	선택 영역을 {0}° 회전했습니다 (시계 방향이 양수): 드래그하거나 더 회전(Ctrl+[ ])할 수 있고 Enter로 놓고 Esc로 취소합니다. 다른 축으로 돌리려면 시점을 바꾸세요.
+（此層）	(this slice)	（このスライス）	(이 슬라이스)
+（此幀所有層）	(all slices of this frame)	（このフレームの全スライス）	(이 프레임의 모든 슬라이스)
+旋轉 90° 需要正方形的畫布，目前是 {0}×{1}；可以改用「旋轉 180°」，或換一個畫布是正方形的視角。	Rotating by 90° needs a square canvas; the current one is {0}×{1}. You can use "Rotate 180°" instead, or switch to a view whose canvas is square.	90°回転には正方形のキャンバスが必要です（現在は {0}×{1}）。「180°回転」を使うか、キャンバスが正方形になるビューに切り替えてください。	90° 회전에는 정사각형 캔버스가 필요합니다 (현재 {0}×{1}). 「180° 회전」을 쓰거나 캔버스가 정사각형인 시점으로 바꾸세요.
+順時針轉 90°	Rotate 90° clockwise	時計回りに90°回転	시계 방향 90° 회전
+逆時針轉 90°	Rotate 90° counter-clockwise	反時計回りに90°回転	반시계 방향 90° 회전
+平移（右 {0}、下 {1}{2}）	Shift (right {0}, down {1}{2})	平行移動（右 {0}、下 {1}{2}）	이동 (오른쪽 {0}, 아래 {1}{2})
+，繞回	, wrap around	、折り返し	, 순환
+{0}：沒有任何格子改變。	{0}: no cells changed.	{0}: 変更されたセルはありません。	{0}: 바뀐 칸이 없습니다.
+已{0}（可以 Ctrl+Z 復原）。	{0} (Ctrl+Z undoes it).	{0}しました（Ctrl+Z で元に戻せます）。	{0} 완료 (Ctrl+Z로 되돌릴 수 있음).
+剪貼簿：選取區 {0}×{1}，{2} 層	Clipboard: selection {0}×{1}, {2} slices	クリップボード: 選択範囲 {0}×{1}、{2} スライス	클립보드: 선택 영역 {0}×{1}, {2}슬라이스
+剪貼簿：選取區 {0}×{1}，{2} 層（已剪下）	Clipboard: selection {0}×{1}, {2} slices (cut)	クリップボード: 選択範囲 {0}×{1}、{2} スライス（切り取り済み）	클립보드: 선택 영역 {0}×{1}, {2}슬라이스 (잘라냄)
+還原	Undo	元に戻す	실행 취소
+開啟失敗	Open failed	開けませんでした	열기 실패
+儲存失敗	Save failed	保存に失敗しました	저장 실패
+第 {0} {1}	{0} {1}	{0} {1}	{0} {1}
+　顏色太多，已量化成 {0} 色（半透明變不透明）	   Too many colours; quantized to {0} colours (semi-transparent became opaque)	　色が多すぎるため {0} 色に減色しました（半透明は不透明になりました）	　색이 너무 많아 {0}색으로 줄였습니다 (반투명이 불투명이 됨)
+　超出模型的 {0} {1}被丟掉	   {0} {1} that went outside the model were dropped	　モデルの外に出た {0} {1} は捨てられました	　모델 밖으로 나간 {0} {1}은(는) 버려졌습니다
+匯入圖片：沒有任何格子改變（圖片是全透明、或跟原本一樣）。{0}	Import image: no cells changed (the image is fully transparent or the same as what was there). {0}	画像のインポート: 変更されたセルはありません（画像が完全に透明、または元と同じです）。{0}	이미지 가져오기: 바뀐 칸이 없습니다 (이미지가 완전히 투명하거나 원래와 같음). {0}
+已匯入 {0} {1}（{2} 個體素，從第 {3} {4}開始）{5}（可以 Ctrl+Z 復原）。	Imported {0} {1} ({2} voxels, starting at {3} {4}){5} (Ctrl+Z undoes it).	{0} {1} をインポートしました（{2} 個のボクセル、{3} {4} から開始）{5}（Ctrl+Z で元に戻せます）。	{0} {1}을(를) 가져왔습니다 (복셀 {2}개, {3} {4}부터 시작){5} (Ctrl+Z로 되돌릴 수 있음).
+膨脹成 3D：選一張圖片	Inflate to 3D: choose an image	3Dに膨張: 画像を選択	3D로 부풀리기: 이미지 선택
+膨脹：沒有寫出任何體素（圖片全透明或低於透明門檻）。{0}	Inflate: no voxels were written (the image is fully transparent or below the transparency threshold). {0}	膨張: ボクセルは作成されませんでした（画像が完全に透明、または透明のしきい値未満）。{0}	부풀리기: 만들어진 복셀이 없습니다 (이미지가 완전히 투명하거나 투명 기준값 미만). {0}
+已膨脹成 3D（{0} 個體素，{1}視角）{2}（可以 Ctrl+Z 復原）。	Inflated to 3D ({0} voxels, {1} view){2} (Ctrl+Z undoes it).	3Dに膨張しました（{0} 個のボクセル、{1}ビュー）{2}（Ctrl+Z で元に戻せます）。	3D로 부풀렸습니다 (복셀 {0}개, {1} 시점){2} (Ctrl+Z로 되돌릴 수 있음).
+■ 停止 (Space)	■ Stop (Space)	■ 停止 (Space)	■ 정지 (Space)
+{0}×{1}、{2} 幀、每幀 {3} 毫秒、{4} 色{5}、{6} KB	{0}×{1}, {2} frames, {3} ms per frame, {4} colours{5}, {6} KB	{0}×{1}、{2} フレーム、1フレーム {3} ミリ秒、{4} 色{5}、{6} KB	{0}×{1}, {2}프레임, 프레임당 {3}ms, {4}색{5}, {6} KB
+（顏色太多，已量化）	(too many colours; quantized)	（色が多すぎるため減色）	(색이 너무 많아 줄임)
+請指定輸出檔案	Please specify the output file	出力ファイルを指定してください	출력 파일을 지정하세요
+畫面 {0}×{1} 超過 GIF 的上限（65535）。請降低倍率。	The image {0}×{1} exceeds the GIF limit (65535). Please lower the scale.	画像 {0}×{1} がGIFの上限（65535）を超えています。倍率を下げてください。	화면 {0}×{1}이(가) GIF 한도(65535)를 넘습니다. 배율을 낮추세요.
+GIF 的寬高必須在 1 ~ 65535 之間	The GIF width and height must be between 1 and 65535	GIFの幅と高さは 1 ～ 65535 の間にしてください	GIF의 너비와 높이는 1 ~ 65535 사이여야 합니다
+沒有任何幀	There are no frames	フレームがありません	프레임이 없습니다
+幀的大小不符	The frame sizes do not match	フレームのサイズが一致しません	프레임 크기가 일치하지 않습니다
+圖片 (*.png;*.bmp;*.gif;*.jpg;*.jpeg)|*.png;*.bmp;*.gif;*.jpg;*.jpeg|所有檔案 (*.*)|*.*	Images (*.png;*.bmp;*.gif;*.jpg;*.jpeg)|*.png;*.bmp;*.gif;*.jpg;*.jpeg|All files (*.*)|*.*	画像 (*.png;*.bmp;*.gif;*.jpg;*.jpeg)|*.png;*.bmp;*.gif;*.jpg;*.jpeg|すべてのファイル (*.*)|*.*	이미지 (*.png;*.bmp;*.gif;*.jpg;*.jpeg)|*.png;*.bmp;*.gif;*.jpg;*.jpeg|모든 파일 (*.*)|*.*
+圖片是空的	The image is empty	画像が空です	이미지가 비어 있습니다
+{0} 不是可以讀取的圖片（{1}）	{0} is not an image that can be read ({1})	{0} は読み込める画像ではありません（{1}）	{0}은(는) 읽을 수 있는 이미지가 아닙니다 ({1})
+每層的寬高必須大於 0	The width and height of each slice must be greater than 0	各スライスの幅と高さは 0 より大きくしてください	각 슬라이스의 너비와 높이는 0보다 커야 합니다
+每格 {0}×{1}，{2} 個方向 × {3} 幀	Each cell {0}×{1}, {2} directions × {3} frames	1セル {0}×{1}、{2} 方向 × {3} フレーム	한 칸 {0}×{1}, {2}방향 × {3}프레임
+；圖集 {0}×{1}	; atlas {0}×{1}	；アトラス {0}×{1}	; 아틀라스 {0}×{1}
+；序列 {0} 個檔	; sequence of {0} files	；{0} ファイルのシーケンス	; {0}개 파일 시퀀스
+方向數必須在 1 ~ 64 之間	The number of directions must be between 1 and 64	方向数は 1 ～ 64 の間にしてください	방향 수는 1 ~ 64 사이여야 합니다
+倍率必須在 1 ~ 16 之間	The scale must be between 1 and 16	倍率は 1 ～ 16 の間にしてください	배율은 1 ~ 16 사이여야 합니다
+留白必須在 0 ~ 64 之間	The padding must be between 0 and 64	余白は 0 ～ 64 の間にしてください	여백은 0 ~ 64 사이여야 합니다
+沒有選擇輸出內容	No output was selected	出力内容が選択されていません	출력 내용을 선택하지 않았습니다
+格子太多（{0}），上限 {1}	Too many cells ({0}); the limit is {1}	セルが多すぎます（{0}）。上限は {1} です	칸이 너무 많습니다 ({0}). 한도는 {1}입니다
+檔名不合法	The file name is not valid	ファイル名が不正です	파일 이름이 올바르지 않습니다
+圖集 {0}×{1} 超過 {2} 像素（多數顯示卡的貼圖上限）。請減少方向數、降低倍率，或改用 PNG 序列。	The atlas {0}×{1} exceeds {2} pixels (the texture limit of most graphics cards). Reduce the number of directions, lower the scale, or use a PNG sequence instead.	アトラス {0}×{1} が {2} ピクセル（多くのグラフィックスカードのテクスチャ上限）を超えています。方向数を減らすか、倍率を下げるか、PNGシーケンスにしてください。	아틀라스 {0}×{1}이(가) {2}픽셀(대부분 그래픽 카드의 텍스처 한도)을 넘습니다. 방향 수를 줄이거나 배율을 낮추거나 PNG 시퀀스를 쓰세요.
+每層 {0}×{1}、{2} 層 × {3} 幀；圖 {4}×{5}	Each slice {0}×{1}, {2} slices × {3} frames; image {4}×{5}	1スライス {0}×{1}、{2} スライス × {3} フレーム、画像 {4}×{5}	슬라이스당 {0}×{1}, {2}슬라이스 × {3}프레임, 이미지 {4}×{5}
+圖 {0}×{1} 超過 {2} 像素（多數顯示卡的貼圖上限）。請降低倍率、啟用裁切，或減少層數／幀數。	The image {0}×{1} exceeds {2} pixels (the texture limit of most graphics cards). Lower the scale, enable trimming, or reduce the number of slices / frames.	画像 {0}×{1} が {2} ピクセル（多くのグラフィックスカードのテクスチャ上限）を超えています。倍率を下げるか、トリミングを有効にするか、スライス／フレーム数を減らしてください。	이미지 {0}×{1}이(가) {2}픽셀(대부분 그래픽 카드의 텍스처 한도)을 넘습니다. 배율을 낮추거나 자르기를 켜거나 슬라이스/프레임 수를 줄이세요.
+功能總覽	Feature overview	機能一覧	기능 개요
+新增文件	New document	新規ドキュメント	새 문서
+檔案、匯入與匯出	File, import and export	ファイル、インポート、エクスポート	파일, 가져오기, 내보내기
+自訂長、寬、高（各 1~128 格），Ctrl+N。	Custom length, width and height (1–128 cells each), Ctrl+N.	長さ・幅・高さを自由に指定（各 1～128 セル）、Ctrl+N。	길이, 너비, 높이를 자유롭게 지정 (각 1~128칸), Ctrl+N.
+開啟與儲存	Open and save	開く・保存	열기와 저장
+存成 .pstk：所有幀、調色盤、骨架與部件標記都在裡面。Ctrl+O／Ctrl+S／Ctrl+Shift+S。	Saves as .pstk: all frames, the palette, the rig and part marks are inside. Ctrl+O / Ctrl+S / Ctrl+Shift+S.	.pstk として保存: すべてのフレーム、パレット、リグ、パーツのマークが含まれます。Ctrl+O／Ctrl+S／Ctrl+Shift+S。	.pstk로 저장: 모든 프레임, 팔레트, 리그, 파트 표시가 들어 있습니다. Ctrl+O/Ctrl+S/Ctrl+Shift+S.
+未儲存提醒	Unsaved-changes warning	未保存の警告	저장 안 함 경고
+有修改時狀態列檔名後面會有「*」，關閉視窗或開新檔前會問你要不要存。	When there are changes, a "*" follows the file name in the status bar; closing the window or starting a new file asks whether to save.	変更があるとステータスバーのファイル名の後ろに「*」が付き、ウィンドウを閉じるときや新規ファイルを作るときに保存するか尋ねます。	변경 사항이 있으면 상태 표시줄의 파일 이름 뒤에 「*」가 붙고, 창을 닫거나 새 파일을 만들 때 저장할지 묻습니다.
+PNG／BMP／GIF／JPG 放到目前這一層；可一次選多張（每張一層），或把疊層條帶切成多層。Ctrl+I。	Put a PNG / BMP / GIF / JPG on the current slice; you can pick several at once (one per slice), or cut a stack strip into several slices. Ctrl+I.	PNG／BMP／GIF／JPG を現在のスライスに置きます。複数選択（1枚ずつ各スライスへ）や、スタックストリップを複数スライスに分割もできます。Ctrl+I。	PNG/BMP/GIF/JPG를 현재 슬라이스에 놓습니다. 여러 장을 한 번에 고르거나(슬라이스마다 한 장씩) 스택 스트립을 여러 슬라이스로 나눌 수도 있습니다. Ctrl+I.
+讀一張 2D 圖片，把輪廓往厚度方向鼓起來變成立體：選視角、截面（圓潤／平滑／錐形／平板）、前後對稱或單面、厚度，右邊即時預覽。Ctrl+Shift+I。	Read a 2D image and bulge its outline in the thickness direction into a solid: choose the view, cross-section (round / smooth / cone / flat), symmetric or single-sided, and thickness, with a live preview on the right. Ctrl+Shift+I.	2D画像を読み込み、輪郭を厚み方向に膨らませて立体にします。ビュー、断面（丸み／スムーズ／円錐／フラット）、前後対称か片面か、厚みを選べ、右側にリアルタイムプレビューが出ます。Ctrl+Shift+I。	2D 이미지를 읽어 윤곽을 두께 방향으로 부풀려 입체로 만듭니다. 시점, 단면(둥글게/부드럽게/원뿔/평판), 앞뒤 대칭 또는 한쪽 면, 두께를 고를 수 있고 오른쪽에 실시간 미리보기가 나옵니다. Ctrl+Shift+I.
+匯出 PNG	Export PNG	PNGをエクスポート	PNG 내보내기
+固定角度預先渲染成「圖集＋JSON」或「PNG 序列」，給遊戲用。	Pre-render fixed angles into an "atlas + JSON" or a "PNG sequence" for games.	固定角度を事前レンダリングして、「アトラス＋JSON」または「PNGシーケンス」としてゲーム用に出力します。	고정 각도를 미리 렌더링해 「아틀라스 + JSON」 또는 「PNG 시퀀스」로 게임용으로 내보냅니다.
+匯出 GIF	Export GIF	GIFをエクスポート	GIF 내보내기
+固定角度的動畫 GIF，拿來預覽或分享。	An animated GIF at a fixed angle, for previewing or sharing.	固定角度のアニメーションGIF。プレビューや共有に。	고정 각도의 애니메이션 GIF, 미리보기나 공유용.
+匯出疊層條帶	Export stack strip	スタックストリップをエクスポート	스택 스트립 내보내기
+Sprite Stacking 原始格式：每層一張平面圖排成一條（每幀一列）＋JSON，遊戲端自己疊起來再旋轉。	The original Sprite Stacking format: one flat picture per slice laid out in a strip (one row per frame) + JSON; the game stacks them up and rotates them itself.	Sprite Stacking の元の形式: スライスごとに1枚の平面画像をストリップに並べ（1フレーム1行）＋JSON。ゲーム側で重ねて回転させます。	원래의 Sprite Stacking 형식: 슬라이스마다 평면 이미지 한 장을 한 줄로 늘어놓고(프레임당 한 행) + JSON. 게임에서 직접 쌓고 회전시킵니다.
+視角與畫布	View and canvas	ビューとキャンバス	시점과 캔버스
+六個編輯視角	Six editing views	6つの編集ビュー	6가지 편집 시점
+頂部、底部、正面、背面、左側、右側，快捷鍵 1~6；畫布永遠是這個視角看到的「一層」。	Top, bottom, front, back, left and right, shortcuts 1–6; the canvas is always the one "slice" seen from this view.	上面・下面・正面・背面・左側面・右側面、ショートカット 1～6。キャンバスには常にそのビューで見える「1スライス」が表示されます。	위, 아래, 정면, 후면, 왼쪽, 오른쪽, 단축키 1~6. 캔버스는 항상 그 시점에서 보이는 「한 슬라이스」입니다.
+層數滑桿、←／→、[ ]、PageUp／PageDown，或在層數面板上滾動滾輪。數字越大越靠近視角。	The layer slider, ←/→, [ ], PageUp/PageDown, or the wheel over the layer panel. A higher number is closer to the viewer.	レイヤースライダー、←/→、[ ]、PageUp/PageDown、またはレイヤーパネル上のホイール。数字が大きいほど視点に近くなります。	레이어 슬라이더, ←/→, [ ], PageUp/PageDown 또는 레이어 패널 위의 휠. 숫자가 클수록 시점에 가깝습니다.
+切換層（切片）	Change slice	スライスの切り替え	슬라이스 전환
+每層縮圖列	Slice thumbnail strip	スライスのサムネイル列	슬라이스 썸네일 열
+層數滑桿下面每一層（切片）各一張小圖，整層沒有顏色的層會用橘框標「空」；點一下跳到那一層；按住縮圖拖到別的位置放開，就把這一層搬過去（中間的層各挪一格，一筆復原，只動目前這一幀，拖到邊邊會自動捲動）；面板標題列也會寫還有幾層空白。	Under the slice slider there is one small picture per slice; a slice with no colour at all is marked "empty" with an orange frame; click to jump to that slice; press a thumbnail and drag it elsewhere before releasing to move that slice there (the slices in between each shift by one; one undo step; only the current frame is affected; dragging to the edge scrolls automatically); the panel's title bar also says how many slices are still empty.	スライススライダーの下に、スライスごとに1枚の小さな画像が並びます。色がまったくないスライスはオレンジの枠と「空」で示されます。クリックでそのスライスへ移動、サムネイルを押したまま別の位置へドラッグして離すと、そのスライスをそこへ移動します（間のスライスは1つずつずれ、1回の取り消し単位、現在のフレームのみ、端までドラッグすると自動スクロール）。パネルのタイトルバーにも空のスライス数が表示されます。	슬라이스 슬라이더 아래에 슬라이스마다 작은 그림 한 장이 놓입니다. 색이 전혀 없는 슬라이스는 주황 테두리와 「비어 있음」으로 표시됩니다. 클릭하면 그 슬라이스로 이동하고, 썸네일을 누른 채 다른 위치로 드래그해서 놓으면 그 슬라이스를 거기로 옮깁니다 (사이의 슬라이스는 한 칸씩 밀리고, 한 번의 실행 취소, 현재 프레임만 해당, 가장자리로 끌면 자동 스크롤). 패널 제목 줄에도 비어 있는 슬라이스 수가 표시됩니다.
+半透明顯示下一層；半透明顯示上一幀（橘色），對齊動畫用。	Show the next slice semi-transparent; show the previous frame semi-transparent (orange), for lining up animation.	次のスライスを半透明で表示。前のフレームを半透明（オレンジ）で表示。アニメーションの位置合わせ用。	다음 슬라이스를 반투명으로 표시, 이전 프레임을 반투명(주황)으로 표시. 애니메이션 위치 맞춤용.
+半透明參考	Semi-transparent reference	半透明の参考表示	반투명 참고 표시
+格線與透明棋盤	Grid and transparency checkerboard	グリッドと透明チェッカー	격자와 투명 체크무늬
+格線可開關；透明格可選淺色或深色棋盤，設定會記住。	The grid can be switched on and off; transparent cells can use a light or dark checkerboard, and the choice is remembered.	グリッドは切り替え可能。透明セルは明るい／暗いチェッカーを選べ、設定は記憶されます。	격자는 켜고 끌 수 있고, 투명 칸은 밝은/어두운 체크무늬를 고를 수 있으며 설정은 기억됩니다.
+畫布右上角顯示游標所在的體素座標。	The voxel coordinates under the cursor are shown at the top right of the canvas.	キャンバスの右上に、カーソルの位置のボクセル座標が表示されます。	캔버스 오른쪽 위에 커서가 있는 복셀 좌표가 표시됩니다.
+座標顯示	Coordinate display	座標表示	좌표 표시
+繪圖工具	Drawing tools	描画ツール	그리기 도구
+畫筆與橡皮擦	Pencil and eraser	ペンと消しゴム	연필과 지우개
+左鍵畫目前顏色，右鍵擦成透明（橡皮擦工具則左鍵就是擦）。	The left button paints the current colour and the right button erases to transparent (with the eraser tool, the left button erases).	左ボタンで現在の色を描画、右ボタンで透明に消去（消しゴムツールでは左ボタンで消去）。	왼쪽 버튼은 현재 색으로 칠하고 오른쪽 버튼은 투명으로 지웁니다 (지우개 도구에서는 왼쪽 버튼이 지우기).
+平面填滿連通的同色區域；勾「立體填滿」則換掉整個立體連通的實心塊。	A flat fill replaces the connected region of the same colour; tick "3D fill" to replace the whole connected solid block in 3D.	平面の塗りつぶしは、つながった同色の領域を置き換えます。「3D塗りつぶし」にチェックすると、立体的につながった塊全体を置き換えます。	평면 채우기는 이어진 같은 색 영역을 바꿉니다. 「3D 채우기」를 체크하면 3D로 이어진 덩어리 전체를 바꿉니다.
+填滿	Fill	塗りつぶし	채우기
+點畫布取色（點空白格＝選透明色），按著拖曳連續取色，快捷鍵 I。	Click the canvas to pick a colour (clicking an empty cell picks the transparent colour); hold and drag to keep picking; shortcut I.	キャンバスをクリックして色を取得します（空白セルをクリックすると透明色）。押したままドラッグで連続取得、ショートカット I。	캔버스를 클릭해 색을 가져옵니다 (빈 칸을 클릭하면 투명색). 누른 채 드래그하면 계속 가져오며 단축키는 I.
+吸管	Eyedropper	スポイト	스포이트
+直線	Line	直線	직선
+拖曳預覽、放開才畫；Shift 限制水平／垂直／45°，快捷鍵 L。	Drag to preview and the line is only drawn when you release; Shift constrains to horizontal / vertical / 45°; shortcut L.	ドラッグでプレビューし、離したときに描画します。Shift で水平／垂直／45°に制限、ショートカット L。	드래그하면 미리보기가 나오고 놓을 때 그려집니다. Shift는 수평/수직/45°로 제한, 단축키 L.
+拖曳對角；預設外框，勾「填滿形狀」畫實心；Shift 變正方形，快捷鍵 R。	Drag the corners; by default only the outline, tick "Fill shape" for solid; Shift makes a square; shortcut R.	対角をドラッグ。既定は枠線のみで、「図形を塗りつぶす」にチェックすると中まで塗ります。Shift で正方形、ショートカット R。	대각선을 드래그합니다. 기본은 테두리만이고 「도형 채우기」를 체크하면 속까지 칠합니다. Shift는 정사각형, 단축키 R.
+矩形	Rectangle	長方形	사각형
+橢圓	Ellipse	楕円	타원
+拖曳外接矩形；Shift 變正圓，快捷鍵 E。	Drag the bounding rectangle; Shift makes a circle; shortcut E.	外接長方形をドラッグ。Shift で正円、ショートカット E。	바깥 사각형을 드래그합니다. Shift는 정원, 단축키 E.
+鏡像對稱	Mirror symmetry	ミラー対称	대칭
+以模型正中央為軸，X／Y／Z 可同時開；畫筆、橡皮擦、填滿都會同步畫到對稱位置。	Around the exact centre of the model; X / Y / Z can be on together; the pencil, eraser and fill all paint the mirrored position as well.	モデルの中心を軸に、X／Y／Z を同時にオンにできます。ペン・消しゴム・塗りつぶしは対称位置にも同時に描画されます。	모델의 정중앙을 축으로 하며 X/Y/Z를 동시에 켤 수 있습니다. 연필, 지우개, 채우기가 대칭 위치에도 함께 그려집니다.
+11 種筆刷形狀	11 brush shapes	11種類のブラシ形状	11가지 브러시 모양
+方形、圓形、立方體、橢圓球、彈簧、螺旋、圓環、金字塔、圓錐體、圓柱體、膠囊型；立體筆刷一筆就畫出一整團。	Square, circle, cube, ellipsoid, spring, helix, torus, pyramid, cone, cylinder and capsule; a 3D brush paints a whole blob in one stroke.	四角、円、立方体、楕円体、バネ、螺旋、トーラス、ピラミッド、円錐、円柱、カプセル。立体ブラシは一筆で塊ごと描けます。	사각형, 원, 정육면체, 타원체, 스프링, 나선, 토러스, 피라미드, 원뿔, 원기둥, 캡슐. 입체 브러시는 한 번에 덩어리째 그립니다.
+粗細 1~8；深度＝同時往後面畫幾層（最多 128，受該視角的層數限制）。	Size 1–8; depth = how many slices behind to paint at the same time (up to 128, limited by the number of slices in that view).	太さ 1～8。深さ＝後ろへ何スライス同時に描くか（最大 128、そのビューのスライス数が上限）。	굵기 1~8, 깊이 = 뒤쪽으로 몇 슬라이스를 동시에 그릴지 (최대 128, 그 시점의 슬라이스 수가 한도).
+粗細與深度	Size and depth	太さと深さ	굵기와 깊이
+選取（矩形選取）	Select (rectangle select)	選択（矩形選択）	선택 (사각형 선택)
+拖曳拉出框，厚度＝筆刷深度；框內拖曳可搬移，浮起來時方向鍵微調，Enter 放下、Esc 取消。	Drag out a box, thickness = brush depth; drag inside the box to move it, arrow keys nudge it while it is floating, Enter drops it and Esc cancels.	ドラッグして枠を作ります。厚み＝ブラシの深さ。枠の中をドラッグで移動、浮動中は矢印キーで微調整、Enter で確定、Esc で取り消し。	드래그해서 상자를 만듭니다. 두께 = 브러시 깊이. 상자 안을 드래그하면 이동하고, 떠 있는 동안 방향키로 미세 조정하며 Enter로 놓고 Esc로 취소합니다.
+選取與編輯	Selection and editing	選択と編集	선택과 편집
+魔術棒	Magic wand	マジックワンド	마술봉
+選取相連的同色區域；Shift 加選、Ctrl 減選；可勾「全域同色」、設「容許誤差」與「羽化」。	Selects the connected region of the same colour; Shift adds, Ctrl subtracts; you can tick "Global same colour" and set "Tolerance" and "Feather".	つながった同色の領域を選択します。Shift で追加、Ctrl で除外。「全体の同色」にチェックしたり、「許容差」「ぼかし」を設定したりできます。	이어진 같은 색 영역을 선택합니다. Shift는 추가, Ctrl은 제외. 「전체 같은 색」을 체크하거나 「허용 오차」와 「페더」를 설정할 수 있습니다.
+剪下、複製、貼上、刪除、全選	Cut, copy, paste, delete, select all	切り取り・コピー・貼り付け・削除・すべて選択	잘라내기, 복사, 붙여넣기, 삭제, 모두 선택
+Ctrl+X／C／V、Delete、Ctrl+A；貼上後可拖曳到想要的位置再放下。	Ctrl+X / C / V, Delete, Ctrl+A; after pasting you can drag it to the place you want before dropping it.	Ctrl+X／C／V、Delete、Ctrl+A。貼り付け後は好きな位置までドラッグしてから確定できます。	Ctrl+X/C/V, Delete, Ctrl+A. 붙여넣은 뒤 원하는 위치로 드래그한 다음 놓을 수 있습니다.
+任意角度（編輯選單，或 Ctrl+]／Ctrl+[ 每次 15°），轉完還是浮動的，可再轉、再拖。	Any angle (Edit menu, or Ctrl+] / Ctrl+[ for 15° each); the result is still floating, so you can rotate or drag it again.	任意の角度（編集メニュー、または Ctrl+]／Ctrl+[ で15°ずつ）。回転後も浮動状態なので、さらに回したりドラッグしたりできます。	임의의 각도 (편집 메뉴 또는 Ctrl+]/Ctrl+[로 15°씩). 회전 후에도 떠 있는 상태라 다시 회전하거나 드래그할 수 있습니다.
+複製到 +1 層（Ctrl+D）、−1 層（Ctrl+Shift+D）、或一次複製到一段範圍；可勾「透明不覆蓋」。	Copy to +1 slice (Ctrl+D), −1 slice (Ctrl+Shift+D), or to a whole range at once; you can tick "Don't overwrite transparent".	+1 スライス（Ctrl+D）、−1 スライス（Ctrl+Shift+D）、または範囲へ一度にコピー。「透明部分は上書きしない」にチェックできます。	+1 슬라이스(Ctrl+D), −1 슬라이스(Ctrl+Shift+D) 또는 범위 전체로 한 번에 복사. 「투명은 덮어쓰지 않음」을 체크할 수 있습니다.
+複製圖層	Duplicate slice	スライスの複製	슬라이스 복제
+把目前視角看到的這一層整個清掉。	Clears the whole slice seen in the current view.	現在のビューに見えているスライス全体を消去します。	현재 시점에서 보이는 슬라이스 전체를 지웁니다.
+清除此層	Clear this slice	このスライスを消去	이 슬라이스 지우기
+左右翻轉、上下翻轉、轉 90°／180°、平移（編輯選單）。	Flip horizontally, flip vertically, rotate 90° / 180°, shift (Edit menu).	左右反転・上下反転・90°／180°回転・平行移動（編集メニュー）。	좌우 반전, 상하 반전, 90°/180° 회전, 이동 (편집 메뉴).
+整層／整幀變換	Whole-slice / whole-frame transforms	スライス全体／フレーム全体の変形	슬라이스 전체/프레임 전체 변형
+Ctrl+Z，最多 200 步；筆畫、選取搬移、複製圖層、幀的增減、調色盤整理都能復原。	Ctrl+Z, up to 200 steps; strokes, selection moves, slice copies, adding or removing frames and palette tidying can all be undone.	Ctrl+Z、最大200ステップ。ストローク・選択範囲の移動・スライスのコピー・フレームの追加削除・パレット整理がすべて元に戻せます。	Ctrl+Z, 최대 200단계. 획, 선택 영역 이동, 슬라이스 복사, 프레임 추가/삭제, 팔레트 정리를 모두 되돌릴 수 있습니다.
+復原	Undo	元に戻す	실행 취소
+RGBA 取色	RGBA colour picking	RGBA での色選択	RGBA 색 고르기
+方框＋兩條滑桿取色（含透明度），也可直接輸入 0~255。	Pick with the square and two sliders (including opacity), or type 0–255 directly.	四角と2本のスライダーで色を選びます（不透明度を含む）。0～255 を直接入力することもできます。	사각형과 슬라이더 두 개로 색을 고릅니다 (불투명도 포함). 0~255를 직접 입력해도 됩니다.
+顏色與調色盤	Colour and palette	色とパレット	색과 팔레트
+另一種取色方式：色相、飽和度、明度。	Another way to pick: hue, saturation and value.	もう1つの色選択方法: 色相・彩度・明度。	다른 색 고르기 방식: 색상, 채도, 명도.
+HSV 分頁	HSV tab	HSVタブ	HSV 탭
+共用調色盤	Shared palette	共有パレット	공유 팔레트
+最多 255 色，所有幀共用；畫下去才登記進調色盤；透明色永遠在第一格。	Up to 255 colours, shared by all frames; a colour is only recorded in the palette once you paint with it; the transparent colour is always in the first slot.	最大255色、全フレーム共通。描いたときに初めてパレットに記録されます。透明色は常に最初のスロットです。	최대 255색, 모든 프레임이 공유합니다. 칠해야 비로소 팔레트에 기록되며 투명색은 항상 첫 칸입니다.
+工具選單 > 調色盤：把所有幀都沒用到的顏色拿掉，空出色格。	Tools menu > Palette: removes colours that no frame uses, freeing slots.	ツールメニュー > パレット: どのフレームでも使われていない色を取り除き、スロットを空けます。	도구 메뉴 > 팔레트: 어떤 프레임도 쓰지 않는 색을 빼서 칸을 비웁니다.
+清除沒用到的顏色	Remove unused colours	使っていない色を削除	쓰지 않는 색 제거
+合併重複的顏色	Merge duplicate colours	重複した色を結合	중복된 색 병합
+工具選單 > 調色盤：完全相同的顏色只留一格。	Tools menu > Palette: identical colours keep only one slot.	ツールメニュー > パレット: 全く同じ色は1つのスロットだけ残します。	도구 메뉴 > 팔레트: 완전히 같은 색은 한 칸만 남깁니다.
+匯入／匯出調色盤	Import / export palette	パレットのインポート／エクスポート	팔레트 가져오기/내보내기
+GIMP 調色盤（.gpl）。	GIMP palette (.gpl).	GIMPパレット（.gpl）。	GIMP 팔레트(.gpl).
+圖層與部件拼接	Layers and part assembly	レイヤーとパーツの組み立て	레이어와 파트 조립
+時間軸左邊是圖層清單：整份動畫共用，每一幀每個圖層各有一張圖格。上面的圖層蓋住下面的。畫筆、填滿、選取、匯入圖片、膨脹都作用在目前圖層；預覽、時間軸縮圖、播放與匯出看的是合成後的樣子。	To the left of the timeline is the layer list: shared by the whole animation, with one cel per layer in every frame. Upper layers cover lower ones. The pencil, fill, selection, image import and inflate all act on the current layer; the preview, timeline thumbnails, playback and exports show the composited result.	タイムラインの左はレイヤー一覧です。アニメーション全体で共通で、各フレームの各レイヤーに1枚ずつセルがあります。上のレイヤーが下を覆います。ペン・塗りつぶし・選択・画像インポート・膨張は現在のレイヤーに作用し、プレビュー・タイムラインのサムネイル・再生・エクスポートは合成後の結果を表示します。	타임라인 왼쪽은 레이어 목록입니다. 애니메이션 전체가 공유하며 모든 프레임의 레이어마다 셀이 하나씩 있습니다. 위 레이어가 아래를 덮습니다. 연필, 채우기, 선택, 이미지 가져오기, 부풀리기는 현재 레이어에 적용되고, 미리보기, 타임라인 썸네일, 재생, 내보내기는 합성된 결과를 보여줍니다.
+多圖層	Multiple layers	複数レイヤー	다중 레이어
+新增（Ctrl+Shift+N，在目前圖層上方）、複製、刪除、上移／下移、向下合併、拼合所有圖層；點一列切換目前圖層，左邊的勾＝顯示／隱藏，連點兩下改名。每個動作算一次復原（連圖層內容都會回來）。	New (Ctrl+Shift+N, above the current layer), duplicate, delete, move up / down, merge down, flatten all layers; click a row to switch the current layer, the tick on the left = show / hide, double-click to rename. Every action is one undo step (even the layer content comes back).	新規（Ctrl+Shift+N、現在のレイヤーの上）、複製、削除、上へ／下へ、下のレイヤーに結合、すべて統合。行をクリックで現在のレイヤーを切り替え、左のチェック＝表示／非表示、ダブルクリックで名前の変更。どの操作も1回の取り消し単位です（レイヤーの内容も戻ります）。	새로 만들기(Ctrl+Shift+N, 현재 레이어 위), 복제, 삭제, 위/아래로 이동, 아래로 병합, 모든 레이어 병합. 행을 클릭하면 현재 레이어가 바뀌고, 왼쪽 체크 = 표시/숨김, 더블 클릭 = 이름 바꾸기. 모든 동작이 한 번의 실행 취소입니다 (레이어 내용까지 돌아옴).
+圖層指令	Layer commands	レイヤーコマンド	레이어 명령
+背景參考	Background reference	背景の参考表示	배경 참고 표시
+有多個圖層時，編輯畫布會把其他圖層的內容用半透明畫在目前圖層的透明處底下，方便對位。	With several layers, the edit canvas draws the content of the other layers semi-transparent underneath the transparent parts of the current layer, to help with alignment.	複数のレイヤーがあるとき、編集キャンバスは他のレイヤーの内容を、現在のレイヤーの透明な部分の下に半透明で描画します。位置合わせに便利です。	레이어가 여러 개일 때 편집 캔버스는 다른 레이어의 내용을 현재 레이어의 투명한 부분 아래에 반투명으로 그려 위치 맞추기를 돕습니다.
+匯入檔案成圖層	Import file as layer	ファイルをレイヤーとしてインポート	파일을 레이어로 가져오기
+圖層選單：把另一個 .pstk（組件）讀進來，放在目前圖層上方成為新圖層。尺寸不同以中心對齊；顏色對應到目前的調色盤；組件只有一幀＝每一幀都放同一份。	Layer menu: reads another .pstk (a component) and puts it above the current layer as a new layer. If the sizes differ it is centred; colours are mapped to the current palette; a component with a single frame is put in every frame.	レイヤーメニュー: 別の .pstk（コンポーネント）を読み込み、現在のレイヤーの上に新しいレイヤーとして置きます。サイズが違う場合は中央揃え、色は現在のパレットに割り当てられ、1フレームだけのコンポーネントは全フレームに同じものが置かれます。	레이어 메뉴: 다른 .pstk(구성 요소)를 읽어 현재 레이어 위에 새 레이어로 놓습니다. 크기가 다르면 가운데 맞춤, 색은 현재 팔레트에 대응되며 프레임이 하나뿐인 구성 요소는 모든 프레임에 같은 것을 놓습니다.
+圖層選單：把目前圖層所有體素整塊平移 X／Y／Z 格（只動這一幀，或這個圖層在所有幀的內容）；超出模型的會丟掉，可復原。	Layer menu: shifts all voxels of the current layer by X / Y / Z cells as one block (this frame only, or this layer's content in every frame); anything moved outside the model is dropped, and it can be undone.	レイヤーメニュー: 現在のレイヤーのボクセルをすべて X／Y／Z セル分まとめて平行移動（このフレームのみ、またはこのレイヤーの全フレームの内容）。モデルの外に出たものは捨てられ、元に戻せます。	레이어 메뉴: 현재 레이어의 모든 복셀을 X/Y/Z칸만큼 한 덩어리로 이동 (이 프레임만 또는 이 레이어의 모든 프레임 내용). 모델 밖으로 나간 것은 버려지며 되돌릴 수 있습니다.
+工具「3D 魔術棒」：點一個體素，選出立體相連的整塊部件（可改成只選同色、可含斜角相連），Shift 加選、Ctrl 減選。選到的部件在畫布上染黃色。	Tool "3D magic wand": click a voxel to select the whole part connected to it in 3D (can be changed to same colour only, and can include diagonal connections); Shift adds, Ctrl subtracts. The selected part is tinted yellow on the canvas.	ツール「3Dマジックワンド」: ボクセルをクリックして、立体的につながったパーツ全体を選択します（同色のみに変更可、斜め接続を含めることも可）。Shift で追加、Ctrl で除外。選択したパーツはキャンバス上で黄色に染まります。	도구 「3D 마술봉」: 복셀을 클릭하면 3D로 이어진 파트 전체를 선택합니다 (같은 색만으로 바꿀 수 있고 대각선 연결을 포함할 수도 있음). Shift는 추가, Ctrl은 제외. 선택한 파트는 캔버스에서 노란색으로 물듭니다.
+3D 魔術棒	3D magic wand	3Dマジックワンド	3D 마술봉
+選好部件後用方向鍵（Ctrl+↑／↓ 往前後）或面板按鈕整塊搬動，Delete 刪除，「抽到新圖層」把它剪到上方的新圖層，再向下合併就拼好了。	After selecting a part, move it as a block with the arrow keys (Ctrl+↑ / ↓ for forward / back) or the panel buttons; Delete deletes it; "Move to new layer" cuts it into a new layer above, and merging down puts it together.	パーツを選択したら、矢印キー（Ctrl+↑／↓ で手前／奥）またはパネルのボタンで塊ごと動かします。Delete で削除、「新規レイヤーへ移動」で上の新しいレイヤーに切り出し、下のレイヤーに結合すれば組み立て完了です。	파트를 선택한 뒤 방향키(Ctrl+↑/↓로 앞/뒤) 또는 패널 버튼으로 덩어리째 옮깁니다. Delete로 삭제하고, 「새 레이어로 이동」으로 위의 새 레이어로 잘라낸 뒤 아래로 병합하면 조립이 끝납니다.
+移動與抽出部件	Move and extract parts	パーツの移動と切り出し	파트 이동과 분리
+動畫（逐幀）	Animation (frame by frame)	アニメーション（フレームごと）	애니메이션 (프레임별)
+多幀時間軸	Multi-frame timeline	マルチフレームのタイムライン	다중 프레임 타임라인
+底部是每一幀的縮圖，點一下就切過去編輯。	At the bottom is a thumbnail of every frame; click one to switch to it and edit.	下部に各フレームのサムネイルが並びます。クリックするとそのフレームに切り替わって編集できます。	아래쪽에 모든 프레임의 썸네일이 있습니다. 클릭하면 그 프레임으로 전환해 편집합니다.
+新增空白幀、複製此幀、刪除此幀、左移、右移。	Add blank frame, duplicate frame, delete frame, move left, move right.	空のフレームを追加、フレームを複製、フレームを削除、左へ移動、右へ移動。	빈 프레임 추가, 프레임 복제, 프레임 삭제, 왼쪽으로, 오른쪽으로.
+幀的管理	Frame management	フレームの管理	프레임 관리
+播放與速度	Playback and speed	再生と速度	재생과 속도
+Space 播放／暫停，速度 1~30 幀/秒。	Space plays / pauses; speed 1–30 frames per second.	スペースキーで再生／一時停止、速度は 1～30 フレーム毎秒。	스페이스로 재생/일시 정지, 속도는 초당 1~30프레임.
+按 , 與 . 切換上一幀、下一幀。	Press , and . for the previous and next frame.	, と . で前／次のフレーム。	, 와 .로 이전/다음 프레임.
+切換幀	Change frame	フレームの切り替え	프레임 전환
+右側即時顯示；拖曳轉動與改俯角，滾輪拉近拉遠，雙擊還原。	Shown live on the right; drag to rotate and change the pitch, the wheel zooms in and out, double-click resets.	右側にリアルタイムで表示。ドラッグで回転と仰角変更、ホイールでズーム、ダブルクリックでリセット。	오른쪽에 실시간으로 표시됩니다. 드래그로 회전과 피치 변경, 휠로 확대/축소, 더블 클릭으로 초기화.
+即時偽 3D 預覽	Live pseudo-3D preview	リアルタイム疑似3Dプレビュー	실시간 의사 3D 미리보기
+3D 預覽	3D preview	3Dプレビュー	3D 미리보기
+實心體素（看到什麼顯示什麼）與層疊（Sprite Stacking 風格）。	Solid voxels (shows what you see) and stacked (Sprite Stacking style).	ソリッドボクセル（見えたものをそのまま表示）とスタック（Sprite Stacking 風）。	꽉 찬 복셀(보이는 대로 표시)과 겹쌓기(Sprite Stacking 방식).
+兩種預覽方式	Two preview modes	2つのプレビュー方式	두 가지 미리보기 방식
+自動旋轉可開關；光影可關閉改看純色。	Auto-rotate can be switched on and off; shading can be turned off to see flat colours.	自動回転はオン／オフ可能。シェーディングをオフにすると単色で表示されます。	자동 회전은 켜고 끌 수 있고, 음영을 끄면 단색으로 봅니다.
+自動旋轉與光影	Auto-rotate and shading	自動回転とシェーディング	자동 회전과 음영
+只顯示目前切片以後面的部分，檢查內部。	Shows only the part behind the current slice, to check the inside.	現在のスライスより奥の部分だけを表示して、内部を確認します。	현재 슬라이스 뒤쪽 부분만 표시해서 안쪽을 확인합니다.
+切開看內部	Cut open to see inside	断面で内部を表示	잘라서 안쪽 보기
+可收合的功能列	Collapsible function bars	折りたたみ可能な機能バー	접을 수 있는 기능 막대
+左欄分成視角、顏色、工具、筆刷、顯示五大類，可收起或展開，狀態會記住。	The left column is split into five categories — view, colour, tools, brush and display — which can be collapsed or expanded, and the state is remembered.	左の列は、ビュー・色・ツール・ブラシ・表示の5つのカテゴリに分かれ、折りたたみ／展開でき、状態は記憶されます。	왼쪽 열은 시점, 색, 도구, 브러시, 표시의 다섯 범주로 나뉘며 접거나 펼 수 있고 상태는 기억됩니다.
+介面	Interface	インターフェース	인터페이스
+時間軸、層數滑桿＋複製工具各有一條標題列，點一下收起，編輯畫布與預覽就多出空間；收起時空白鍵、, . 、←／→、[ ] 仍然有效，狀態會記住。	The timeline and the layer slider + copy tools each have a title bar; click it to collapse and give the edit canvas and preview more room. While collapsed, Space, , . , ←/→ and [ ] still work, and the state is remembered.	タイムラインと、レイヤースライダー＋コピーツールにはそれぞれタイトルバーがあり、クリックで折りたたむと編集キャンバスとプレビューが広くなります。折りたたみ中もスペース、, . 、←/→、[ ] は使え、状態は記憶されます。	타임라인과 레이어 슬라이더+복사 도구에는 각각 제목 줄이 있어 클릭하면 접혀 편집 캔버스와 미리보기가 넓어집니다. 접은 상태에서도 Space, , . , ←/→, [ ] 는 동작하며 상태는 기억됩니다.
+可收起的時間軸與層數面板	Collapsible timeline and slice panels	折りたたみ可能なタイムラインとスライスのパネル	접을 수 있는 타임라인과 슬라이스 패널
+滾輪分區	Wheel zones	ホイールの領域分担	휠 영역 구분
+滑鼠在左欄＝捲動功能列、中間＝換層、右邊＝縮放 3D 預覽。	Mouse over the left column = scroll the function bars, middle = change slice, right = zoom the 3D preview.	マウスが左の列＝機能バーをスクロール、中央＝スライスの切り替え、右＝3Dプレビューのズーム。	마우스가 왼쪽 열 = 기능 막대 스크롤, 가운데 = 슬라이스 전환, 오른쪽 = 3D 미리보기 확대/축소.
+滑鼠提示	Mouse tips	マウスのヒント	마우스 툴팁
+幾乎每個按鈕、選項停一下都會顯示說明。	Almost every button and option shows an explanation if you hold the mouse over it.	ほとんどのボタンやオプションは、マウスを少し置くと説明が表示されます。	거의 모든 버튼과 옵션에 마우스를 잠깐 올리면 설명이 나타납니다.
+說明選單的「使用教學…」（F1）：就是這份文件。	The "User guide…" in the Help menu (F1): this very document.	ヘルプメニューの「使い方ガイド…」（F1）: この文書そのものです。	도움말 메뉴의 「사용 안내…」(F1): 바로 이 문서입니다.
+PixelStacking 是做「體素」模型與動畫的編輯器：模型是一疊一疊的平面（層），你從任一個方向編輯其中一層，右邊即時看到立體的樣子。	PixelStacking is an editor for "voxel" models and animation: a model is a stack of flat slices; you edit one slice from any direction and see the 3D result live on the right.	PixelStacking は「ボクセル」モデルとアニメーションのエディターです。モデルは平面（スライス）を積み重ねたもので、好きな方向から1つのスライスを編集すると、右側で立体の姿がリアルタイムに見えます。	PixelStacking은 「복셀」 모델과 애니메이션을 만드는 편집기입니다. 모델은 평면(슬라이스)을 쌓은 것이며, 어느 방향에서든 슬라이스 하나를 편집하면 오른쪽에서 입체 모습을 실시간으로 볼 수 있습니다.
+目前共有 {0} 項功能，分成 {1} 大類。左邊的頁籤有快速上手、建議做法、快捷鍵與常見問題。	There are {0} features in {1} categories. The tabs on the left hold the quick start, recommended workflows, shortcuts and FAQ.	機能は {0} 個、{1} カテゴリあります。左のタブには、クイックスタート、おすすめの手順、ショートカット、よくある質問があります。	기능은 {0}개이며 {1}개 범주로 나뉩니다. 왼쪽 탭에 빠른 시작, 추천 작업 방식, 단축키, 자주 묻는 질문이 있습니다.
+{0}（{1} 項）	{0} ({1} items)	{0}（{1} 項目）	{0} ({1}개)
+{0}：{1}	{0}: {1}	{0}：{1}	{0}: {1}
+快速上手	Quick start	クイックスタート	빠른 시작
+做出你的第一個模型，大約五分鐘：	Make your first model in about five minutes:	最初のモデルを約5分で作りましょう:	약 5분 안에 첫 모델을 만들어 보세요:
+按 Ctrl+N 新增文件。第一次建議用 32 × 32 × 32（長 × 寬 × 高，各 1~128）；格子越多越細，但畫起來越慢。	Press Ctrl+N for a new document. For the first time 32 × 32 × 32 (length × width × height, 1–128 each) is a good size; more cells means more detail but slower drawing.	Ctrl+N で新規ドキュメントを作ります。最初は 32 × 32 × 32（長さ × 幅 × 高さ、各 1～128）がおすすめ。セルが多いほど細かくなりますが、描くのが遅くなります。	Ctrl+N으로 새 문서를 만듭니다. 처음에는 32 × 32 × 32(길이 × 너비 × 높이, 각 1~128)를 추천합니다. 칸이 많을수록 세밀하지만 그리기가 느려집니다.
+選顏色：左欄「顏色」用方框與滑桿調 RGBA，或點下面的色塊。顏色是「畫下去才登記」進調色盤的。	Pick a colour: in the left column "Colour", adjust RGBA with the square and sliders, or click a swatch below. A colour is only recorded in the palette once you paint with it.	色を選ぶ: 左の「色」で四角とスライダーを使って RGBA を調整するか、下の色見本をクリックします。色は描いたときに初めてパレットに記録されます。	색 고르기: 왼쪽 「색」에서 사각형과 슬라이더로 RGBA를 조정하거나 아래 색 칸을 클릭합니다. 색은 칠해야 비로소 팔레트에 기록됩니다.
+開始畫：預設是「頂部」視角，畫布上看到的是模型的一層。選「畫筆」，在畫布上左鍵畫、右鍵擦。	Start drawing: the default view is "Top", and the canvas shows one slice of the model. Choose "Pencil" and paint with the left button, erase with the right.	描き始める: 既定のビューは「上面」で、キャンバスにはモデルの1スライスが表示されます。「ペン」を選び、左ボタンで描画、右ボタンで消去します。	그리기 시작: 기본 시점은 「위」이며 캔버스에는 모델의 슬라이스 하나가 보입니다. 「연필」을 고르고 왼쪽 버튼으로 칠하고 오른쪽 버튼으로 지웁니다.
+換層：按 ← 與 →，或 [ 與 ]。數字越大越靠近你。每一層畫一點，模型就長高了。	Change layer: press ← and →, or [ and ]. A higher number is closer to you. Draw a little on each layer and the model grows taller.	レイヤー切り替え：← と →、または [ と ] を押します。数字が大きいほど手前になります。レイヤーごとに少しずつ描くと、モデルが高くなっていきます。	레이어 전환: ← 와 → 또는 [ 와 ] 를 누릅니다. 숫자가 클수록 가까워집니다. 레이어마다 조금씩 그리면 모델이 높아집니다.
+一筆就畫出立體：在左欄「筆刷」選「橢圓球」「立方體」「圓柱體」…，點一下就是一團；或把「深度」拉大，一次往後畫好幾層。	Paint in 3D with one stroke: in the left column "Brush" pick "Ellipsoid", "Cube", "Cylinder"…, one click is a whole blob; or raise "Depth" to paint several slices behind at once.	一筆で立体を描く: 左の「ブラシ」で「楕円体」「立方体」「円柱」…を選ぶと、1クリックで塊ができます。または「深さ」を大きくして、後ろのスライスを一度に何枚も描けます。	한 번에 입체 그리기: 왼쪽 「브러시」에서 「타원체」 「정육면체」 「원기둥」…을 고르면 한 번 클릭에 덩어리가 됩니다. 또는 「깊이」를 크게 해서 뒤쪽 슬라이스 여러 장을 한꺼번에 그리세요.
+看成果：右邊的 3D 預覽會即時更新。拖曳轉動，滾輪縮放，雙擊還原。	See the result: the 3D preview on the right updates live. Drag to rotate, wheel to zoom, double-click to reset.	結果を見る: 右の3Dプレビューがリアルタイムで更新されます。ドラッグで回転、ホイールでズーム、ダブルクリックでリセット。	결과 보기: 오른쪽 3D 미리보기가 실시간으로 갱신됩니다. 드래그로 회전, 휠로 확대/축소, 더블 클릭으로 초기화.
+換個角度補細節：按 1~6（頂、底、正、背、左、右）從別的方向編輯，正面看腳、側面看背，比較好對位。	Add detail from another angle: press 1–6 (top, bottom, front, back, left, right) to edit from another direction; feet are easier to see from the front and the back from the side, which makes alignment easier.	別の角度から細部を描く: 1～6（上・下・正・背・左・右）を押して別の方向から編集します。足は正面から、背中は側面から見ると位置を合わせやすくなります。	다른 각도에서 디테일 보충: 1~6(위, 아래, 정면, 후면, 왼쪽, 오른쪽)을 눌러 다른 방향에서 편집합니다. 발은 정면에서, 등은 옆에서 보면 위치를 맞추기 쉽습니다.
+存檔：Ctrl+S 存成 .pstk。有「*」代表還沒存。	Save: Ctrl+S saves as .pstk. A "*" means it is not saved yet.	保存: Ctrl+S で .pstk として保存します。「*」は未保存の印です。	저장: Ctrl+S로 .pstk로 저장합니다. 「*」는 아직 저장하지 않았다는 뜻입니다.
+給遊戲用：檔案 → 匯出 PNG（預先渲染好的圖）、匯出 GIF（分享）、匯出疊層條帶（讓遊戲自己疊）。	For games: File → Export PNG (pre-rendered pictures), Export GIF (to share), Export stack strip (so the game stacks it itself).	ゲーム用: ファイル → PNGをエクスポート（事前レンダリング画像）、GIFをエクスポート（共有用）、スタックストリップをエクスポート（ゲーム側で重ねる）。	게임용: 파일 → PNG 내보내기(미리 렌더링한 그림), GIF 내보내기(공유용), 스택 스트립 내보내기(게임에서 직접 쌓음).
+找不到某個功能時，把滑鼠停在它上面幾秒，幾乎每個控制項都有說明。	When you can't find a feature, hold the mouse over it for a few seconds; almost every control has an explanation.	機能が見つからないときは、その上にマウスを数秒置いてください。ほとんどのコントロールに説明があります。	기능을 찾지 못하겠으면 마우스를 몇 초 올려 보세요. 거의 모든 컨트롤에 설명이 있습니다.
+繪圖與選取技巧	Drawing and selection tips	描画と選択のコツ	그리기와 선택 요령
+讓畫圖更快	Draw faster	もっと速く描く	더 빠르게 그리기
+左右對稱的角色：左欄「筆刷」勾「鏡像對稱」的 X，只畫半邊。要前後、上下對稱就勾 Y 或 Z；可同時開多個。畫布上的粉紅虛線就是對稱軸。	Left-right symmetric characters: in the left column "Brush" tick X under "Mirror symmetry" and draw only half. For front-back or up-down symmetry tick Y or Z; several can be on together. The pink dashed lines on the canvas are the mirror axes.	左右対称のキャラクター: 左の「ブラシ」で「ミラー対称」の X にチェックし、半分だけ描きます。前後や上下の対称なら Y や Z にチェック。複数同時にオンにできます。キャンバスのピンクの破線が対称軸です。	좌우 대칭 캐릭터: 왼쪽 「브러시」에서 「대칭」의 X를 체크하고 절반만 그립니다. 앞뒤나 상하 대칭이면 Y나 Z를 체크하며 여러 개를 함께 켤 수 있습니다. 캔버스의 분홍 점선이 대칭 축입니다.
+大面積著色：用「填滿」。勾「立體填滿」會一次換掉整個立體連通的同色塊（點空白格不會動）。	Large areas: use "Fill". Tick "3D fill" to replace a whole connected solid block of the same colour at once (clicking an empty cell does nothing).	広い面の塗り: 「塗りつぶし」を使います。「3D塗りつぶし」にチェックすると、立体的につながった同色の塊を一度に置き換えます（空白セルをクリックしても何も起きません）。	넓은 면 칠하기: 「채우기」를 쓰세요. 「3D 채우기」를 체크하면 3D로 이어진 같은 색 덩어리를 한 번에 바꿉니다 (빈 칸을 클릭해도 아무 일 없음).
+畫圓、方框、直線：用「直線」「矩形」「橢圓」，拖曳時有預覽；Shift 變正圓、正方形、45° 線。	Circles, boxes, lines: use "Line", "Rectangle" and "Ellipse", which show a preview while you drag; Shift gives a circle, a square or a 45° line.	円・枠・直線: 「直線」「長方形」「楕円」を使うと、ドラッグ中にプレビューが出ます。Shift で正円・正方形・45°の線になります。	원, 사각 테두리, 직선: 「직선」 「사각형」 「타원」을 쓰면 드래그하는 동안 미리보기가 나옵니다. Shift는 정원, 정사각형, 45° 선이 됩니다.
+拉出整面牆、整根柱子：畫好一層後用「複製到範圍…」，或 Ctrl+D 連按往上疊。	A whole wall or a whole pillar: draw one slice and use "Copy to range…", or press Ctrl+D repeatedly to stack upward.	壁一面や柱1本を作る: 1スライスを描いて「範囲にコピー…」を使うか、Ctrl+D を連打して上へ積み重ねます。	벽 한 면이나 기둥 하나 만들기: 슬라이스 하나를 그린 뒤 「범위로 복사…」를 쓰거나 Ctrl+D를 연달아 눌러 위로 쌓습니다.
+立體筆刷：橢圓球做頭（深度 = 2×半徑+1 就是正圓球）、膠囊型做手腳、圓環做甜甜圈或輪胎、螺旋與彈簧做線圈。深度決定沿視線方向的長度。	3D brushes: ellipsoid for heads (depth = 2×radius+1 gives a true sphere), capsule for arms and legs, torus for donuts or tyres, helix and spring for coils. Depth decides the length along the line of sight.	立体ブラシ: 楕円体は頭（深さ = 2×半径+1 で真球）、カプセルは手足、トーラスはドーナツやタイヤ、螺旋とバネはコイルに。深さは視線方向の長さを決めます。	입체 브러시: 타원체는 머리(깊이 = 2×반지름+1이면 정구), 캡슐은 팔다리, 토러스는 도넛이나 타이어, 나선과 스프링은 코일에. 깊이는 시선 방향의 길이를 정합니다.
+選取與修改	Selecting and modifying	選択と修正	선택과 수정
+「選取」拖出矩形，「魔術棒」點一下選相連的同色區域（Shift 加選、Ctrl 減選）。厚度＝筆刷深度，所以深度設大可以一次選好幾層。	"Select" drags out a rectangle; "Magic wand" selects the connected region of the same colour with one click (Shift adds, Ctrl subtracts). Thickness = brush depth, so a large depth selects several slices at once.	「選択」は矩形をドラッグで作り、「マジックワンド」は1クリックでつながった同色の領域を選択します（Shift で追加、Ctrl で除外）。厚み＝ブラシの深さなので、深さを大きくすると複数のスライスを一度に選べます。	「선택」은 사각형을 드래그해서 만들고 「마술봉」은 한 번 클릭으로 이어진 같은 색 영역을 선택합니다 (Shift는 추가, Ctrl은 제외). 두께 = 브러시 깊이이므로 깊이를 크게 하면 여러 슬라이스를 한 번에 선택할 수 있습니다.
+魔術棒的「容許誤差」讓相近的顏色一起選；「羽化」讓邊緣漸變（只往內）。	The magic wand's "Tolerance" lets similar colours be selected together; "Feather" fades the edge (inward only).	マジックワンドの「許容差」で近い色も一緒に選択でき、「ぼかし」で縁を徐々に変化させます（内側のみ）。	마술봉의 「허용 오차」는 비슷한 색을 함께 선택하게 하고, 「페더」는 가장자리를 점점 바뀌게 합니다 (안쪽으로만).
+選好後可以 Ctrl+C／X／V，或直接在框內拖曳搬移；內容浮起來（搬移中、貼上後）時，方向鍵可以微調 1 格。Enter 放下，Esc 取消。	After selecting you can Ctrl+C / X / V, or drag inside the box to move it; while the content is floating (being moved or just pasted) the arrow keys nudge it by 1 cell. Enter drops it, Esc cancels.	選択後は Ctrl+C／X／V ができ、枠の中をドラッグして移動することもできます。内容が浮動状態（移動中・貼り付け直後）のあいだは、矢印キーで1セルずつ微調整できます。Enter で確定、Esc で取り消し。	선택한 뒤 Ctrl+C/X/V를 쓰거나 상자 안을 드래그해 옮길 수 있습니다. 내용이 떠 있는 동안(이동 중, 붙여넣은 직후) 방향키로 1칸씩 미세 조정할 수 있습니다. Enter로 놓고 Esc로 취소합니다.
+「旋轉選取區」（編輯選單，或 Ctrl+] / Ctrl+[）可轉任意角度，沿視線軸、繞選取區中心。想繞別的軸，換到那個視角再轉。	"Rotate selection" (Edit menu, or Ctrl+] / Ctrl+[) turns it by any angle, along the line of sight around the centre of the selection. To rotate around another axis, switch to that view and rotate there.	「選択範囲を回転」（編集メニュー、または Ctrl+]／Ctrl+[）で任意の角度に回せます。視線方向に沿って、選択範囲の中心を軸に回ります。別の軸で回したいときは、そのビューに切り替えてから回します。	「선택 영역 회전」(편집 메뉴 또는 Ctrl+]/Ctrl+[)으로 임의의 각도로 돌릴 수 있습니다. 시선 방향을 따라 선택 영역의 중심을 축으로 돕니다. 다른 축으로 돌리려면 그 시점으로 바꾼 뒤 돌리세요.
+「變換目前圖層的所有切片」可以把目前圖層整個翻轉、轉 90°、平移，等於整個圖層一起動。	"Transform all slices of the current layer" flips, rotates 90° or shifts the whole current layer, as if the whole layer moved together.	「現在のレイヤーのすべてのスライスを変形」は、現在のレイヤー全体を反転・90°回転・平行移動します。レイヤー全体が一緒に動くイメージです。	「현재 레이어의 모든 슬라이스 변형」은 현재 레이어 전체를 뒤집거나 90° 회전하거나 이동합니다. 레이어 전체가 함께 움직이는 셈입니다.
+貼上時勾「透明不覆蓋」，只會貼有顏色的格子，不會把底下原有的東西清掉。	When pasting, tick "Don't overwrite transparent" so only cells with colour are pasted and what was underneath is not cleared.	貼り付けるときに「透明部分は上書きしない」にチェックすると、色のあるセルだけが貼り付けられ、下にあるものは消されません。	붙여넣을 때 「투명은 덮어쓰지 않음」을 체크하면 색이 있는 칸만 붙여지고 아래에 있던 것은 지워지지 않습니다.
+輔助顯示	Display aids	表示の補助	보조 표시
+「半透明顯示下一層」讓你知道後面那一層長什麼樣，對位用。「半透明顯示上一幀」（橘色）做動畫時很有用。	"Show next slice semi-transparent" shows what the slice behind looks like, for alignment. "Show previous frame semi-transparent" (orange) is very useful when animating.	「次のスライスを半透明で表示」は後ろのスライスの様子を見せ、位置合わせに使います。「前のフレームを半透明で表示」（オレンジ）はアニメーション作りにとても便利です。	「다음 슬라이스를 반투명으로 표시」는 뒤쪽 슬라이스가 어떻게 생겼는지 보여줘 위치 맞추기에 씁니다. 「이전 프레임을 반투명으로 표시」(주황)는 애니메이션을 만들 때 아주 유용합니다.
+右邊預覽勾「切開看內部」，只顯示目前這一層以後面的部分，可以檢查內部有沒有畫對。	Tick "Cut open to see inside" in the preview on the right to show only the part behind the current slice and check whether the inside is drawn correctly.	右のプレビューで「断面で内部を表示」にチェックすると、現在のスライスより奥の部分だけが表示され、内部が正しく描けているか確認できます。	오른쪽 미리보기에서 「잘라서 안쪽 보기」를 체크하면 현재 슬라이스 뒤쪽 부분만 표시되어 안쪽이 제대로 그려졌는지 확인할 수 있습니다.
+一個文件可以有很多幀，所有幀共用同一份調色盤與尺寸。最直接的做法就是一幀一幀畫：	A document can have many frames, and all frames share the same palette and size. The most direct way is to draw frame by frame:	1つのドキュメントには多数のフレームを持たせられ、全フレームが同じパレットとサイズを共有します。最も直接的な方法は、1フレームずつ描くことです:	한 문서에는 프레임을 여러 개 둘 수 있고 모든 프레임이 같은 팔레트와 크기를 공유합니다. 가장 직접적인 방법은 프레임을 하나씩 그리는 것입니다:
+畫好第一幀。按「複製此幀」，複製出來的新幀會接在後面並切過去。	Finish the first frame. Press "Duplicate frame"; the new frame is added after it and selected.	最初のフレームを描き終えたら、「フレームを複製」を押します。複製された新しいフレームが後ろに追加され、そちらに切り替わります。	첫 프레임을 다 그립니다. 「프레임 복제」를 누르면 복제된 새 프레임이 뒤에 붙고 그쪽으로 전환됩니다.
+在新幀上微調（手抬高一點、腳換個位置）。「半透明顯示上一幀」會用橘色標出上一幀的樣子，對位很方便。	Fine-tune the new frame (raise the hand a bit, move a foot). "Show previous frame semi-transparent" marks the previous frame in orange, which makes alignment easy.	新しいフレームで微調整します（手を少し上げる、足の位置を変えるなど）。「前のフレームを半透明で表示」で前のフレームがオレンジで示され、位置合わせが簡単です。	새 프레임에서 미세 조정합니다 (손을 조금 올리고 발 위치를 바꾸는 등). 「이전 프레임을 반투명으로 표시」가 이전 프레임을 주황으로 보여줘 위치 맞추기가 쉽습니다.
+重複 1、2。底部時間軸可以點縮圖切換，「◀ 左移」「右移 ▶」調整順序，「刪除此幀」刪掉不要的。	Repeat 1 and 2. On the timeline at the bottom you can click thumbnails to switch, "◀ Move left" / "Move right ▶" to change the order, and "Delete frame" to remove ones you don't want.	1と2を繰り返します。下のタイムラインではサムネイルをクリックして切り替え、「◀ 左へ移動」「右へ移動 ▶」で順序を変え、「フレームを削除」で不要なものを消せます。	1과 2를 반복합니다. 아래 타임라인에서 썸네일을 클릭해 전환하고, 「◀ 왼쪽으로」 「오른쪽으로 ▶」로 순서를 바꾸고, 「프레임 삭제」로 필요 없는 것을 지울 수 있습니다.
+按 Space 或「播放」看動畫，滑桿調速度（1~30 幀/秒）。, 與 . 切換上一幀、下一幀。	Press Space or "Play" to watch the animation, and set the speed with the slider (1–30 frames per second). , and . switch to the previous and next frame.	Space か「再生」でアニメーションを再生し、スライダーで速度を調整します（1～30 フレーム毎秒）。, と . で前／次のフレームに切り替えます。	Space나 「재생」으로 애니메이션을 보고 슬라이더로 속도를 조절합니다 (초당 1~30프레임). , 와 .로 이전/다음 프레임으로 전환합니다.
+檔案 → 匯出 GIF 分享，或匯出 PNG／疊層條帶給遊戲。	File → Export GIF to share, or export PNG / stack strip for games.	ファイル → GIFをエクスポートで共有、またはゲーム用にPNG／スタックストリップをエクスポートします。	파일 → GIF 내보내기로 공유하거나 게임용으로 PNG/스택 스트립을 내보냅니다.
+多圖層讓你把角色拆成幾個物件（身體、帽子、武器…）分開畫、分開移動，最後合併成一個。時間軸左邊有圖層清單：	Multiple layers let you split a character into several objects (body, hat, weapon…), draw and move them separately, then merge them into one. To the left of the timeline is the layer list:	複数レイヤーを使うと、キャラクターをいくつかのオブジェクト（身体・帽子・武器…）に分けて別々に描いたり動かしたりし、最後に1つに結合できます。タイムラインの左にレイヤー一覧があります:	다중 레이어를 쓰면 캐릭터를 여러 물체(몸, 모자, 무기…)로 나눠 따로 그리고 따로 옮긴 뒤 마지막에 하나로 합칠 수 있습니다. 타임라인 왼쪽에 레이어 목록이 있습니다:
+上面的圖層蓋住下面的；每個圖層在每一幀都有自己的內容。只有一個圖層時跟以前完全一樣。	Upper layers cover lower ones; every layer has its own content in every frame. With just one layer it works exactly as before.	上のレイヤーが下を覆います。各レイヤーは各フレームに独自の内容を持ちます。レイヤーが1つだけのときは、これまでとまったく同じです。	위 레이어가 아래를 덮고, 레이어마다 모든 프레임에 자기만의 내용이 있습니다. 레이어가 하나뿐이면 예전과 완전히 같습니다.
+畫布編輯的是「目前圖層」（清單裡藍框那列）；其他圖層會半透明地顯示在底下當參考。預覽、縮圖、匯出看的是合成結果。	The canvas edits the "current layer" (the row with the blue frame in the list); other layers are shown semi-transparent underneath as a reference. The preview, thumbnails and exports show the composited result.	キャンバスで編集するのは「現在のレイヤー」（一覧で青い枠の行）です。他のレイヤーは参考として下に半透明で表示されます。プレビュー・サムネイル・エクスポートは合成結果を表示します。	캔버스에서 편집하는 것은 「현재 레이어」(목록에서 파란 테두리 행)입니다. 다른 레이어는 참고용으로 아래에 반투명하게 표시됩니다. 미리보기, 썸네일, 내보내기는 합성된 결과를 보여줍니다.
+＋ 新增（在目前圖層上方）、⧉ 複製、✕ 刪除、▲▼ 調順序、⤓ 向下合併；左邊的勾＝顯示／隱藏；連點兩下改名。圖層選單還有「拼合所有圖層」。	＋ New (above the current layer), ⧉ duplicate, ✕ delete, ▲▼ change order, ⤓ merge down; the tick on the left = show / hide; double-click to rename. The Layer menu also has "Flatten all layers".	＋ 新規（現在のレイヤーの上）、⧉ 複製、✕ 削除、▲▼ 順序変更、⤓ 下のレイヤーに結合。左のチェック＝表示／非表示、ダブルクリックで名前の変更。レイヤーメニューには「すべてのレイヤーを統合」もあります。	＋ 새로 만들기(현재 레이어 위), ⧉ 복제, ✕ 삭제, ▲▼ 순서 변경, ⤓ 아래로 병합. 왼쪽 체크 = 표시/숨김, 더블 클릭 = 이름 바꾸기. 레이어 메뉴에는 「모든 레이어 병합」도 있습니다.
+匯入一個組件，拼到角色身上	Import a component and assemble it onto the character	コンポーネントをインポートしてキャラクターに組み立てる	구성 요소를 가져와 캐릭터에 조립하기
+圖層選單 → 匯入檔案成圖層…，選另一個 .pstk（例如一頂帽子）。它會成為目前圖層上方的新圖層，尺寸不同時置中。	Layer menu → Import file as layer…, and pick another .pstk (for example a hat). It becomes a new layer above the current one, centred if the sizes differ.	レイヤーメニュー → ファイルをレイヤーとしてインポート… で別の .pstk（例: 帽子）を選びます。現在のレイヤーの上に新しいレイヤーとして置かれ、サイズが違うときは中央に揃います。	레이어 메뉴 → 파일을 레이어로 가져오기… 에서 다른 .pstk(예: 모자)를 고릅니다. 현재 레이어 위에 새 레이어가 되며 크기가 다르면 가운데 맞춤이 됩니다.
+圖層選單 → 移動圖層內容…，輸入 X／Y／Z 格數把整個組件移到位置（可以只動這一幀，或所有幀一起動）。	Layer menu → Move layer content…, and enter X / Y / Z cells to move the whole component into place (this frame only, or all frames together).	レイヤーメニュー → レイヤーの内容を移動… で X／Y／Z のセル数を入力し、コンポーネント全体を所定の位置へ動かします（このフレームのみ、または全フレーム一緒に）。	레이어 메뉴 → 레이어 내용 이동… 에서 X/Y/Z 칸 수를 입력해 구성 요소 전체를 제자리로 옮깁니다 (이 프레임만 또는 모든 프레임 함께).
+看起來對了，按 ⤓ 向下合併，組件就併進身體那一層了。想改回來按 Ctrl+Z。	When it looks right, press ⤓ merge down and the component is merged into the body layer. To undo it, press Ctrl+Z.	合っていたら ⤓ 下のレイヤーに結合を押すと、コンポーネントが身体のレイヤーに結合されます。元に戻すには Ctrl+Z。	맞으면 ⤓ 아래로 병합을 누르세요. 구성 요소가 몸 레이어에 합쳐집니다. 되돌리려면 Ctrl+Z.
+用 3D 魔術棒把一個部件從模型裡拆出來	Use the 3D magic wand to take a part out of the model	3Dマジックワンドでモデルからパーツを取り出す	3D 마술봉으로 모델에서 파트 떼어내기
+左欄工具選「3D 魔術棒」，點模型上某個體素。跟它立體相連的整塊會被選起來（染黃色）。「只選同色」「斜角也算相連」可以調整範圍。	In the left column choose the "3D magic wand" tool and click a voxel on the model. The whole block connected to it in 3D is selected (tinted yellow). "Same colour only" and "Diagonals count as connected" adjust the range.	左の列のツールで「3Dマジックワンド」を選び、モデル上のボクセルをクリックします。立体的につながった塊全体が選択されます（黄色に染まります）。「同色のみ」「斜めも接続とみなす」で範囲を調整できます。	왼쪽 열 도구에서 「3D 마술봉」을 고르고 모델의 복셀을 클릭합니다. 3D로 이어진 덩어리 전체가 선택됩니다 (노란색으로 물듦). 「같은 색만」 「대각선도 이어진 것으로 봄」으로 범위를 조절할 수 있습니다.
+用方向鍵 ← → ↑ ↓ 移動，Ctrl+↑／↓ 往前／往後（依目前視角的方向）。想換視角就按 1~6，再接著移動。	Move it with the arrow keys ← → ↑ ↓, and Ctrl+↑ / ↓ for forward / back (in the direction of the current view). To change the view press 1–6, then keep moving.	矢印キー ← → ↑ ↓ で移動、Ctrl+↑／↓ で手前／奥（現在のビューの向き）。ビューを変えたいときは 1～6 を押してから続けて動かします。	방향키 ← → ↑ ↓로 이동하고 Ctrl+↑/↓로 앞/뒤(현재 시점의 방향)로 옮깁니다. 시점을 바꾸려면 1~6을 누른 뒤 계속 옮기세요.
+按「抽到新圖層」，這一塊會被剪到新圖層，選取跟著過去，可以繼續移動；拼到位置後用「向下合併」合回去。	Press "Move to new layer"; the block is cut into a new layer and the selection follows it, so you can keep moving it; when it is in place use "Merge down" to put it back.	「新規レイヤーへ移動」を押すと、その塊が新しいレイヤーに切り出され、選択も一緒に移るので続けて動かせます。位置が決まったら「下のレイヤーに結合」で戻します。	「새 레이어로 이동」을 누르면 그 덩어리가 새 레이어로 잘리고 선택도 따라가므로 계속 옮길 수 있습니다. 제자리에 놓았으면 「아래로 병합」으로 다시 합칩니다.
+匯入的組件、抽出來的部件都在「自己的圖層」裡，移錯了隨時 Ctrl+Z，或把那層刪掉重來，不會弄壞原本的角色。	Imported components and extracted parts live in "their own layer"; if you move one wrongly, press Ctrl+Z at any time, or delete that layer and start over, and the original character is never damaged.	インポートしたコンポーネントや切り出したパーツは「専用のレイヤー」に入っています。動かし間違えても、いつでも Ctrl+Z で戻すか、そのレイヤーを削除してやり直せます。元のキャラクターは壊れません。	가져온 구성 요소와 떼어낸 파트는 「자기만의 레이어」에 들어 있습니다. 잘못 옮겼으면 언제든 Ctrl+Z로 되돌리거나 그 레이어를 지우고 다시 하면 되며 원래 캐릭터는 망가지지 않습니다.
+建議做法	Recommended workflow	おすすめの手順	추천 작업 방식
+尺寸	Size	サイズ	크기
+先用小尺寸（16~32）做出外形，確定了再放大。尺寸越大，每次預覽越慢，檔案也越大。	Start small (16–32) to get the shape right, then scale up once decided. The larger the size, the slower every preview, and the bigger the file.	まず小さなサイズ（16～32）で形を決め、決まってから大きくします。サイズが大きいほど、プレビューのたびに遅くなり、ファイルも大きくなります。	먼저 작은 크기(16~32)로 모양을 잡고 정해지면 키우세요. 크기가 클수록 미리보기가 느려지고 파일도 커집니다.
+尺寸要在新增時決定，之後不能改，所以先在小尺寸上把設計確定。	The size is decided when you create the document and cannot be changed later, so settle the design at a small size first.	サイズは新規作成時に決まり、あとから変更できません。まず小さなサイズでデザインを固めてください。	크기는 새로 만들 때 정해지며 나중에 바꿀 수 없으므로 먼저 작은 크기에서 디자인을 확정하세요.
+作畫順序	Drawing order	描く順番	그리는 순서
+先決定調色盤再畫。色格最多 255 個；畫完可以用「調色盤 → 清除沒用到的顏色／合併重複的顏色」整理。	Decide the palette before drawing. There are at most 255 slots; when done you can tidy up with "Palette → Remove unused colours / Merge duplicate colours".	描く前にパレットを決めておきます。スロットは最大255個。描き終えたら「パレット → 使っていない色を削除／重複した色を結合」で整理できます。	그리기 전에 팔레트를 정하세요. 칸은 최대 255개이며 다 그린 뒤 「팔레트 → 쓰지 않는 색 제거/중복된 색 병합」으로 정리할 수 있습니다.
+存檔與保險	Saving and safety	保存と備え	저장과 안전
+常按 Ctrl+S。做大改動前先「另存新檔」留一份。復原最多 200 步，關掉程式就沒了。	Press Ctrl+S often. Before a big change use "Save as" to keep a copy. Undo goes back up to 200 steps and is gone when you close the program.	こまめに Ctrl+S を押しましょう。大きな変更の前には「名前を付けて保存」でコピーを残します。取り消しは最大200ステップで、プログラムを閉じると消えます。	Ctrl+S를 자주 누르세요. 큰 변경 전에는 「다른 이름으로 저장」으로 사본을 남기세요. 실행 취소는 최대 200단계이며 프로그램을 닫으면 사라집니다.
+輸出給遊戲	Output for games	ゲーム向けの出力	게임용 출력
+遊戲只要「顯示轉動的 3D 角色」：用「匯出 PNG」，選要的角度數，得到圖集（或 PNG 序列）＋ JSON。	If the game only needs to "show a rotating 3D character": use "Export PNG", choose how many angles you want, and you get an atlas (or PNG sequence) + JSON.	ゲームが「回転する3Dキャラクターを表示する」だけなら、「PNGをエクスポート」で必要な角度数を選ぶと、アトラス（またはPNGシーケンス）＋JSON が得られます。	게임이 「회전하는 3D 캐릭터를 보여주기」만 하면 된다면 「PNG 내보내기」에서 원하는 각도 수를 골라 아틀라스(또는 PNG 시퀀스) + JSON을 얻으세요.
+遊戲想自己疊層、自己旋轉（Sprite Stacking）：用「匯出疊層條帶」。	If the game wants to stack and rotate the slices itself (Sprite Stacking): use "Export stack strip".	ゲーム側でスライスを重ねて回転させたい（Sprite Stacking）場合は、「スタックストリップをエクスポート」を使います。	게임에서 슬라이스를 직접 쌓고 회전시키고 싶다면(Sprite Stacking) 「스택 스트립 내보내기」를 쓰세요.
+只是要分享動畫：「匯出 GIF」。	Just sharing an animation: "Export GIF".	アニメーションを共有するだけなら:「GIFをエクスポート」。	애니메이션을 공유하기만 한다면: 「GIF 내보내기」.
+快捷鍵與滑鼠	Shortcuts and mouse	ショートカットとマウス	단축키와 마우스
+檔案與編輯	File and edit	ファイルと編集	파일과 편집
+Ctrl+N 新增、Ctrl+O 開啟、Ctrl+S 儲存、Ctrl+Shift+S 另存新檔、Ctrl+I 匯入圖片。	Ctrl+N new, Ctrl+O open, Ctrl+S save, Ctrl+Shift+S save as, Ctrl+I import image.	Ctrl+N 新規、Ctrl+O 開く、Ctrl+S 保存、Ctrl+Shift+S 名前を付けて保存、Ctrl+I 画像をインポート。	Ctrl+N 새로 만들기, Ctrl+O 열기, Ctrl+S 저장, Ctrl+Shift+S 다른 이름으로 저장, Ctrl+I 이미지 가져오기.
+Ctrl+Z 復原。Ctrl+X 剪下、Ctrl+C 複製、Ctrl+V 貼上、Ctrl+A 全選、Delete 刪除選取。	Ctrl+Z undo. Ctrl+X cut, Ctrl+C copy, Ctrl+V paste, Ctrl+A select all, Delete deletes the selection.	Ctrl+Z 元に戻す。Ctrl+X 切り取り、Ctrl+C コピー、Ctrl+V 貼り付け、Ctrl+A すべて選択、Delete で選択範囲を削除。	Ctrl+Z 실행 취소. Ctrl+X 잘라내기, Ctrl+C 복사, Ctrl+V 붙여넣기, Ctrl+A 모두 선택, Delete로 선택 삭제.
+Ctrl+D 複製到 +1 層、Ctrl+Shift+D 複製到 −1 層。	Ctrl+D copy to slice +1, Ctrl+Shift+D copy to slice −1.	Ctrl+D スライス +1 にコピー、Ctrl+Shift+D スライス −1 にコピー。	Ctrl+D 슬라이스 +1로 복사, Ctrl+Shift+D 슬라이스 −1로 복사.
+Ctrl+] 順時針旋轉選取區 15°、Ctrl+[ 逆時針 15°。	Ctrl+] rotates the selection 15° clockwise, Ctrl+[ 15° counter-clockwise.	Ctrl+] で選択範囲を時計回りに15°、Ctrl+[ で反時計回りに15°回転。	Ctrl+]로 선택 영역을 시계 방향 15°, Ctrl+[로 반시계 방향 15° 회전.
+Enter 放下浮動內容、Esc 取消選取或形狀、方向鍵微調浮動內容 1 格。	Enter drops floating content, Esc cancels the selection or shape, the arrow keys nudge floating content by 1 cell.	Enter で浮動内容を確定、Esc で選択や図形を取り消し、矢印キーで浮動内容を1セル微調整。	Enter로 떠 있는 내용을 놓고, Esc로 선택이나 도형을 취소하며, 방향키로 떠 있는 내용을 1칸 미세 조정.
+工具與視角	Tools and views	ツールとビュー	도구와 시점
+I 吸管、L 直線、R 矩形、E 橢圓。其他工具用左欄點選。	I eyedropper, L line, R rectangle, E ellipse. Other tools are chosen by clicking in the left column.	I スポイト、L 直線、R 長方形、E 楕円。他のツールは左の列でクリックして選びます。	I 스포이트, L 직선, R 사각형, E 타원. 다른 도구는 왼쪽 열에서 클릭해서 고릅니다.
+1 頂部、2 底部、3 正面、4 背面、5 左側、6 右側。	1 top, 2 bottom, 3 front, 4 back, 5 left, 6 right.	1 上面、2 下面、3 正面、4 背面、5 左側面、6 右側面。	1 위, 2 아래, 3 정면, 4 후면, 5 왼쪽, 6 오른쪽.
+← 與 →、[ 與 ]、PageDown 與 PageUp：切換層（有浮動選取或 3D 魔術棒選取時，←→ 改成移動選取）。	← and →, [ and ], PageDown and PageUp: change layer (with a floating selection or a 3D wand selection, ←/→ move the selection instead).	← と →、[ と ]、PageDown と PageUp：レイヤー切り替え（浮動選択や3D魔法の杖の選択があるときは、←→ は選択の移動になります）。	← 와 →, [ 와 ], PageDown 과 PageUp: 레이어 전환(플로팅 선택이나 3D 마법봉 선택이 있으면 ←→ 는 선택 이동).
+, 與 .：切換上一幀、下一幀。Space：播放／暫停。F1：開啟這份教學。	, and .: previous and next frame. Space: play / pause. F1: open this guide.	, と .: 前／次のフレーム。Space: 再生／一時停止。F1: このガイドを開く。	, 와 .: 이전/다음 프레임. Space: 재생/일시 정지. F1: 이 안내 열기.
+滑鼠	Mouse	マウス	마우스
+畫布：左鍵畫（或套用目前工具）、右鍵擦／清除。	Canvas: left button paints (or applies the current tool), right button erases / clears.	キャンバス: 左ボタンで描画（または現在のツールを適用）、右ボタンで消去／クリア。	캔버스: 왼쪽 버튼은 그리기(또는 현재 도구 적용), 오른쪽 버튼은 지우기/비우기.
+滾輪依游標位置分工：在左欄＝捲動功能列、在畫布上＝上下捲動（Shift＋滾輪左右捲動、Ctrl＋滾輪縮放）、在層數與複製工具面板＝換層、在右邊預覽欄＝縮放 3D 預覽。	The wheel depends on where the cursor is: left column = scroll the tool list; over the canvas = scroll up/down (Shift + wheel scrolls sideways, Ctrl + wheel zooms); over the layer and copy tools panel = change layer; right preview column = zoom the 3D preview.	ホイールはカーソル位置で役割が変わります。左の列＝機能リストのスクロール、キャンバス上＝上下スクロール（Shift＋ホイールで左右、Ctrl＋ホイールでズーム）、レイヤーとコピーツールのパネル上＝レイヤー切り替え、右のプレビュー列＝3Dプレビューのズーム。	휠은 커서 위치에 따라 동작합니다. 왼쪽 열=기능 목록 스크롤, 캔버스 위=상하 스크롤(Shift+휠은 좌우, Ctrl+휠은 확대/축소), 레이어·복사 도구 패널 위=레이어 전환, 오른쪽 미리보기 열=3D 미리보기 확대/축소.
+3D 預覽：拖曳轉動與改俯角，滾輪拉近拉遠，雙擊還原。	3D preview: drag to rotate and change the pitch, wheel to zoom, double-click to reset.	3Dプレビュー: ドラッグで回転と仰角変更、ホイールでズーム、ダブルクリックでリセット。	3D 미리보기: 드래그로 회전과 피치 변경, 휠로 확대/축소, 더블 클릭으로 초기화.
+直線／矩形／橢圓：拖曳時按住 Shift 限制形狀；魔術棒與選取：Shift 加選、Ctrl 減選。	Line / rectangle / ellipse: hold Shift while dragging to constrain the shape; magic wand and select: Shift adds, Ctrl subtracts.	直線／長方形／楕円: ドラッグ中に Shift を押すと形を制限します。マジックワンドと選択: Shift で追加、Ctrl で除外。	직선/사각형/타원: 드래그하는 동안 Shift를 누르면 모양이 제한됩니다. 마술봉과 선택: Shift는 추가, Ctrl은 제외.
+常見問題	FAQ	よくある質問	자주 묻는 질문
+畫圖	Drawing	描画	그리기
+畫了看不到？確認目前的「層」是不是你想畫的那一層（畫布上方的數字）；也可能是顏色太透明（A 條）。	Can't see what you drew? Check that the current "slice" is the one you meant to paint (the number above the canvas); it could also be that the colour is too transparent (the A bar).	描いたのに見えない？ 現在の「スライス」が描こうとしたものか確認してください（キャンバス上の数字）。色が透明すぎる（A バー）可能性もあります。	그렸는데 안 보이나요? 현재 「슬라이스」가 그리려던 슬라이스인지 확인하세요 (캔버스 위의 숫자). 색이 너무 투명한 경우(A 막대)일 수도 있습니다.
+一筆畫出好幾層？那是「深度」大於 1，或選了立體筆刷。要只畫一層就把深度設回 1、形狀選方形或圓形。	One stroke paints several slices? That's "Depth" above 1, or a 3D brush is chosen. To paint only one slice set depth back to 1 and choose a square or circle shape.	1回のストロークで複数スライスが描かれる？ 「深さ」が 1 より大きいか、立体ブラシを選んでいます。1スライスだけ描くには深さを 1 に戻し、形状は四角か円にします。	한 번 그었는데 여러 슬라이스가 그려지나요? 「깊이」가 1보다 크거나 입체 브러시를 골랐기 때문입니다. 한 슬라이스만 그리려면 깊이를 1로 되돌리고 모양은 사각형이나 원으로 하세요.
+滾輪不是我想要的？滾輪依游標位置：左欄捲動功能列、畫布上下捲動（Shift 左右、Ctrl 縮放）、層數面板換層、右邊縮放預覽。	The wheel isn't doing what you want? It depends on the cursor: left column scrolls the tool list, the canvas scrolls up/down (Shift sideways, Ctrl zoom), the layer panel changes layer, the right side zooms the preview.	ホイールが思いどおりに動かない？カーソル位置で変わります：左の列は機能リスト、キャンバスは上下スクロール（Shift で左右、Ctrl でズーム）、レイヤーパネルはレイヤー切り替え、右はプレビューのズーム。	휠이 원하는 대로 안 되나요? 커서 위치에 따라 다릅니다: 왼쪽 열은 기능 목록 스크롤, 캔버스는 상하 스크롤(Shift 좌우, Ctrl 확대/축소), 레이어 패널은 레이어 전환, 오른쪽은 미리보기 확대/축소.
+檔案	Files	ファイル	파일
+匯入的顏色變少或變成近似色？調色盤最多 255 色，空格不夠時新顏色會被量化；先用「清除沒用到的顏色」騰出空間。	Imported colours reduced or turned into similar ones? The palette has at most 255 colours; when there aren't enough free slots new colours are quantized; use "Remove unused colours" first to make room.	インポートした色が減った、または近い色になった？ パレットは最大255色で、空きスロットが足りないと新しい色は減色されます。先に「使っていない色を削除」で空きを作ってください。	가져온 색이 줄어들거나 비슷한 색으로 바뀌었나요? 팔레트는 최대 255색이며 빈 칸이 모자라면 새 색을 줄입니다. 먼저 「쓰지 않는 색 제거」로 자리를 만드세요.
+開啟舊檔？舊版的 .pstk 都能開；新版存的檔（含骨架）舊版程式不能開。	Opening old files? Every old-version .pstk can be opened; files saved by a newer version (with a rig) cannot be opened by the older program.	古いファイルを開く？ 旧バージョンの .pstk はすべて開けます。新しいバージョンで保存したファイル（リグ入り）は、古いプログラムでは開けません。	예전 파일 열기? 이전 버전의 .pstk는 모두 열 수 있습니다. 새 버전에서 저장한 파일(리그 포함)은 이전 프로그램에서 열 수 없습니다.
+關閉時一直問要不要存？狀態列檔名後面有「*」代表有未儲存的修改。	Keeps asking whether to save when closing? A "*" after the file name in the status bar means there are unsaved changes.	閉じるときに毎回保存するか聞かれる？ ステータスバーのファイル名の後ろの「*」は、未保存の変更があることを示します。	닫을 때마다 저장할지 묻나요? 상태 표시줄 파일 이름 뒤의 「*」는 저장하지 않은 변경 사항이 있다는 뜻입니다.
+複製「給 AI 的提示詞」	Copy "prompt for AI"	「AI 向けプロンプト」をコピー	「AI용 프롬프트」 복사
+讓 Claude 等 AI 用命令列版 pstk.exe 幫你做模型：把這段話貼給 AI，它會先讀說明書再動手。	Let an AI such as Claude build models with the command-line pstk.exe: paste this text to the AI and it will read the manual first.	Claude などの AI にコマンドライン版 pstk.exe でモデルを作らせます。この文を AI に貼り付けると、先にマニュアルを読んでから作業します。	Claude 같은 AI가 명령줄 버전 pstk.exe로 모델을 만들게 합니다. 이 글을 AI에게 붙여넣으면 먼저 설명서를 읽고 작업합니다.
+開啟 AI 說明書…	Open AI manual…	AI マニュアルを開く…	AI 설명서 열기…
+給 AI 讀的說明書（AI說明書.md）：命令列版 pstk.exe 的全部用法與建議流程。	The manual for AIs (AI說明書.md): every command of the command-line pstk.exe and the recommended workflow.	AI が読むマニュアル（AI說明書.md）: コマンドライン版 pstk.exe の全コマンドとおすすめの手順。	AI가 읽는 설명서(AI說明書.md): 명령줄 버전 pstk.exe의 모든 명령과 추천 작업 흐름.
+找不到命令列版 pstk.exe：{0}\n請重新建置專案（編輯器建置時會一起建 pstk.exe）。	Cannot find the command-line pstk.exe: {0}\nPlease rebuild the project (building the editor also builds pstk.exe).	コマンドライン版 pstk.exe が見つかりません: {0}\nプロジェクトを再ビルドしてください（エディターのビルド時に pstk.exe も作られます）。	명령줄 버전 pstk.exe를 찾을 수 없습니다: {0}\n프로젝트를 다시 빌드하세요 (편집기를 빌드하면 pstk.exe도 함께 만들어집니다).
+給 AI 的提示詞	Prompt for AI	AI 向けプロンプト	AI용 프롬프트
+已複製「給 AI 的提示詞」。貼給 Claude 等 AI，把最後一行換成你要做的事；它會先讀說明書再動手。	Copied the "prompt for AI". Paste it to Claude or another AI and replace the last line with what you want done; it will read the manual first.	「AI 向けプロンプト」をコピーしました。Claude などの AI に貼り付け、最後の行を頼みたい内容に書き換えてください。先にマニュアルを読んでから作業します。	「AI용 프롬프트」를 복사했습니다. Claude 같은 AI에게 붙여넣고 마지막 줄을 원하는 작업으로 바꾸세요. 먼저 설명서를 읽고 작업합니다.
+剪貼簿暫時無法使用，請稍後再試。	The clipboard is temporarily unavailable. Please try again in a moment.	クリップボードを一時的に使用できません。しばらくしてからもう一度お試しください。	클립보드를 잠시 사용할 수 없습니다. 잠시 후 다시 시도하세요.
+找不到說明書：{0}	Cannot find the manual: {0}	マニュアルが見つかりません: {0}	설명서를 찾을 수 없습니다: {0}
+AI 說明書	AI manual	AI マニュアル	AI 설명서
+四國語言	Four languages	4か国語対応	4개 국어
+「工具 > 語言 / Language」選單可切換繁體中文、English、日本語、한국어，立刻生效，下次啟動沿用；第一次啟動跟著作業系統語言。	The "Tools > 語言 / Language" menu switches between 繁體中文, English, 日本語 and 한국어; it takes effect at once and is remembered; the first launch follows the operating-system language.	「ツール > 語言 / Language」メニューで 繁體中文・English・日本語・한국어 を切り替えられます。すぐに反映され、次回起動時も維持されます。初回起動時は OS の言語に従います。	「도구 > 語言 / Language」 메뉴에서 繁體中文, English, 日本語, 한국어로 바꿀 수 있습니다. 즉시 적용되고 다음 실행에도 유지되며, 처음 실행할 때는 운영 체제 언어를 따릅니다.
+給 AI 用	For AI	AI 向け	AI용
+說明選單的「複製給 AI 的提示詞」＋命令列版 pstk.exe（不開視窗；畫體素、匯入圖片、膨脹、圖層、魔術棒、骨架與預設庫、匯出都能下指令）；提示詞會要求 AI 先讀說明書（AI說明書.md）才能動手。	Help menu "Copy prompt for AI" plus the command-line pstk.exe (no window; drawing voxels, importing images, inflate, layers, magic wand, rig and preset library and export can all be commanded); the prompt tells the AI to read the manual (AI說明書.md) before doing anything.	ヘルプメニューの「AI 向けプロンプトをコピー」とコマンドライン版 pstk.exe（ウィンドウなし。ボクセル描画・画像インポート・膨張・レイヤー・マジックワンド・リグとプリセットライブラリ・エクスポートをコマンドで実行できます）。プロンプトは AI に、作業の前にマニュアル（AI說明書.md）を読むよう指示します。	도움말 메뉴의 「AI용 프롬프트 복사」와 명령줄 버전 pstk.exe (창 없음. 복셀 그리기, 이미지 가져오기, 팽창, 레이어, 마술봉, 리그와 프리셋 라이브러리, 내보내기를 명령으로 실행할 수 있습니다). 프롬프트는 AI가 작업 전에 설명서(AI說明書.md)를 읽도록 지시합니다.
+語言與 AI	Language and AI	言語と AI	언어와 AI
+換介面語言？「工具 > 語言 / Language」選單：繁體中文、English、日本語、한국어，立刻生效並記住。	Change the interface language? "Tools > 語言 / Language" menu: 繁體中文, English, 日本語, 한국어; it takes effect at once and is remembered.	表示言語を変えたい？「ツール > 語言 / Language」メニュー: 繁體中文・English・日本語・한국어。すぐに反映され、記憶されます。	인터페이스 언어를 바꾸려면? 「도구 > 語言 / Language」 메뉴: 繁體中文, English, 日本語, 한국어. 즉시 적용되고 기억됩니다.
+想讓 Claude 等 AI 幫忙做模型？說明選單 →「複製給 AI 的提示詞」，貼給 AI，把最後一行換成你要做的事；提示詞會要求 AI 先讀說明書（pstk.exe manual）才能動手。	Want Claude or another AI to help build models? Help menu → "Copy prompt for AI", paste it to the AI and replace the last line with what you want; the prompt tells the AI to read the manual (pstk.exe manual) first.	Claude などの AI にモデル作りを手伝わせたい？ ヘルプメニュー →「AI 向けプロンプトをコピー」して AI に貼り付け、最後の行を頼みたい内容に書き換えます。プロンプトは AI に、先にマニュアル（pstk.exe manual）を読むよう指示します。	Claude 같은 AI가 모델 제작을 돕게 하려면? 도움말 메뉴 →「AI용 프롬프트 복사」를 AI에게 붙여넣고 마지막 줄을 원하는 작업으로 바꾸세요. 프롬프트는 AI가 먼저 설명서(pstk.exe manual)를 읽도록 지시합니다.
+命令列版 pstk.exe 放在 PixelStacking.exe 旁邊，不開視窗，做出來的 .pstk 可以直接用編輯器開啟。AI 改的檔案如果同時開在編輯器裡，要重新開啟才看得到（編輯器不會自動重讀）。	The command-line pstk.exe sits next to PixelStacking.exe and opens no window; the .pstk files it makes can be opened directly in the editor. If a file the AI changed is also open in the editor, re-open it to see the changes (the editor does not reload automatically).	コマンドライン版 pstk.exe は PixelStacking.exe の隣にあり、ウィンドウは開きません。作られた .pstk はエディターでそのまま開けます。AI が変更したファイルがエディターでも開いている場合は、開き直さないと反映されません（エディターは自動では再読み込みしません）。	명령줄 버전 pstk.exe는 PixelStacking.exe 옆에 있으며 창을 열지 않습니다. 만들어진 .pstk는 편집기에서 바로 열 수 있습니다. AI가 바꾼 파일이 편집기에도 열려 있으면 다시 열어야 변경 사항이 보입니다 (편집기는 자동으로 다시 읽지 않습니다).
+輪廓線	Outline	輪郭線	윤곽선
+外輪廓	Outer outline	外側の輪郭	바깥 윤곽
+模型外圍加一圈線，線的顏色是它旁邊的底色加深。線會長在模型外面（匯出的圖會大一圈）。	Adds a line around the outside of the model, in a darker shade of the colour next to it. The line grows outside the model (exported images get one ring larger).	モデルの外側に、隣り合う色を暗くした線を1周追加します。線はモデルの外側に付くため、書き出した画像は一回り大きくなります。	모델 바깥쪽에 바로 옆 색을 어둡게 한 선을 한 바퀴 더합니다. 선은 모델 밖에 생기므로 내보낸 이미지가 한 겹 커집니다.
+面折線	Edge lines	面の折れ線	면 경계선
+模型內部：不同朝向的面交界（頂面與側面…），以及前面的東西壓在後面東西上的邊，畫上底色加深的線。層疊模式沒有面的概念，這項在那裡不作用。	Inside the model: draws a line, in a darker shade of the base colour, where faces of different orientation meet (top vs side…) and where something in front overlaps something behind. Stacked mode has no faces, so this does nothing there.	モデル内部の、向きの違う面の境目（上面と側面など）や、手前のものが奥のものに重なる縁に、元の色を暗くした線を引きます。重ね合わせモードには面がないので無効です。	모델 안쪽에서 방향이 다른 면의 경계(윗면과 옆면 등)와 앞쪽 물체가 뒤쪽 물체에 겹치는 가장자리에 바탕색을 어둡게 한 선을 그립니다. 겹쳐 쌓기 모드에는 면이 없어 적용되지 않습니다.
+線寬	Width	線の太さ	선 두께
+線寬（畫出來的圖上的像素數：預覽圖或匯出的圖）。匯出倍率大的時候選粗一點。	Line width in pixels of the rendered image (the preview image or the exported image). For a large export scale pick a thicker line.	線の太さ（描画された画像のピクセル数: プレビュー画像または書き出した画像）。書き出し倍率が大きいときは太めにしてください。	선 두께(렌더링된 이미지의 픽셀 수: 미리보기 또는 내보낸 이미지). 내보내기 배율이 클 때는 더 두껍게 하세요.
+深淺	Tone	濃さ	농도
+淺	Light	薄	연함
+中	Medium	中	보통
+深	Dark	濃	진함
+線的顏色＝底色乘上這個比例：淺 70%、中 55%、深 35%。	Line colour = the base colour times this: light 70 %, medium 55 %, dark 35 %.	線の色＝元の色にこの割合を掛けたもの: 薄 70%、中 55%、濃 35%。	선 색 = 바탕색에 이 비율을 곱한 값: 연함 70%, 보통 55%, 진함 35%.
+輪廓線（沿用預覽的設定）	Outline (same settings as the preview)	輪郭線（プレビューと同じ設定）	윤곽선(미리보기와 같은 설정)
+外輪廓會佔用模型外面的像素，圖會比沒有輪廓時大一圈。線寬、深淺、畫哪幾種線都跟預覽一樣。	The outer outline takes pixels outside the model, so the image is one ring larger than without an outline. Line width, tone and which lines are drawn follow the preview.	外側の輪郭はモデルの外のピクセルを使うため、輪郭なしより画像が一回り大きくなります。線の太さ・濃さ・描く線の種類はプレビューに従います。	바깥 윤곽은 모델 밖의 픽셀을 사용하므로 윤곽이 없을 때보다 이미지가 한 겹 커집니다. 선 두께, 농도, 그릴 선의 종류는 미리보기를 따릅니다.
+預覽與匯出（PNG／GIF）都能加：外輪廓（模型外圍一圈）與面折線（面與面的交界、前後交疊的邊），線色是底色加深，線寬 1~3、深淺可調。在預覽面板的「輪廓線」。	Available in the preview and in PNG / GIF export: an outer outline (a ring around the model) and edge lines (where faces meet, and where something in front overlaps something behind), drawn in a darker shade of the base colour; width 1–3 and tone are adjustable. See "Outline" in the preview panel.	プレビューと書き出し（PNG／GIF）の両方で使えます。外側の輪郭（モデルを囲む1周）と面の折れ線（面の境目、手前と奥が重なる縁）を、元の色を暗くした色で描きます。太さ1〜3と濃さを調整できます。プレビューパネルの「輪郭線」です。	미리보기와 내보내기(PNG／GIF) 모두에서 쓸 수 있습니다. 바깥 윤곽(모델을 두르는 한 바퀴)과 면 경계선(면이 만나는 곳, 앞뒤가 겹치는 가장자리)을 바탕색을 어둡게 한 색으로 그립니다. 두께 1~3과 농도를 조절할 수 있습니다. 미리보기 패널의 「윤곽선」입니다.
+實心顯示時邊緣不明顯？打開預覽面板的「輪廓線」：外輪廓讓模型和背景分開，面折線讓方塊的邊角更清楚；匯出 PNG／GIF 時勾「輪廓線」就會一起畫進去。	Edges hard to see in the solid preview? Turn on "Outline" in the preview panel: the outer outline separates the model from the background and the edge lines make block corners clearer; tick "Outline" when exporting PNG / GIF to bake it in.	ソリッド表示で縁が見づらい？プレビューパネルの「輪郭線」をオンに: 外側の輪郭でモデルと背景が分かれ、面の折れ線でブロックの角がはっきりします。PNG／GIF の書き出しで「輪郭線」にチェックすると一緒に描き込まれます。	솔리드 표시에서 가장자리가 잘 안 보이나요? 미리보기 패널의 「윤곽선」을 켜세요: 바깥 윤곽이 모델과 배경을 구분하고 면 경계선이 블록 모서리를 더 또렷하게 합니다. PNG／GIF로 내보낼 때 「윤곽선」에 체크하면 함께 그려 넣습니다.
+裙子	Skirt	スカート	치마
+前髮（瀏海）	Front hair (bangs)	前髪（ぱっつん）	앞머리
+後髮	Back hair	後ろ髪	뒷머리
+呆毛（天線）	Ahoge (hair antenna)	アホ毛	아호게(삐죽 머리카락)
+髮飾	Hair accessory	髪飾り	머리 장식
+披風	Cape	マント	망토
+左耳	Left ear	左耳	왼쪽 귀
+右耳	Right ear	右耳	오른쪽 귀
+倍率	Zoom	倍率	배율
+適合視窗	Fit window	ウィンドウに合わせる	창에 맞춤
+編輯畫布每一格的放大倍率。「適合視窗」會自動撐到最大；選固定倍率後，畫布超出視窗時可用捲軸、滾輪或滑鼠中鍵拖曳來移動。也可以在畫布上按住 Ctrl 滾動滾輪縮放（以游標位置為中心）。	Magnification of each cell on the edit canvas. "Fit window" stretches it to the largest size; with a fixed zoom, scroll with the scroll bars, the wheel or by dragging with the middle mouse button when it is larger than the window. You can also hold Ctrl over the canvas and scroll the wheel to zoom (centred on the cursor).	編集キャンバスの1マスの拡大率です。「ウィンドウに合わせる」は最大まで自動で広げます。固定倍率でウィンドウより大きいときは、スクロールバー、ホイール、マウスの中ボタンのドラッグで移動できます。キャンバス上で Ctrl を押しながらホイールでもズームできます（カーソル位置が中心）。	편집 캔버스 한 칸의 확대 배율입니다. '창에 맞춤'은 가장 크게 자동으로 맞춥니다. 고정 배율에서 창보다 크면 스크롤바, 휠 또는 마우스 가운데 버튼 드래그로 이동합니다. 캔버스 위에서 Ctrl을 누른 채 휠을 굴려도 확대/축소됩니다(커서 위치 기준).
+畫布倍率：右上角的「倍率」選單可固定編輯畫布每格的大小（1×~64×），放大到超出視窗時用捲軸、滾輪或滑鼠中鍵拖曳來移動；在畫布上按住 Ctrl 滾動滾輪也能縮放（以游標為中心）。預設「適合視窗」會自動撐到最大。	Canvas zoom: the "Zoom" menu at the top right fixes the size of each cell on the edit canvas (1×–64×). When it is larger than the window, move with the scroll bars, the wheel or by dragging with the middle mouse button; holding Ctrl and scrolling the wheel over the canvas also zooms (centred on the cursor). The default "Fit window" stretches it to the largest size.	キャンバスの倍率：右上の「倍率」メニューで編集キャンバスの1マスの大きさを固定できます（1×～64×）。ウィンドウより大きくなったらスクロールバー、ホイール、マウスの中ボタンのドラッグで移動。キャンバス上で Ctrl を押しながらホイールでもズームできます（カーソルが中心）。既定の「ウィンドウに合わせる」は最大まで自動で広げます。	캔버스 배율: 오른쪽 위의 '배율' 메뉴로 편집 캔버스 한 칸의 크기를 고정할 수 있습니다(1×~64×). 창보다 커지면 스크롤바, 휠 또는 마우스 가운데 버튼 드래그로 이동하고, 캔버스 위에서 Ctrl을 누른 채 휠을 굴려도 확대/축소됩니다(커서 기준). 기본값 '창에 맞춤'은 가장 크게 자동으로 맞춥니다.
+編輯畫布的捲軸（放大到超出視窗時才能用）。游標在畫布上時：滾輪＝上下捲動、Shift＋滾輪＝左右捲動，滑鼠中鍵拖曳也能平移。	Scroll bars for the edit canvas (available once it is zoomed larger than the window). With the cursor over the canvas: wheel = scroll up/down, Shift + wheel = scroll sideways; dragging with the middle mouse button also pans.	編集キャンバスのスクロールバーです（ウィンドウより大きく拡大したときに使えます）。カーソルがキャンバス上にあるとき：ホイールで上下、Shift＋ホイールで左右にスクロール。マウスの中ボタンのドラッグでも移動できます。	편집 캔버스의 스크롤바입니다(창보다 크게 확대했을 때 사용 가능). 커서가 캔버스 위에 있을 때: 휠은 상하, Shift+휠은 좌우 스크롤이며 마우스 가운데 버튼 드래그로도 이동합니다.
+畫布捲動：放大到超出視窗時，畫布右邊與下方的捲軸可以拖曳；游標在畫布上時，滾輪上下捲動、Shift＋滾輪左右捲動、Ctrl＋滾輪縮放。換層改用 ←／→、[ ]、PageUp／PageDown。	Canvas scrolling: when zoomed beyond the window, drag the scroll bars at the right and bottom of the canvas. With the cursor over the canvas, the wheel scrolls up/down, Shift + wheel scrolls sideways and Ctrl + wheel zooms. Change layer with ←/→, [ ] or PageUp/PageDown instead.	キャンバスのスクロール：ウィンドウより大きく拡大したときは、キャンバスの右と下のスクロールバーをドラッグできます。カーソルがキャンバス上にあるとき、ホイールで上下、Shift＋ホイールで左右、Ctrl＋ホイールでズーム。レイヤー切り替えは ←/→、[ ]、PageUp/PageDown を使います。	캔버스 스크롤: 창보다 크게 확대하면 캔버스 오른쪽과 아래의 스크롤바를 드래그할 수 있습니다. 커서가 캔버스 위에 있을 때 휠은 상하, Shift+휠은 좌우 스크롤, Ctrl+휠은 확대/축소입니다. 레이어 전환은 ←/→, [ ], PageUp/PageDown 을 사용합니다.
+編輯視角	Edit view	編集ビュー	편집 시점
+預覽左下角的座標軸：紅 X、綠 Y、藍 Z，實線的一端朝向你，淡色的一端背向你。黃色圓圈是左邊編輯畫布現在的觀看位置；模型裡的黃色半透明框是正在編輯的那一層。	The axes at the bottom left of the preview: red X, green Y, blue Z; the solid end points towards you and the faded end points away. The yellow circle is where the edit canvas on the left is looking from; the translucent yellow frame in the model is the layer being edited.	プレビュー左下の座標軸：赤が X、緑が Y、青が Z。実線の端が手前、薄い端が奥を向いています。黄色の丸は左の編集キャンバスが見ている位置、モデル内の半透明の黄色い枠は編集中のレイヤーです。	미리보기 왼쪽 아래의 좌표축: 빨강 X, 초록 Y, 파랑 Z. 실선 쪽이 나를 향하고 연한 쪽이 반대쪽입니다. 노란 원은 왼쪽 편집 캔버스가 보고 있는 위치이고, 모델 안의 반투명 노란 프레임은 편집 중인 레이어입니다.
+顯示編輯中的層框	Show the edit-layer frame	編集中のレイヤー枠を表示	편집 중인 레이어 틀 표시
+在預覽的模型裡，用黃色虛線框標出左邊畫布正在編輯的那一層。框是疊在畫面上的，不會被方塊遮住；嫌擋到就取消勾選。（左下角的座標軸不受影響。）	Marks the layer being edited on the left canvas with a dashed yellow frame inside the preview model. The frame is drawn over the image and is not hidden by voxels; untick it if it gets in the way. (The axes at the bottom left are not affected.)	プレビューのモデル内に、左のキャンバスで編集中のレイヤーを黄色い破線の枠で表示します。枠は画像の上に重ねて描かれ、ボクセルに隠れません。邪魔なときはチェックを外してください。（左下の座標軸は影響を受けません。）	미리보기 모델 안에 왼쪽 캔버스에서 편집 중인 레이어를 노란 점선 틀로 표시합니다. 틀은 화면 위에 덧그려지므로 복셀에 가려지지 않으며, 방해되면 체크를 해제하세요. (왼쪽 아래 좌표축은 영향받지 않습니다.)
+頂	Top	上	위
+底	Bottom	下	아래
+前	Front	前	앞
+後	Back	後	뒤
+左	Left	左	왼쪽
+右	Right	右	오른쪽
+預覽視角	Preview view	プレビュー視点	미리보기 시점
+把預覽轉到從這一面看（同時停止自動旋轉）：前＝從 +Y 看、後＝從 −Y、右＝從 +X、左＝從 −X、頂＝從上往下、底＝從下往上。這跟左邊編輯視角的方向定義一樣。	Turns the preview to look from that side (and stops auto-rotate): Front = from +Y, Back = from −Y, Right = from +X, Left = from −X, Top = from above, Bottom = from below. These match the directions of the edit views on the left.	プレビューをその面から見る向きに回します（自動回転も止まります）：前＝+Y から、後＝−Y から、右＝+X から、左＝−X から、上＝真上から、下＝真下から。左の編集ビューの向きの定義と同じです。	미리보기를 그 면에서 보는 방향으로 돌립니다(자동 회전도 멈춥니다): 앞=+Y에서, 뒤=−Y에서, 오른쪽=+X에서, 왼쪽=−X에서, 위=위에서, 아래=아래에서. 왼쪽 편집 시점의 방향 정의와 같습니다.
+視角方塊：點一個面，預覽就轉到從那一面看（同時停止自動旋轉）。方塊會跟著預覽轉動；黃色邊框的面是左邊編輯畫布現在看的方向。	View cube: click a face to turn the preview to look from that side (this also stops auto-rotate). The cube turns with the preview; the face with the yellow border is the direction the edit canvas on the left is looking from.	ビューキューブ：面をクリックすると、プレビューをその面から見る向きに回します（自動回転も止まります）。キューブはプレビューと一緒に回り、黄色い枠の面は左の編集キャンバスが見ている向きです。	뷰 큐브: 면을 클릭하면 미리보기가 그 면에서 보는 방향으로 돌아갑니다(자동 회전도 멈춤). 큐브는 미리보기와 함께 돌며, 노란 테두리 면은 왼쪽 편집 캔버스가 보고 있는 방향입니다.

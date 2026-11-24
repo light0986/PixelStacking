@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- pstk.exe：PixelStacking 的命令列版（主控台程式，給 AI 與批次腳本用）。
+     不用視窗，直接編譯 PixelStacking 的 Data\ 與 Render\（純邏輯，沒有任何畫面相依），所以做出來的結果跟編輯器完全一樣。
+     輸出到 PixelStacking 的 bin 資料夾，跟 PixelStacking.exe 放在一起。 -->
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B3E1B7C-6D0F-4C0E-9B55-2D7C1A5E8A11}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <ApplicationIcon>..\PixelStacking\app.ico</ApplicationIcon>
+    <RootNamespace>PixelStacking.Cli</RootNamespace>
+    <AssemblyName>pstk</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\PixelStacking\bin\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\PixelStacking\bin\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\PixelStacking\Data\*.cs" Exclude="..\PixelStacking\Data\HelpContent.cs" />
+    <Compile Include="..\PixelStacking\Render\*.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="CliArgs.cs" />
+    <Compile Include="Commands.cs" />
+    <Compile Include="CommandsEdit.cs" />
+    <Compile Include="CommandsRig.cs" />
+    <EmbeddedResource Include="..\PixelStacking\Resources\Strings.tsv">
+      <LogicalName>Strings.tsv</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\PixelStacking\Resources\Lang\Keys.tsv">
+      <LogicalName>Keys.tsv</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\PixelStacking\AI說明書.md">
+      <LogicalName>manual.md</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

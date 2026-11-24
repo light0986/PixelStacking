@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47340592-4AFE-4931-A530-8F615B37EB1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PixelStacking</RootNamespace>
+    <AssemblyName>PixelStacking</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Controls\AboutDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Controls\AboutDialog.xaml.cs">
+      <DependentUpon>AboutDialog.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ColorPicker.cs" />
+    <Compile Include="Controls\DialogStyle.cs" />
+    <Compile Include="Controls\ExportDialog.cs" />
+    <Compile Include="Controls\LayerCanvas.cs" />
+    <Compile Include="Controls\PreviewOverlay.cs" />
+    <Compile Include="Controls\ViewCubeControl.cs" />
+    <Compile Include="Controls\LayerCanvas.Selection.cs" />
+    <Compile Include="Data\PixelBlock.cs" />
+    <Compile Include="Controls\MaximizeHook.cs" />
+    <Compile Include="Controls\NewDialog.cs" />
+    <Compile Include="Controls\RangeDialog.cs" />
+    <Compile Include="Controls\SavePromptDialog.cs" />
+    <Compile Include="Controls\ShiftDialog.cs" />
+    <Compile Include="Data\LayerTransform.cs" />
+    <Compile Include="Data\PaletteOps.cs" />
+    <Compile Include="Data\BlockRotation.cs" />
+    <Compile Include="Data\Rig.cs" />
+    <Compile Include="Data\RigBake.cs" />
+    <Compile Include="Data\PosePresets.cs" />
+    <Compile Include="Controls\NamePromptDialog.cs" />
+    <Compile Include="Data\HelpContent.cs" />
+    <Compile Include="Controls\HelpDialog.cs" />
+    <Compile Include="MainWindow.Layers.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RotateDialog.cs" />
+    <Compile Include="Controls\TimelineStrip.cs" />
+    <Compile Include="Controls\LayerStrip.cs" />
+    <Compile Include="Data\Inflate.cs" />
+    <Compile Include="Data\Layer.cs" />
+    <Compile Include="Data\Loc.cs" />
+    <Compile Include="Data\TextKey.cs" />
+    <Compile Include="Controls\LocHook.cs" />
+    <Compile Include="MessageBoxShim.cs" />
+    <Compile Include="MainWindow.Language.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resources\Strings.tsv" />
+    <Compile Include="Controls\LangResources.cs" />
+    <!-- 每種語言一份 ResourceDictionary（Tools\GenLang.ps1 從 Strings.tsv 產生）；zh 在 App.xaml 合併，其他語言執行時換上 -->
+    <Page Include="Resources\Lang\Strings.zh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Lang\Strings.en.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Lang\Strings.ja.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Lang\Strings.ko.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <EmbeddedResource Include="Resources\Lang\Keys.tsv" />
+    <None Include="Tools\GenLang.ps1" />
+    <Compile Include="Data\VoxelOps.cs" />
+    <Compile Include="Data\LayerImport.cs" />
+    <Compile Include="Controls\LayerListBox.cs" />
+    <Compile Include="Controls\MoveLayerDialog.cs" />
+    <Compile Include="Controls\InflateDialog.cs" />
+    <Compile Include="Data\SliceOps.cs" />
+    <Compile Include="Data\Animation.cs" />
+    <Compile Include="Data\BrushSettings.cs" />
+    <Compile Include="Data\UiState.cs" />
+    <Compile Include="Data\UndoStack.cs" />
+    <Compile Include="Data\ViewDirection.cs" />
+    <Compile Include="Data\VoxelModel.cs" />
+    <Compile Include="Render\Outline.cs" />
+    <Compile Include="Render\SpriteExporter.cs" />
+    <Compile Include="Render\GifWriter.cs" />
+    <Compile Include="Render\ImageImport.cs" />
+    <Compile Include="Controls\ImportImageDialog.cs" />
+    <Compile Include="Render\GifExporter.cs" />
+    <Compile Include="Render\StripExporter.cs" />
+    <Compile Include="Controls\ExportExtraDialog.cs" />
+    <Compile Include="Render\StackRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- 圖片必須用 Resource（不是 Content），執行時才載得到 pack URI -->
+    <Resource Include="Resources\rabbit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="app.manifest" />
+    <Resource Include="app.ico" />
+    <!-- 給 AI 的說明書：跟 exe 放在一起（pstk.exe 也把同一份嵌在裡面，pstk manual 會印出來） -->
+    <None Include="AI說明書.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="MainWindow.Ai.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- 編輯器建置完順便建命令列版 pstk.exe（輸出到同一個資料夾）。 -->
+  <Target Name="BuildPstk" AfterTargets="Build">
+    <MSBuild Projects="..\PixelStackingCli\PixelStackingCli.csproj" Properties="Configuration=$(Configuration)" />
+  </Target>
+</Project>
